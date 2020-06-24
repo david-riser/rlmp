@@ -2,7 +2,8 @@
 Welcome to my reinforcement learning journey.
 
 ### Enabling Video Recording
-`apt install python-opengl`
-`apt install ffmpeg`
-`apt install xvfb`
-`pip install pyvirtualdisplay`
+Install the following:
+-`apt install python-opengl`
+-`apt install ffmpeg`
+-`apt install xvfb`
+-`pip install pyvirtualdisplay`
