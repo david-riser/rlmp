@@ -2,7 +2,7 @@ import argparse
 import gym
 import wandb
 from gym import wrappers
-
+from pyvirtualdisplay import Display
 
 def get_args():
     ap = argparse.ArgumentParser()
@@ -28,8 +28,13 @@ if __name__ == "__main__":
 
     args = get_args()
     setup_wandb(args)
+
     env = gym.make(args.env)
-    # env = wrappers.Monitor(env, 'tmp/video', force=True)
+    env = wrappers.Monitor(env, 'tmp/video/{}'.format(wandb.run.id), video_callable=lambda x: x % 20 == 0)
+
+    # Configure display
+    virtual_display = Display(visible=0, size=(320,240))
+    virtual_display.start()
     
     for episode in range(args.episodes):
         observation = env.reset()
