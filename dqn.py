@@ -4,8 +4,6 @@ import gym
 import wandb
 from gym import wrappers
 from pyvirtualdisplay import Display
-from utils.replay import ReplayBuffer
-
 
 def get_args():
     ap = argparse.ArgumentParser()
@@ -43,12 +41,6 @@ if __name__ == "__main__":
     # Configure display
     virtual_display = Display(visible=0, size=(320,240))
     virtual_display.start()
-
-    replay_buffer = ReplayBuffer(
-        n_actions=env.action_space.n,
-        obs_shape=env.observation_space.shape,
-        max_size=1000
-    )
     
     for episode in range(args.episodes):
         observation = env.reset()
@@ -65,16 +57,6 @@ if __name__ == "__main__":
             if done:
                 break
 
-            last_observation = observation
-
-            if timestep > 0:
-                replay_buffer.store(
-                    action, observation, last_observation, reward, done
-                )
-
-            if replay_buffer.is_full:
-                sample = replay_buffer.sample(batch_size=8)
-                
         env.close()
 
     # Upload the video
