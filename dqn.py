@@ -38,8 +38,14 @@ def build_network(input_shape, output_shape):
     a convolutional network based on the shape
     of the observation space. """
     if len(input_shape) > 1:
+        print("Building convnet with shapes: {} -> {}".format(
+            input_shape, output_shape
+        ))
         return _build_convnet(input_shape, output_shape)
     else:
+        print("Building net with shapes: {} -> {}".format(
+            input_shape, output_shape
+        ))
         return _build_fc(input_shape, output_shape)
 
     
@@ -103,16 +109,20 @@ class Agent:
     def choose_action(self, observation):
          
         if random.random() < 0.9:
+            print("Taking best action")
             action = self._choose_best_action(observation)
         else:
+            print("Taking random action")
             action = self._choose_random_action(observation)
 
     def _choose_random_action(self, observation):
-        return np.random.choice(self.action_space)
+        return self.action_space.sample()
 
 
     def _choose_best_action(self, observation):
-        return np.argmax(self.policy.predict(observation))
+        return np.argmax(self.policy.predict(observation.reshape(
+            1, *observation.shape
+        )))
 
 
     def store(self, action, state, next_state, reward, done):
@@ -125,12 +135,18 @@ class Agent:
             self.target.set_weights(self.policy.get_weights())
 
         if len(self.memory) >= self.batch_size:
+            print("Learning step" )
             actions, states, next_states, rewards, dones = self.memory.sample(self.batch_size)
-
+            print(actions)
+            print(states)
+            print(next_states)
+            print(rewards)
+            print(dones)
+            
             # Get the states and predict the Q-values
             # from the batch.
-            policy_preds = self.policy.predict(states)
-            target_preds = self.target.predict(next_states)
+            policy_preds = self.policy.predict(states.reshape(1,*states.shape))
+            target_preds = self.target.predict(next_states.reshape(1,*next_states.shape))
             rewards *= (1. - dones)
 
             # This might not be the correct update procedure yet,
@@ -156,8 +172,24 @@ if __name__ == "__main__":
     virtual_display = Display(visible=0, size=(320,240))
     virtual_display.start()
 
-    agent = Agent(env.action_space, env.observation_space, 10000, 32)
     
+    agent = Agent(
+        action_space=env.action_space,
+        observation_space=env.observation_space,
+        max_size=10000,
+        batch_size=32
+    )
+
+
+    while not agent.memory.is_full:
+        done = False
+        observation = env.reset()        
+        while not done:
+            action = env.action_space.sample()
+            obs, reward, done, _ = env.step(action)
+            agent.store(action, observation, obs, reward, done)
+            observation = obs
+        
     for episode in range(args.episodes):
         observation = env.reset()
 
@@ -167,6 +199,8 @@ if __name__ == "__main__":
         while not done:
             # action = env.action_space.sample()
             action = agent.choose_action(observation)
+            print("Action ", action)
+
             next_observation, reward, done, _ = env.step(action)
 
             agent.store(action, observation, next_observation, reward, done)
@@ -179,7 +213,9 @@ if __name__ == "__main__":
             i += 1
 
             scores.append(reward)
-
+                    
+            observation = next_observation
+                    
         print(np.mean(scores))
             
         env.close()

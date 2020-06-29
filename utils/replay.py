@@ -25,13 +25,10 @@ class ReplayBuffer:
         self.index += 1
 
     def sample(self, batch_size):
-        if self.index >= self.max_size:
-            indices = np.random.choice(self.index_pool, batch_size, replace=False)
+        indices = np.random.choice(self.index_pool, batch_size, replace=False)
 
-            return (self.actions[indices], self.states[indices], self.next_states[indices], 
-                    self.rewards[indices], self.dones[indices])
-        else:
-            return None
+        return (self.actions[indices], self.states[indices], self.next_states[indices], 
+                self.rewards[indices], self.dones[indices])
 
     @property
     def is_full(self):
