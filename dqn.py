@@ -53,7 +53,8 @@ if __name__ == "__main__":
         video_path,
         video_callable=lambda x: x % 20 == 0
     )
-
+    
+    
     # Configure display
     virtual_display = Display(visible=0, size=(320,240))
     virtual_display.start()
@@ -80,12 +81,14 @@ if __name__ == "__main__":
     while num_frames < args.max_frames:
 
         state = env.reset()
+        state = np.swapaxes(state,2,0)
         done = False
         ep_reward = 0 
         while not done:
             epsilon = args.eps_final + (args.eps_start - args.eps_final) * np.exp(-1. * num_frames / args.eps_decay)
             action = model.act(state,epsilon)
             next_state, reward, done, _ = env.step(action)
+            next_state = np.swapaxes(next_state,2,0)
             replay_buffer.add(state, action, reward, next_state, done)
             wandb.log({'reward':reward, 'epsilon':epsilon})
             num_frames += 1

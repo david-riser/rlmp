@@ -49,7 +49,8 @@ class CnnDQN(nn.Module):
         
         self.input_shape = input_shape
         self.num_actions = num_actions
-        
+
+        print("CnnDQN got input shape: ", input_shape)
         self.features = nn.Sequential(
             nn.Conv2d(self.input_shape[0], 32, kernel_size=8, stride=4),
             nn.ReLU(),
