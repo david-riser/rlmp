@@ -1,24 +1,24 @@
 import argparse
 import glob
 import gym
+import numpy as np
+import random
 import wandb
 from gym import wrappers
 from pyvirtualdisplay import Display
-from utils.replay import ReplayBuffer
+from common.replay import ReplayBuffer
 
 
 def get_args():
     ap = argparse.ArgumentParser()
     ap.add_argument('--env', type=str, default='CartPole-v0')
-    ap.add_argument('--episodes', type=int, default=100)
-    ap.add_argument('--steps', type=int, default=100)
+    ap.add_argument('--max_frames', type=int, default=10000)
     return ap.parse_args()
 
 def setup_wandb(args):
     config = dict(
         env = args.env,
-        episodes = args.episodes,
-        max_steps = args.steps
+        max_frames = args.max_frames
     )
     wandb.init(
         project='rlmp',
@@ -26,7 +26,8 @@ def setup_wandb(args):
         tags=['Random'],
         config=config
     )
-    
+
+
 if __name__ == "__main__":
 
     args = get_args()
@@ -44,39 +45,24 @@ if __name__ == "__main__":
     virtual_display = Display(visible=0, size=(320,240))
     virtual_display.start()
 
-    replay_buffer = ReplayBuffer(
-        n_actions=env.action_space.n,
-        obs_shape=env.observation_space.shape,
-        max_size=1000
-    )
-    
-    for episode in range(args.episodes):
-        observation = env.reset()
-        
-        for timestep in range(args.steps):
+
+    num_frames = 0
+    while num_frames < args.max_frames:
+
+        state = env.reset()
+        done = False
+        ep_reward = 0 
+        while not done:
             action = env.action_space.sample()
-            observation, reward, done, info = env.step(action)
+            next_state, reward, done, _ = env.step(action)
+            state = next_state 
+            wandb.log({'reward':reward})
+            num_frames += 1
+            ep_reward += reward
             
-            log_data = dict(
-                reward = reward
-            )
-            wandb.log(log_data)
-            
-            if done:
-                break
-
-            last_observation = observation
-
-            if timestep > 0:
-                replay_buffer.store(
-                    action, observation, last_observation, reward, done
-                )
-
-            if replay_buffer.is_full:
-                sample = replay_buffer.sample(batch_size=8)
-                
         env.close()
-
-    # Upload the video
+        wandb.log({'ep_reward':ep_reward})
+        
+    # Upload the video 
     for movie in glob.glob(video_path + '/*.mp4'):
         wandb.log({'Video':wandb.Video(movie)})
