@@ -7,7 +7,7 @@ import wandb
 from gym import wrappers
 from pyvirtualdisplay import Display
 from common.replay import ReplayBuffer
-
+from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
 
 def get_args():
     ap = argparse.ArgumentParser()
@@ -34,7 +34,8 @@ if __name__ == "__main__":
     setup_wandb(args)
     video_path = 'tmp/video/{}'.format(wandb.run.id)
     
-    env = gym.make(args.env)
+    env = make_atari(args.env)
+    env = wrap_deepmind(env)
     env = wrappers.Monitor(
         gym.make(args.env),
         video_path,

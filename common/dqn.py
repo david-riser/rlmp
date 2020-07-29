@@ -55,15 +55,15 @@ class CnnDQN(nn.Module):
             nn.Conv2d(self.input_shape[0], 32, kernel_size=8, stride=4),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=4, stride=2),
-            nn.ReLU(),
-            nn.Conv2d(64, 64, kernel_size=3, stride=1),
+            #nn.ReLU(),
+            #nn.Conv2d(64, 64, kernel_size=3, stride=1),
             nn.ReLU()
         )
         
         self.fc = nn.Sequential(
-            nn.Linear(self.feature_size(), 512),
+            nn.Linear(self.feature_size(), 256),
             nn.ReLU(),
-            nn.Linear(512, self.num_actions)
+            nn.Linear(256, self.num_actions)
         )
         
     def forward(self, x):
