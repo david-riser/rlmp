@@ -13,7 +13,7 @@ import wandb
 from gym import wrappers
 from pyvirtualdisplay import Display
 from common.replay import ReplayBuffer
-from common.dqn import Variable, DQN, CnnDQN, USE_CUDA
+from common.ddqn import Variable, DDQN, CnnDDQN, USE_CUDA
 from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
 
 
@@ -28,6 +28,7 @@ def get_args():
     ap.add_argument('--eps_decay', type=float, default=2500)
     ap.add_argument('--lr', type=float, default=0.00001)
     ap.add_argument('--replay_size', type=int, default=10000)
+    ap.add_argument('--update_interval', type=int, default=1000)
     return ap.parse_args()
 
 def setup_wandb(args):
@@ -37,8 +38,8 @@ def setup_wandb(args):
     )
     wandb.init(
         project='rlmp',
-        notes='Basic DQN',
-        tags=['DQN'],
+        notes='Dueling DQN',
+        tags=['DDQN'],
         config=config
     )
 
@@ -49,7 +50,7 @@ def setup_env(args, train=True):
     else:
         env = make_atari(args.env)
         if train:
-            env = wrap_deepmind(env, episode_life=True, clip_rewards=True,
+            env = wrap_deepmind(env, episode_life=True, clip_rewards=False,
                                 frame_stack=True, scale=True)    
         else:
             env = wrap_deepmind(env, episode_life=False, clip_rewards=False,
@@ -77,7 +78,11 @@ if __name__ == "__main__":
     # Setup agent
     num_eval_frames = 30    
     if len(env.observation_space.shape) == 1:
-        model = DQN(
+        current_model = DDQN(
+            num_inputs=env.observation_space.shape[0],
+            num_actions=env.action_space.n
+        )
+        target_model = DDQN(
             num_inputs=env.observation_space.shape[0],
             num_actions=env.action_space.n
         )
@@ -85,14 +90,19 @@ if __name__ == "__main__":
     else:
         # Pytorch is channels first
         height, width, channels = env.observation_space.shape
-        model = CnnDQN(
+        current_model = CnnDDQN(
+            input_shape=(channels, height, width),
+            num_actions=env.action_space.n
+        )
+        target_model = CnnDDQN(
             input_shape=(channels, height, width),
             num_actions=env.action_space.n
         )
         eval_frames = np.zeros((num_eval_frames,channels,height,width))
 
     if USE_CUDA:
-        model = model.cuda()
+        current_model = current_model.cuda()
+        target_model = target_model.cuda()
 
 
     # Gather evaluation frames
@@ -114,7 +124,7 @@ if __name__ == "__main__":
 
     eval_frames = Variable(torch.FloatTensor(np.float32(eval_frames)))
     
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = optim.Adam(current_model.parameters(), lr=args.lr)
     replay_buffer = ReplayBuffer(args.replay_size)
     num_frames = 0
     while num_frames < args.max_frames:
@@ -128,14 +138,13 @@ if __name__ == "__main__":
         ep_reward = 0 
         while not done:
             epsilon = args.eps_final + (args.eps_start - args.eps_final) * np.exp(-1. * num_frames / args.eps_decay)
-            action = model.act(state,epsilon)
+            action = current_model.act(state,epsilon)
             next_state, reward, done, _ = env.step(action)
             next_state = np.array(next_state)
             if len(next_state.shape) > 1:
                 next_state = np.swapaxes(next_state,2,0)
 
             replay_buffer.add(state, action, reward, next_state, done)
-            wandb.log({'return':ep_reward, 'epsilon':epsilon})
             num_frames += 1
             ep_reward += reward
             state = next_state
@@ -153,8 +162,8 @@ if __name__ == "__main__":
 
             # Predict value for these state/action pairs
             # and next state/action pairs. 
-            q_values = model(states)
-            next_q_values = model(next_states)
+            q_values = current_model(states)
+            next_q_values = target_model(next_states)
 
             # Calculate value for actions we took
             q_values = q_values.gather(1, actions.view(-1,1)).squeeze(1)
@@ -167,14 +176,17 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
 
-            q_avg = model(eval_frames)
+            q_avg = current_model(eval_frames)
             q_avg = q_avg.cpu().detach().numpy().mean()
-            wandb.log({'q_avg':q_avg})
+            wandb.log({'return':ep_reward, 'epsilon':epsilon, 'q_avg':q_avg})
             
             if num_frames % 100 == 0:
                 print("Frame {0}, Ep. Reward {1:6.4f}, Eps. {2:6.4f}, Q-avg: {3:6.4f}".format(
                     num_frames, ep_reward, epsilon, q_avg
                 ))
+
+            if num_frames % args.update_interval == 0:
+                target_model.load_state_dict(current_model.state_dict())
             
         env.close()
         wandb.log({'score':ep_reward})
@@ -202,7 +214,7 @@ if __name__ == "__main__":
                 state = np.swapaxes(state, 2, 0)
             done = False
             while not done:
-                action = model.act(state,epsilon)
+                action = current_model.act(state,epsilon)
                 next_state, reward, done, _ = env.step(action)
                 next_state = np.array(next_state)
                 if len(next_state.shape) > 1:
