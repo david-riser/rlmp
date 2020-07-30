@@ -19,7 +19,7 @@ from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
 
 def get_args():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--env', type=str, default='CartPole-v0')
+    ap.add_argument('--env', type=str, default='MsPacmanNoFrameskip-v0')
     ap.add_argument('--max_frames', type=int, default=200000)
     ap.add_argument('--batch_size', type=int, default=32)
     ap.add_argument('--gamma', type=float, default=0.99)
