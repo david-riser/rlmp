@@ -3,6 +3,7 @@ import glob
 import gym
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 import random
 import torch
 import torch.nn as nn
@@ -32,13 +33,23 @@ def get_args():
     ap.add_argument('--lr', type=float, default=0.00001)
     ap.add_argument('--replay_size', type=int, default=10000)
     ap.add_argument('--update_interval', type=int, default=1000)
-    
+    ap.add_argument('--video_interval', type=int, default=50000)
     return ap.parse_args()
 
 def setup_wandb(args):
     config = dict(
         env = args.env,
-        max_frames = args.max_frames
+        max_frames = args.max_frames,
+        gamma = args.gamma,
+        batch_size = args.batch_size,
+        eps_start = args.eps_start,
+        eps_final = args.eps_final,
+        eps_decay = args.eps_decay,
+        beta_start = args.beta_start,
+        beta_frames = args.beta_frames,
+        lr = args.lr,
+        replay_size = args.replay_size,
+        update_interval = args.update_interval
     )
     wandb.init(
         project='rlmp',
@@ -48,11 +59,11 @@ def setup_wandb(args):
     )
 
 
-def setup_env(args, train=True):
+def setup_env(env_name, train=True):
     if args.env == "CartPole-v0":
-        env = gym.make(args.env)
+        env = gym.make(env_name)
     else:
-        env = make_atari(args.env)
+        env = make_atari(env_name)
         if train:
             env = wrap_deepmind(env, episode_life=True, clip_rewards=False,
                                 frame_stack=True, scale=True)    
@@ -63,13 +74,52 @@ def setup_env(args, train=True):
     return env
 
 
+def play_evaluation_games(model, env_name, video_path, num_games=20, epsilon=0.05):
+    """ Play some evaluation games and return the 
+    scores.  Also take a video. """
+
+    env = setup_env(env_name, train=False)
+    env = wrappers.Monitor(
+        env,
+        video_path,
+        video_callable=lambda x: True
+    )
+ 
+    scores = []
+    with torch.no_grad():
+        for eval_game in range(num_games):
+            score = 0 
+            state = env.reset()
+            state = np.array(state)
+            if len(state.shape) > 1:
+                state = np.swapaxes(state, 2, 0)
+
+            done = False
+            while not done:
+                action = model.act(state,epsilon)
+                next_state, reward, done, _ = env.step(action)
+                next_state = np.array(next_state)
+                if len(next_state.shape) > 1:
+                    next_state = np.swapaxes(next_state, 2, 0)
+
+                score += reward
+                state = next_state
+                
+            scores.append(score)
+            env.close()
+
+
+    return scores 
+    
+
+    
 if __name__ == "__main__":
 
     args = get_args()
     setup_wandb(args)
     video_path = 'tmp/video/{}'.format(wandb.run.id)
     
-    env = setup_env(args, True)
+    env = setup_env(args.env, True)
     
     # Configure display
     virtual_display = Display(visible=0, size=(320,240))
@@ -199,45 +249,31 @@ if __name__ == "__main__":
 
             if num_frames % args.update_interval == 0:
                 target_model.load_state_dict(current_model.state_dict())
-            
+
+            # Do some video uploads during the run to
+            # track performance.
+            if num_frames % args.video_interval == 0:
+                _ = play_evaluation_games(model=current_model, video_path=video_path + '/' + str(num_frames),
+                                          env_name=args.env, num_games=1, epsilon=0.05)
+
+                # Find the video and change the name to match the number of frames.
+                for movie in glob.glob(video_path + '/' + str(num_frames) + '/*.mp4'):
+                    print("Uploading a video: {}".format(movie))
+                    wandb.log({'Video_{}'.format(num_frames):wandb.Video(movie)})
+
+                
         env.close()
         wandb.log({'score':ep_reward})
         
 
-    # Wrap to record the evaulations, a testing
-    # env does not clip rewards nor does it
-    # have episodic resets
-    env = setup_env(args=args, train=False)
-    env = wrappers.Monitor(
-        env,
-        video_path,
-        video_callable=lambda x: True
+    scores = play_evaluation_games(
+        model=current_model,
+        video_path=video_path,
+        env_name=args.env,
+        num_games=20, epsilon=0.05
     )
-
-    eval_games = 40
-    epsilon = 0.05
-    scores = []
-    with torch.no_grad():
-        for eval_game in range(eval_games):
-            score = 0 
-            state = env.reset()
-            state = np.array(state)
-            if len(state.shape) > 1:
-                state = np.swapaxes(state, 2, 0)
-            done = False
-            while not done:
-                action = current_model.act(state,epsilon)
-                next_state, reward, done, _ = env.step(action)
-                next_state = np.array(next_state)
-                if len(next_state.shape) > 1:
-                    next_state = np.swapaxes(next_state, 2, 0)
-
-                score += reward
-                state = next_state
-                
-            scores.append(score)
-            env.close()
-            
+                                   
+        
     # Upload the video 
     for movie in glob.glob(video_path + '/*.mp4'):
         wandb.log({'Video':wandb.Video(movie)})
