@@ -33,8 +33,8 @@ def build_training_config(args):
     config['num_envs_per_worker'] = 1
     config['rollout_fragment_length'] = 256
     config['train_batch_size'] = 512
-    config['target_network_update_freq'] = 5000
-    config['timesteps_per_iteration'] = 1
+    config['target_network_update_freq'] = 50000
+    config['timesteps_per_iteration'] = 25000
     config['monitor'] = 'true'
     return config
 
