@@ -1,0 +1,70 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.9.5
+    framework: tensorflow
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.10
+adam_epsilon:
+  desc: null
+  value: 0.00015
+buffer_size:
+  desc: null
+  value: 1000000
+double_q:
+  desc: null
+  value: 'true'
+dueling:
+  desc: null
+  value: 'true'
+episilon_timesteps:
+  desc: null
+  value: 200000
+final_episilon:
+  desc: null
+  value: 0.01
+final_prioritized_replay_beta:
+  desc: null
+  value: 1.0
+lr:
+  desc: null
+  value: 0.0001
+n_step:
+  desc: null
+  value: 3
+noisy:
+  desc: null
+  value: 'false'
+num_atoms:
+  desc: null
+  value: 1
+num_envs_per_worker:
+  desc: null
+  value: 8
+num_gpus:
+  desc: null
+  value: 2
+num_workers:
+  desc: null
+  value: 8
+prioritized_replay_alpha:
+  desc: null
+  value: 0.5
+prioritized_replay_beta_annealing_timesteps:
+  desc: null
+  value: 2000000
+rollout_fragment_length:
+  desc: null
+  value: 20
+target_network_update_freq:
+  desc: null
+  value: 50000
+timesteps_per_iteration:
+  desc: null
+  value: 25000
+train_batch_size:
+  desc: null
+  value: 512
