@@ -1,10 +1,31 @@
 import argparse
 import glob
+import gym
 import os
 import ray
 import ray.rllib.agents.dqn.apex as apex
 import time
+import tensorflow as tf
 import wandb
+
+
+from ray.rllib.env.atari_wrappers import (
+    MonitorEnv, NoopResetEnv, MaxAndSkipEnv, 
+    EpisodicLifeEnv, FireResetEnv, WarpFrame, 
+    FrameStack
+    )
+from ray.tune import registry
+from ray.rllib.models import ModelCatalog
+from ray.rllib.models.tf.tf_modelv2 import TFModelV2
+from ray.rllib.models.tf.fcnet import FullyConnectedNetwork
+from ray.rllib.models.tf.visionnet import VisionNetwork
+
+
+from tensorflow.keras.layers import (
+    Activation, Dense, Flatten, Conv2D,
+    MaxPooling2D, Input
+)
+from tensorflow.keras import Model
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--env", default="MsPacmanNoFrameskip-v4")
@@ -22,6 +43,24 @@ parser.add_argument("--target_network_update_freq", default=48000, type=int)
 parser.add_argument("--rollout_fragment_length", default=64, type=int)
 parser.add_argument("--batch_size", default=64, type=int)
 parser.add_argument("--buffer_size", default=1000000, type=int)
+
+
+def custom_wrap_deepmind(env, framestack=4, noop_max=30):
+    env = MonitorEnv(env)
+    env = NoopResetEnv(env, noop_max=noop_max)
+    if "NoFrameskip" in env.spec.id:
+        env = MaxAndSkipEnv(env, skip=framestack)    
+    env = EpisodicLifeEnv(env)
+    if "FIRE" in env.unwrapped.get_action_meanings():
+        env = FireResetEnv(env)
+    env = FrameStack(env, framestack)
+    return env
+
+
+def build_env():
+    env = gym.make("MsPacmanNoFrameskip-v4")
+    return custom_wrap_deepmind(env)
+    
 
 
 def build_training_config(args):
@@ -48,6 +87,8 @@ def build_training_config(args):
     config['target_network_update_freq'] = args.target_network_update_freq
     config['timesteps_per_iteration'] = args.timesteps_per_iteration
     config['monitor'] = 'true'
+    config['model']['custom_model'] = 'pacnet'
+    config['preprocessor_pref'] = ''
     return config
 
 
@@ -74,15 +115,77 @@ def setup_wandb(args, log_config):
     )
     
     
+class PacNet(TFModelV2):
+    """ 
+    def __init__(self, obs_space, action_space, num_outputs, model_config, name):
+        super(PacNet, self).__init__(obs_space, action_space, num_outputs,
+                                          model_config, name)
+
+        # Hard coded input size for now, there is no need
+        # to make it complicated at this point. 
+        self.input_layer = Input((210,160,12))
+        self.conv1 = Conv2D(
+            filters=16, kernel_size=(8,8), strides=4,
+            activation='relu'
+        )(self.input_layer)
+        self.conv2 = Conv2D(
+            filters=32, kernel_size=(4,4), strides=2,
+            activation='relu'
+        )(self.conv1)
+        self.flat_layer = Flatten()(self.conv2)
+        self.fc_layer = Dense(512)(self.flat_layer)
+        self.fc_layer = Activation('relu')(self.fc_layer)
+        self.output_layer = Dense(num_outputs)(self.fc_layer)
+        self.model = Model(self.input_layer, self.output_layer)
+        self.register_variables(self.model.variables)
+
+    @tf.function
+    def forward(self, input_dict, state, seq_lens):
+        model_out, self._value_out = self.model(input_dict["obs"])
+        return model_out, state
+
+    @tf.function
+    def value_function(self):
+        return tf.reshape(self._value_out, [-1])
+    """
+
+
+    def  __init__(self, obs_space, action_space, num_outputs,
+                  model_config, name):
+        model_config['conv_filters'] = [
+            [16, [8,8], 4],
+            [32, [4,4], 2]
+        ]
+        super(PacNet, self).__init__(obs_space, action_space, num_outputs,
+                                     model_config, name)
+        self.model = VisionNetwork(obs_space, action_space, num_outputs, model_config, name)
+        self.register_variables(self.model.variables())
+
+    def forward(self, input_dict, state, seq_lens):
+        return self.model.forward(input_dict, state, seq_lens)
+
+    def value_function(self):
+        return self.model.value_function()
+    
+    
 if __name__ == "__main__":
     args = parser.parse_args()
     config = build_training_config(args)
     log_config = build_log_config(args, config)
     setup_wandb(args, log_config)
 
+    # Now we setup our custom wrapper
+    registry.register_env(
+        "wrapped_pacman_env",
+        lambda config: build_env()
+    )
+
+    # And custom model 
+    ModelCatalog.register_custom_model("pacnet", PacNet)    
+
     # Start ray and load a training instance.
     ray.init()
-    trainer = apex.ApexTrainer(config=config, env=args.env)
+    trainer = apex.ApexTrainer(config=config, env="wrapped_pacman_env")
 
     # Find the new folder and make sure we can upload videos
     base_dir = '/home/ubuntu/ray_results/'
