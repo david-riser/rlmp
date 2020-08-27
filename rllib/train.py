@@ -42,7 +42,8 @@ parser.add_argument("--timesteps_per_iteration", default=38000, type=int)
 parser.add_argument("--target_network_update_freq", default=48000, type=int)
 parser.add_argument("--rollout_fragment_length", default=64, type=int)
 parser.add_argument("--batch_size", default=64, type=int)
-parser.add_argument("--buffer_size", default=1000000, type=int)
+# parser.add_argument("--buffer_size", default=1000000, type=int)
+parser.add_argument("--buffer_size", default=125000, type=int)
 
 
 def custom_wrap_deepmind(env, framestack=4, noop_max=30):
@@ -116,14 +117,18 @@ def setup_wandb(args, log_config):
     
     
 class PacNet(TFModelV2):
-    """ 
     def __init__(self, obs_space, action_space, num_outputs, model_config, name):
         super(PacNet, self).__init__(obs_space, action_space, num_outputs,
                                           model_config, name)
 
+        print("Initializing PacNet")
+        print(obs_space.shape, action_space.n)
+        
         # Hard coded input size for now, there is no need
         # to make it complicated at this point. 
         self.input_layer = Input((210,160,12))
+
+        """
         self.conv1 = Conv2D(
             filters=16, kernel_size=(8,8), strides=4,
             activation='relu'
@@ -132,29 +137,48 @@ class PacNet(TFModelV2):
             filters=32, kernel_size=(4,4), strides=2,
             activation='relu'
         )(self.conv1)
-        self.flat_layer = Flatten()(self.conv2)
-        self.fc_layer = Dense(512)(self.flat_layer)
-        self.fc_layer = Activation('relu')(self.fc_layer)
-        self.output_layer = Dense(num_outputs)(self.fc_layer)
-        self.model = Model(self.input_layer, self.output_layer)
+        """
+
+        # The convolutional encoder part.  I am breaking from the
+        # traditional architecture but sticking with the convention
+        # of not using max-pooling just strides to down-sample.
+        self.conv = Conv2D(filters=16, kernel_size=(3,3), strides=1,
+                           activation='relu')(self.input_layer)
+        self.conv = Conv2D(filters=16, kernel_size=(3,3), strides=(2,2),
+                           activation='relu')(self.conv)
+        self.conv = Conv2D(filters=32, kernel_size=(3,3), strides=1,
+                           activation='relu')(self.conv)
+        self.conv = Conv2D(filters=32, kernel_size=(3,3), strides=(2,2),
+                           activation='relu')(self.conv)
+        self.conv = Conv2D(filters=64, kernel_size=(3,3), strides=1,
+                           activation='relu')(self.conv)
+        self.conv = Conv2D(filters=64, kernel_size=(3,3), strides=(2,2),
+                           activation='relu')(self.conv)
+        
+        # The output expects dims 256 to be compatible with
+        # rllib.  I think it has to do with the LSTM option. 
+        self.flat_layer = Flatten()(self.conv)
+        self.flat_layer = Dense(256)(self.flat_layer)
+        self.flat_layer = Activation('relu')(self.flat_layer)
+        
+        self.output_layer = Dense(action_space.n)(self.flat_layer)
+        self.model = Model(self.input_layer, [self.flat_layer, self.output_layer])
         self.register_variables(self.model.variables)
 
-    @tf.function
     def forward(self, input_dict, state, seq_lens):
-        model_out, self._value_out = self.model(input_dict["obs"])
+        model_out, self._value_out = self.model(
+            tf.cast(input_dict["obs"], tf.float32))
         return model_out, state
 
-    @tf.function
     def value_function(self):
         return tf.reshape(self._value_out, [-1])
+
     """
-
-
     def  __init__(self, obs_space, action_space, num_outputs,
                   model_config, name):
         model_config['conv_filters'] = [
             [16, [8,8], 4],
-            [32, [4,4], 2]
+            [32, [4,4], 2],
         ]
         super(PacNet, self).__init__(obs_space, action_space, num_outputs,
                                      model_config, name)
@@ -166,7 +190,7 @@ class PacNet(TFModelV2):
 
     def value_function(self):
         return self.model.value_function()
-    
+    """
     
 if __name__ == "__main__":
     args = parser.parse_args()
