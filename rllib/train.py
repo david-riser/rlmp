@@ -1,6 +1,8 @@
 import argparse
+import cv2
 import glob
 import gym
+import numpy as np
 import os
 import ray
 import ray.rllib.agents.dqn.apex as apex
@@ -43,7 +45,7 @@ parser.add_argument("--target_network_update_freq", default=48000, type=int)
 parser.add_argument("--rollout_fragment_length", default=64, type=int)
 parser.add_argument("--batch_size", default=64, type=int)
 # parser.add_argument("--buffer_size", default=1000000, type=int)
-parser.add_argument("--buffer_size", default=125000, type=int)
+parser.add_argument("--buffer_size", default=175000, type=int)
 
 
 def custom_wrap_deepmind(env, framestack=4, noop_max=30):
@@ -58,9 +60,41 @@ def custom_wrap_deepmind(env, framestack=4, noop_max=30):
     return env
 
 
+class ResizeFrame(gym.ObservationWrapper):
+    def __init__(self, env, height, width):
+        """Warp frames to the specified size (dim x dim)."""
+        gym.ObservationWrapper.__init__(self, env)
+        self.width = width
+        self.height = height
+        self.observation_space = gym.spaces.Box(
+            low=0,
+            high=255,
+            shape=(self.height, self.width, 1),
+            dtype=np.uint8)
+
+    def observation(self, frame):
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+        frame = cv2.resize(
+            frame, (self.width, self.height), interpolation=cv2.INTER_AREA)
+        return frame[:, :, None]
+
+    
+def gray_wrap_deepmind(env, framestack=4, noop_max=30):
+    env = MonitorEnv(env)
+    env = NoopResetEnv(env, noop_max=noop_max)
+    if "NoFrameskip" in env.spec.id:
+        env = MaxAndSkipEnv(env, skip=framestack)    
+    env = EpisodicLifeEnv(env)
+    if "FIRE" in env.unwrapped.get_action_meanings():
+        env = FireResetEnv(env)
+    env = ResizeFrame(env, height=210, width=160)
+    env = FrameStack(env, framestack)
+    return env
+
+
 def build_env():
     env = gym.make("MsPacmanNoFrameskip-v4")
-    return custom_wrap_deepmind(env)
+    return gray_wrap_deepmind(env)
     
 
 
@@ -126,18 +160,7 @@ class PacNet(TFModelV2):
         
         # Hard coded input size for now, there is no need
         # to make it complicated at this point. 
-        self.input_layer = Input((210,160,12))
-
-        """
-        self.conv1 = Conv2D(
-            filters=16, kernel_size=(8,8), strides=4,
-            activation='relu'
-        )(self.input_layer)
-        self.conv2 = Conv2D(
-            filters=32, kernel_size=(4,4), strides=2,
-            activation='relu'
-        )(self.conv1)
-        """
+        self.input_layer = Input((210,160,4))
 
         # The convolutional encoder part.  I am breaking from the
         # traditional architecture but sticking with the convention
@@ -173,24 +196,6 @@ class PacNet(TFModelV2):
     def value_function(self):
         return tf.reshape(self._value_out, [-1])
 
-    """
-    def  __init__(self, obs_space, action_space, num_outputs,
-                  model_config, name):
-        model_config['conv_filters'] = [
-            [16, [8,8], 4],
-            [32, [4,4], 2],
-        ]
-        super(PacNet, self).__init__(obs_space, action_space, num_outputs,
-                                     model_config, name)
-        self.model = VisionNetwork(obs_space, action_space, num_outputs, model_config, name)
-        self.register_variables(self.model.variables())
-
-    def forward(self, input_dict, state, seq_lens):
-        return self.model.forward(input_dict, state, seq_lens)
-
-    def value_function(self):
-        return self.model.value_function()
-    """
     
 if __name__ == "__main__":
     args = parser.parse_args()
