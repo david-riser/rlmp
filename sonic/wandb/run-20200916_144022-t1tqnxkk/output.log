@@ -1,0 +1,46 @@
+Epoch 0, Loss 59.4191, TD-Loss 0.0101, NTD-Loss 58.4770, Margin Loss 0.9308, L2 Loss 0.0012
+Epoch 1, Loss 56.5089, TD-Loss 0.0260, NTD-Loss 55.6572, Margin Loss 0.8246, L2 Loss 0.0012
+Epoch 2, Loss 113.3043, TD-Loss 0.1153, NTD-Loss 112.4105, Margin Loss 0.7773, L2 Loss 0.0012
+Epoch 3, Loss 240.0217, TD-Loss 62.3192, NTD-Loss 176.9845, Margin Loss 0.7168, L2 Loss 0.0012
+Epoch 4, Loss 91.5131, TD-Loss 31.7714, NTD-Loss 59.1261, Margin Loss 0.6144, L2 Loss 0.0012
+Epoch 5, Loss 57.3174, TD-Loss 0.1482, NTD-Loss 56.3286, Margin Loss 0.8395, L2 Loss 0.0012
+Epoch 6, Loss 269.3956, TD-Loss 92.7979, NTD-Loss 175.7399, Margin Loss 0.8566, L2 Loss 0.0012
+Epoch 7, Loss 119.9867, TD-Loss 31.5916, NTD-Loss 87.6821, Margin Loss 0.7118, L2 Loss 0.0012
+Epoch 8, Loss 89.7781, TD-Loss 31.0454, NTD-Loss 57.9652, Margin Loss 0.7663, L2 Loss 0.0012
+Epoch 9, Loss 144.7237, TD-Loss 0.1643, NTD-Loss 143.7799, Margin Loss 0.7783, L2 Loss 0.0012
+Finished game 0 with score      0.
+Finished game 1 with score      0.
+Finished game 2 with score      0.
+Finished game 3 with score    100.
+Finished game 4 with score      0.
+Finished game 5 with score    200.
+Finished game 6 with score      0.
+Finished game 7 with score    100.
+Finished game 8 with score    100.
+Finished game 9 with score      0.
+Finished game 10 with score    200.
+Finished game 11 with score    100.
+Finished game 12 with score    100.
+Finished game 13 with score    200.
+Finished game 14 with score      0.
+Finished game 15 with score    100.
+Finished game 16 with score      0.
+Finished game 17 with score    100.
+Finished game 18 with score    300.
+Finished game 19 with score      0.
+Collected 100 frames
+Collected 200 frames
+Collected 300 frames
+Collected 400 frames
+Collected 500 frames
+Collected 600 frames
+Collected 700 frames
+Collected 800 frames
+Collected 900 frames
+Collected 1000 frames
+Collected 1100 frames
+Collected 1200 frames
+Collected 1300 frames
+Collected 1400 frames
+Collected 1500 frames
+Collected 1600 frames

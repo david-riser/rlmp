@@ -1,0 +1,27 @@
+{
+    "root": "/home/ubuntu/rlmp",
+    "program": "train_dqfq.py",
+    "git": {
+        "remote": "https://github.com/david-riser/rlmp",
+        "commit": "4d87b476e44aaa62938c01366dd96b28fa185f57"
+    },
+    "email": null,
+    "startedAt": "2020-09-16T14:38:09.118586",
+    "host": "ip-172-31-39-187",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/pytorch_p36/bin/python",
+    "os": "Linux-5.3.0-1035-aws-x86_64-with-debian-buster-sid",
+    "python": "3.6.10",
+    "gpu": "Tesla M60",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": "10.0.130",
+    "args": [],
+    "state": "failed",
+    "jobType": null,
+    "mode": "run",
+    "notes": "DQfD",
+    "project": "rlmp",
+    "heartbeatAt": "2020-09-16T14:39:45.984508",
+    "exitcode": 1
+}

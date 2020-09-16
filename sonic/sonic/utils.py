@@ -213,7 +213,7 @@ def build_nstep_transitions(states, actions, next_states, rewards, dones, n, gam
         _rewards.append(rewards[i])
         
         discounted_reward = 0.
-        for j in range(n):
+        for j in range(n - 1):
             
             if not dones[i + j]:
                 discounted_reward += gamma**j * rewards[i + j]

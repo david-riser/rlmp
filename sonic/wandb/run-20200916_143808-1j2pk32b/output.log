@@ -1,0 +1,84 @@
+Epoch 0, Loss 146.8159, TD-Loss 31.4048, NTD-Loss 114.0265, Margin Loss 1.3834, L2 Loss 0.0012
+Epoch 1, Loss 141.1981, TD-Loss 0.2157, NTD-Loss 139.9637, Margin Loss 1.0175, L2 Loss 0.0012
+Epoch 2, Loss 146.7262, TD-Loss 31.7148, NTD-Loss 114.1159, Margin Loss 0.8943, L2 Loss 0.0012
+Epoch 3, Loss 1.9540, TD-Loss 0.4930, NTD-Loss 0.5227, Margin Loss 0.9371, L2 Loss 0.0012
+Epoch 4, Loss 86.3532, TD-Loss 0.0163, NTD-Loss 85.4021, Margin Loss 0.9337, L2 Loss 0.0012
+Epoch 5, Loss 87.7427, TD-Loss 0.0441, NTD-Loss 86.6924, Margin Loss 1.0050, L2 Loss 0.0012
+Epoch 6, Loss 178.0433, TD-Loss 31.2577, NTD-Loss 145.7368, Margin Loss 1.0477, L2 Loss 0.0011
+Epoch 7, Loss 201.1905, TD-Loss 31.5780, NTD-Loss 168.5701, Margin Loss 1.0414, L2 Loss 0.0011
+Epoch 8, Loss 144.3857, TD-Loss 1.0176, NTD-Loss 142.4243, Margin Loss 0.9427, L2 Loss 0.0011
+Epoch 9, Loss 114.8552, TD-Loss 0.4517, NTD-Loss 113.3771, Margin Loss 1.0252, L2 Loss 0.0011
+Finished game 0 with score      0.
+Finished game 1 with score      0.
+Finished game 2 with score      0.
+Finished game 3 with score      0.
+Finished game 4 with score      0.
+Finished game 5 with score      0.
+Finished game 6 with score      0.
+Finished game 7 with score      0.
+Finished game 8 with score      0.
+Finished game 9 with score      0.
+Finished game 10 with score      0.
+Finished game 11 with score      0.
+Finished game 12 with score      0.
+Finished game 13 with score      0.
+Finished game 14 with score      0.
+Finished game 15 with score      0.
+Finished game 16 with score      0.
+Finished game 17 with score      0.
+Finished game 18 with score      0.
+Finished game 19 with score      0.
+Collected 100 frames
+Collected 200 frames
+Collected 300 frames
+Collected 400 frames
+Collected 500 frames
+Collected 600 frames
+Collected 700 frames
+Collected 800 frames
+Collected 900 frames
+Collected 1000 frames
+Collected 1100 frames
+Collected 1200 frames
+Collected 1300 frames
+Collected 1400 frames
+Collected 1500 frames
+Collected 1600 frames
+Collected 1700 frames
+Collected 1800 frames
+Collected 1900 frames
+Collected 2000 frames
+Collected 2100 frames
+Collected 2200 frames
+Collected 2300 frames
+Collected 2400 frames
+Collected 2500 frames
+Collected 2600 frames
+Collected 2700 frames
+Collected 2800 frames
+Collected 2900 frames
+Collected 3000 frames
+Collected 3100 frames
+Collected 3200 frames
+Collected 3300 frames
+Collected 3400 frames
+Collected 3500 frames
+Collected 3600 frames
+Collected 3700 frames
+Collected 3800 frames
+Collected 3900 frames
+Collected 4000 frames
+Collected 4100 frames
+Collected 4200 frames
+Collected 4300 frames
+Collected 4400 frames
+Collected 4500 frames
+Collected 4600 frames
+Collected 4700 frames
+Collected 4800 frames
+Collected 4900 frames
+Collected 5000 frames
+Traceback (most recent call last):
+  File "train_dqfq.py", line 364, in <module>
+    {'video':wandb.Video("torch_dqfd_agent_{}.mp4".format(config["level"]))}
+KeyError: 'level'
