@@ -14,8 +14,6 @@ import os
 import pandas as pd
 import retro
 
-from sklearn.preprocessing import LabelEncoder
-
 if __name__ == "__main__":
 
     # Path to the replay data and the files contained
@@ -23,11 +21,6 @@ if __name__ == "__main__":
     data_path = os.path.abspath("./data/human/")
     data_files = os.listdir(data_path)
     
-    # Setup a label encoder that will be used to transform the
-    # list of actions into a single number.  This is possible
-    # because of the 4,096 possible actions, humans only use 16
-    # of them in the dataset.
-    encoder = LabelEncoder()
 
     # Start processing the human replays
     for data_file in data_files:
@@ -69,3 +62,24 @@ if __name__ == "__main__":
             dones.append(done)
             
             state = next_state
+
+        env.close()
+
+        print("Size of actions: ", len(actions))
+        
+        # Output these suckers into some kind of file.
+        if not os.path.exists("./data/{}".format(level)):
+            os.mkdir("./data/{}".format(level))
+
+        indices = []
+        for index in range(len(dones)):
+            indices.append(index)
+            np.save("./data/{}/state_{}.npy".format(level, index), states[index])
+            np.save("./data/{}/action_{}.npy".format(level, index), actions[index])
+
+        dataframe = pd.DataFrame({
+            "index":indices,
+            "reward":rewards,
+            "done":dones
+        })
+        dataframe.to_csv("./data/{}/meta.csv".format(level), index=False)

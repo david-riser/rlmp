@@ -1,4 +1,5 @@
 *~
 wandb/*
 tmp/*
-rllib/wandb/* 
+rllib/wandb/*
+*.npy
