@@ -1,0 +1,46 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.9.4
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.10
+batch_size:
+  desc: null
+  value: 32
+batches_per_epoch:
+  desc: null
+  value: 100
+coef1:
+  desc: null
+  value: 1.0
+coef2:
+  desc: null
+  value: 1.0
+coef3:
+  desc: null
+  value: 1.0e-05
+epochs:
+  desc: null
+  value: 7500
+gamma:
+  desc: null
+  value: 0.99
+level:
+  desc: null
+  value: GreenHillZone.Act1
+lr:
+  desc: null
+  value: 0.0001
+margin:
+  desc: null
+  value: 0.8
+n_step:
+  desc: null
+  value: 10
+update_freq:
+  desc: null
+  value: 100
