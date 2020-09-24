@@ -1,0 +1,1707 @@
+wandb: Starting wandb agent 🕵️
+2020-09-24 17:55:33,415 - wandb.wandb_agent - INFO - Running runs: []
+2020-09-24 17:55:33,598 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:55:33,599 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 5000
+	hidden_dims: 64
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 25000
+2020-09-24 17:55:33,669 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=5000 --hidden_dims=64 --lr=0.0001 --n_steps=1 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175533-lntixtw4
+wandb: Syncing run super-sweep-1
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/lntixtw4
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:55:38,677 - wandb.wandb_agent - INFO - Running runs: ['lntixtw4']
+Using GPU for training.
+Epoch 0, Score 16.0000, Loss    nan, Time 0.0400
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+wandb: Waiting for W&B process to finish, PID 7469
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 10.0
+wandb:          _runtime 3.8130881786346436
+wandb:             _step 4
+wandb:        _timestamp 1600970138.5177126
+wandb:              time 0.04005837440490723
+wandb:              loss nan
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: | 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced super-sweep-1: https://app.wandb.ai/dmriser/rlmp/runs/lntixtw4
+2020-09-24 17:55:43,743 - wandb.wandb_agent - INFO - Cleaning up finished run: lntixtw4
+2020-09-24 17:55:43,941 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:55:43,941 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 1e-05
+	n_steps: 1
+	update_interval: 1000
+2020-09-24 17:55:44,002 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=250000 --hidden_dims=32 --lr=1e-05 --n_steps=1 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175543-kymo6gww
+wandb: Syncing run sleek-sweep-2
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/kymo6gww
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:55:49,012 - wandb.wandb_agent - INFO - Running runs: ['kymo6gww']
+Using GPU for training.
+Epoch 0, Score 17.0000, Loss 1.0067, Time 0.3043
+
+wandb: Waiting for W&B process to finish, PID 7521
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 4.043172597885132
+wandb:        _timestamp 1600970149.0774171
+wandb:   episodic_reward 25.0
+wandb:             _step 3
+wandb:              time 0.3043382167816162
+wandb:              loss 1.006666898727417
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced sleek-sweep-2: https://app.wandb.ai/dmriser/rlmp/runs/kymo6gww
+2020-09-24 17:55:54,081 - wandb.wandb_agent - INFO - Cleaning up finished run: kymo6gww
+2020-09-24 17:55:54,239 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:55:54,240 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 2
+	update_interval: 1000
+2020-09-24 17:55:54,304 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=50000 --hidden_dims=16 --lr=0.0001 --n_steps=2 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175554-276e0c4w
+wandb: Syncing run resilient-sweep-3
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/276e0c4w
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:55:59,314 - wandb.wandb_agent - INFO - Running runs: ['276e0c4w']
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+Using GPU for training.
+Epoch 0, Score 0.0000, Loss    nan, Time 0.0510
+wandb: Waiting for W&B process to finish, PID 7575
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970159.1066363
+wandb:   episodic_reward 9.0
+wandb:          _runtime 3.7724242210388184
+wandb:             _step 6
+wandb:              loss nan
+wandb:              time 0.05102419853210449
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.02MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.02MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: / 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced resilient-sweep-3: https://app.wandb.ai/dmriser/rlmp/runs/276e0c4w
+2020-09-24 17:56:04,395 - wandb.wandb_agent - INFO - Cleaning up finished run: 276e0c4w
+2020-09-24 17:56:04,635 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:56:04,635 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 10000
+2020-09-24 17:56:04,700 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=16 --lr=0.0001 --n_steps=1 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175604-t6bmzll4
+wandb: Syncing run rich-sweep-4
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/t6bmzll4
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:56:09,705 - wandb.wandb_agent - INFO - Running runs: ['t6bmzll4']
+
+wandb: Waiting for W&B process to finish, PID 7627
+Using GPU for training.
+Epoch 0, Score 4.0000, Loss 1.0051, Time 0.2006
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 6
+wandb:        _timestamp 1600970169.67097
+wandb:          _runtime 3.936276912689209
+wandb:   episodic_reward 11.0
+wandb:              time 0.2005908489227295
+wandb:              loss 1.0050638914108276
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced rich-sweep-4: https://app.wandb.ai/dmriser/rlmp/runs/t6bmzll4
+2020-09-24 17:56:14,778 - wandb.wandb_agent - INFO - Cleaning up finished run: t6bmzll4
+2020-09-24 17:56:14,945 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:56:14,946 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 250000
+	hidden_dims: 64
+	lr: 0.0001
+	n_steps: 2
+	update_interval: 1000
+2020-09-24 17:56:15,007 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=250000 --hidden_dims=64 --lr=0.0001 --n_steps=2 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175614-xh2skdgd
+wandb: Syncing run clean-sweep-5
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/xh2skdgd
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:56:20,016 - wandb.wandb_agent - INFO - Running runs: ['xh2skdgd']
+Using GPU for training.
+Epoch 0, Score 13.0000, Loss 5.8662, Time 0.4296
+
+wandb: Waiting for W&B process to finish, PID 7681
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 8.0
+wandb:             _step 2
+wandb:          _runtime 4.174195289611816
+wandb:        _timestamp 1600970180.2052257
+wandb:              time 0.429607629776001
+wandb:              loss 5.866199493408203
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced clean-sweep-5: https://app.wandb.ai/dmriser/rlmp/runs/xh2skdgd
+2020-09-24 17:56:30,183 - wandb.wandb_agent - INFO - Cleaning up finished run: xh2skdgd
+2020-09-24 17:56:30,343 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:56:30,343 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 50000
+	hidden_dims: 64
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 5000
+2020-09-24 17:56:30,404 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=50000 --hidden_dims=64 --lr=0.0001 --n_steps=1 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175630-vqo46i4l
+wandb: Syncing run dazzling-sweep-6
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/vqo46i4l
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:56:35,413 - wandb.wandb_agent - INFO - Running runs: ['vqo46i4l']
+Using GPU for training.
+Epoch 0, Score 33.0000, Loss 0.9073, Time 0.1896
+
+wandb: Waiting for W&B process to finish, PID 7736
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970195.3758523
+wandb:             _step 3
+wandb:   episodic_reward 12.0
+wandb:          _runtime 3.938678026199341
+wandb:              time 0.1896038055419922
+wandb:              loss 0.9072654247283936
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: | 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced dazzling-sweep-6: https://app.wandb.ai/dmriser/rlmp/runs/vqo46i4l
+2020-09-24 17:56:40,498 - wandb.wandb_agent - INFO - Cleaning up finished run: vqo46i4l
+2020-09-24 17:56:40,649 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:56:40,649 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 2
+	update_interval: 10000
+2020-09-24 17:56:40,707 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=50000 --hidden_dims=16 --lr=0.0001 --n_steps=2 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175640-g9pw0zcm
+wandb: Syncing run blooming-sweep-7
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/g9pw0zcm
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:56:45,716 - wandb.wandb_agent - INFO - Running runs: ['g9pw0zcm']
+Using GPU for training.
+Epoch 0, Score 16.0000, Loss 24.1942, Time 0.4414
+
+wandb: Waiting for W&B process to finish, PID 7790
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 4.148998975753784
+wandb:             _step 6
+wandb:        _timestamp 1600970205.8847818
+wandb:   episodic_reward 9.0
+wandb:              loss 24.19420051574707
+wandb:              time 0.44142794609069824
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced blooming-sweep-7: https://app.wandb.ai/dmriser/rlmp/runs/g9pw0zcm
+2020-09-24 17:56:55,854 - wandb.wandb_agent - INFO - Cleaning up finished run: g9pw0zcm
+2020-09-24 17:56:56,037 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:56:56,038 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 1000
+2020-09-24 17:56:56,096 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=250000 --hidden_dims=32 --lr=0.0001 --n_steps=1 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175656-ddcqsrmy
+wandb: Syncing run rose-sweep-8
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/ddcqsrmy
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:57:01,105 - wandb.wandb_agent - INFO - Running runs: ['ddcqsrmy']
+
+wandb: Waiting for W&B process to finish, PID 7844
+Using GPU for training.
+Epoch 0, Score 39.0000, Loss 1.1582, Time 0.3049
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 2
+wandb:          _runtime 4.040849447250366
+wandb:        _timestamp 1600970221.1717424
+wandb:   episodic_reward 14.0
+wandb:              time 0.3049635887145996
+wandb:              loss 1.1581895351409912
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced rose-sweep-8: https://app.wandb.ai/dmriser/rlmp/runs/ddcqsrmy
+2020-09-24 17:57:06,205 - wandb.wandb_agent - INFO - Cleaning up finished run: ddcqsrmy
+2020-09-24 17:57:06,508 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:57:06,509 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 32
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 5000
+2020-09-24 17:57:06,605 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=32 --lr=1e-05 --n_steps=3 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175706-360xyusk
+wandb: Syncing run splendid-sweep-9
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/360xyusk
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:57:11,615 - wandb.wandb_agent - INFO - Running runs: ['360xyusk']
+Using GPU for training.
+Epoch 0, Score 10.0000, Loss 55.1063, Time 0.3037
+
+wandb: Waiting for W&B process to finish, PID 7898
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 4.241446256637573
+wandb:        _timestamp 1600970231.8721037
+wandb:             _step 6
+wandb:   episodic_reward 10.0
+wandb:              time 0.3037092685699463
+wandb:              loss 55.10626220703125
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced splendid-sweep-9: https://app.wandb.ai/dmriser/rlmp/runs/360xyusk
+2020-09-24 17:57:21,857 - wandb.wandb_agent - INFO - Cleaning up finished run: 360xyusk
+2020-09-24 17:57:22,213 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:57:22,213 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 0.001
+	n_steps: 2
+	update_interval: 25000
+2020-09-24 17:57:22,304 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=250000 --hidden_dims=32 --lr=0.001 --n_steps=2 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175722-e5jgga8a
+wandb: Syncing run devout-sweep-10
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/e5jgga8a
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:57:27,314 - wandb.wandb_agent - INFO - Running runs: ['e5jgga8a']
+Using GPU for training.
+Epoch 0, Score 8.0000, Loss 57.4370, Time 0.3208
+
+wandb: Waiting for W&B process to finish, PID 7952
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 7
+wandb:          _runtime 4.349748373031616
+wandb:   episodic_reward 20.0
+wandb:        _timestamp 1600970247.6914184
+wandb:              loss 57.43696975708008
+wandb:              time 0.32079434394836426
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced devout-sweep-10: https://app.wandb.ai/dmriser/rlmp/runs/e5jgga8a
+2020-09-24 17:57:37,479 - wandb.wandb_agent - INFO - Cleaning up finished run: e5jgga8a
+2020-09-24 17:57:37,632 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:57:37,632 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 5000
+	hidden_dims: 64
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 5000
+2020-09-24 17:57:37,695 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=5000 --hidden_dims=64 --lr=1e-05 --n_steps=3 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175737-3i0jvxbn
+wandb: Syncing run efficient-sweep-11
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/3i0jvxbn
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:57:42,704 - wandb.wandb_agent - INFO - Running runs: ['3i0jvxbn']
+Using GPU for training.
+Epoch 0, Score 9.0000, Loss    nan, Time 0.0591
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+wandb: Waiting for W&B process to finish, PID 8006
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970262.5249527
+wandb:          _runtime 3.8011505603790283
+wandb:   episodic_reward 8.0
+wandb:             _step 6
+wandb:              loss nan
+wandb:              time 0.059098243713378906
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: | 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced efficient-sweep-11: https://app.wandb.ai/dmriser/rlmp/runs/3i0jvxbn
+2020-09-24 17:57:47,778 - wandb.wandb_agent - INFO - Cleaning up finished run: 3i0jvxbn
+2020-09-24 17:57:47,923 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:57:47,924 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 1e-05
+	n_steps: 1
+	update_interval: 10000
+2020-09-24 17:57:47,987 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=50000 --hidden_dims=16 --lr=1e-05 --n_steps=1 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175747-9rgu71n4
+wandb: Syncing run wandering-sweep-12
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/9rgu71n4
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:57:52,996 - wandb.wandb_agent - INFO - Running runs: ['9rgu71n4']
+
+wandb: Waiting for W&B process to finish, PID 8058
+Using GPU for training.
+Epoch 0, Score 47.0000, Loss 1.2442, Time 0.1884
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 21.0
+wandb:        _timestamp 1600970272.9197838
+wandb:             _step 3
+wandb:          _runtime 3.9081332683563232
+wandb:              time 0.18847203254699707
+wandb:              loss 1.244219422340393
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced wandering-sweep-12: https://app.wandb.ai/dmriser/rlmp/runs/9rgu71n4
+2020-09-24 17:57:58,071 - wandb.wandb_agent - INFO - Cleaning up finished run: 9rgu71n4
+2020-09-24 17:57:59,186 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:57:59,186 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 0.001
+	n_steps: 2
+	update_interval: 25000
+2020-09-24 17:57:59,244 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=250000 --hidden_dims=32 --lr=0.001 --n_steps=2 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175759-qbjy3gxg
+wandb: Syncing run ethereal-sweep-13
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/qbjy3gxg
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:58:04,253 - wandb.wandb_agent - INFO - Running runs: ['qbjy3gxg']
+
+wandb: Waiting for W&B process to finish, PID 8112
+Using GPU for training.
+Epoch 0, Score 1.0000, Loss 8.8444, Time 0.4449
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 4.207900524139404
+wandb:   episodic_reward 11.0
+wandb:             _step 5
+wandb:        _timestamp 1600970284.4799492
+wandb:              time 0.4448714256286621
+wandb:              loss 8.844439506530762
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced ethereal-sweep-13: https://app.wandb.ai/dmriser/rlmp/runs/qbjy3gxg
+2020-09-24 17:58:14,385 - wandb.wandb_agent - INFO - Cleaning up finished run: qbjy3gxg
+2020-09-24 17:58:14,537 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:58:14,538 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 1e-05
+	n_steps: 2
+	update_interval: 25000
+2020-09-24 17:58:14,600 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=250000 --hidden_dims=32 --lr=1e-05 --n_steps=2 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175814-8empi0ht
+wandb: Syncing run magic-sweep-14
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/8empi0ht
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:58:19,609 - wandb.wandb_agent - INFO - Running runs: ['8empi0ht']
+
+Using GPU for training.
+Epoch 0, Score 3.0000, Loss 24.2172, Time 0.2766
+wandb: Waiting for W&B process to finish, PID 8167
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 4
+wandb:        _timestamp 1600970299.688849
+wandb:   episodic_reward 26.0
+wandb:          _runtime 4.053310871124268
+wandb:              time 0.27666163444519043
+wandb:              loss 24.217151641845703
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced magic-sweep-14: https://app.wandb.ai/dmriser/rlmp/runs/8empi0ht
+2020-09-24 17:58:24,686 - wandb.wandb_agent - INFO - Cleaning up finished run: 8empi0ht
+2020-09-24 17:58:24,840 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:58:24,840 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 5000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 1000
+2020-09-24 17:58:24,899 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=5000 --hidden_dims=16 --lr=0.0001 --n_steps=1 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175824-wi76qipa
+wandb: Syncing run peach-sweep-15
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/wi76qipa
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:58:29,905 - wandb.wandb_agent - INFO - Running runs: ['wi76qipa']
+Using GPU for training.
+Epoch 0, Score 24.0000, Loss 0.8530, Time 0.3202
+
+wandb: Waiting for W&B process to finish, PID 8221
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 3
+wandb:   episodic_reward 23.0
+wandb:        _timestamp 1600970309.9982183
+wandb:          _runtime 4.068429231643677
+wandb:              time 0.3201904296875
+wandb:              loss 0.8529534935951233
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced peach-sweep-15: https://app.wandb.ai/dmriser/rlmp/runs/wi76qipa
+2020-09-24 17:58:34,975 - wandb.wandb_agent - INFO - Cleaning up finished run: wi76qipa
+2020-09-24 17:58:35,144 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:58:35,144 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 50000
+	hidden_dims: 32
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 10000
+2020-09-24 17:58:35,209 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=50000 --hidden_dims=32 --lr=0.0001 --n_steps=1 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175835-vkkrrxcj
+wandb: Syncing run jumping-sweep-16
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/vkkrrxcj
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:58:40,218 - wandb.wandb_agent - INFO - Running runs: ['vkkrrxcj']
+Using GPU for training.
+Epoch 0, Score 7.0000, Loss    nan, Time 0.0321
+
+wandb: Waiting for W&B process to finish, PID 8275
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 4
+wandb:          _runtime 3.753408908843994
+wandb:   episodic_reward 11.0
+wandb:        _timestamp 1600970319.9922931
+wandb:              loss nan
+wandb:              time 0.03206968307495117
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced jumping-sweep-16: https://app.wandb.ai/dmriser/rlmp/runs/vkkrrxcj
+2020-09-24 17:58:45,289 - wandb.wandb_agent - INFO - Cleaning up finished run: vkkrrxcj
+2020-09-24 17:58:45,470 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:58:45,470 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 1000
+2020-09-24 17:58:45,526 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=50000 --hidden_dims=16 --lr=1e-05 --n_steps=3 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175845-prozndyc
+wandb: Syncing run lilac-sweep-17
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/prozndyc
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:58:50,533 - wandb.wandb_agent - INFO - Running runs: ['prozndyc']
+Using GPU for training.
+Epoch 0, Score 6.0000, Loss 50.0311, Time 0.4636
+
+wandb: Waiting for W&B process to finish, PID 8327
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 18.0
+wandb:             _step 4
+wandb:          _runtime 4.201385974884033
+wandb:        _timestamp 1600970330.760736
+wandb:              loss 50.031124114990234
+wandb:              time 0.4636685848236084
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced lilac-sweep-17: https://app.wandb.ai/dmriser/rlmp/runs/prozndyc
+2020-09-24 17:59:00,696 - wandb.wandb_agent - INFO - Cleaning up finished run: prozndyc
+2020-09-24 17:59:00,838 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:59:00,839 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 0.001
+	n_steps: 2
+	update_interval: 5000
+2020-09-24 17:59:00,905 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=250000 --hidden_dims=32 --lr=0.001 --n_steps=2 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175900-ipun0wvf
+wandb: Syncing run silver-sweep-18
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/ipun0wvf
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:59:05,914 - wandb.wandb_agent - INFO - Running runs: ['ipun0wvf']
+
+Using GPU for training.
+Epoch 0, Score 4.0000, Loss    nan, Time 0.0407
+wandb: Waiting for W&B process to finish, PID 8381
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 3.7676732540130615
+wandb:   episodic_reward 23.0
+wandb:             _step 5
+wandb:        _timestamp 1600970345.7100623
+wandb:              loss nan
+wandb:              time 0.04075455665588379
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced silver-sweep-18: https://app.wandb.ai/dmriser/rlmp/runs/ipun0wvf
+2020-09-24 17:59:11,007 - wandb.wandb_agent - INFO - Cleaning up finished run: ipun0wvf
+2020-09-24 17:59:11,204 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:59:11,204 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 16
+	lr: 1e-05
+	n_steps: 1
+	update_interval: 10000
+2020-09-24 17:59:11,278 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=16 --lr=1e-05 --n_steps=1 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175911-0rpmopld
+wandb: Syncing run trim-sweep-19
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/0rpmopld
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:59:16,288 - wandb.wandb_agent - INFO - Running runs: ['0rpmopld']
+Using GPU for training.
+Epoch 0, Score 15.0000, Loss 1.0592, Time 0.1983
+
+wandb: Waiting for W&B process to finish, PID 8433
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 4.008447885513306
+wandb:             _step 3
+wandb:   episodic_reward 16.0
+wandb:        _timestamp 1600970356.3160956
+wandb:              time 0.19834685325622559
+wandb:              loss 1.0591543912887573
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced trim-sweep-19: https://app.wandb.ai/dmriser/rlmp/runs/0rpmopld
+2020-09-24 17:59:21,386 - wandb.wandb_agent - INFO - Cleaning up finished run: 0rpmopld
+2020-09-24 17:59:22,589 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:59:22,589 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 64
+	lr: 1e-05
+	n_steps: 2
+	update_interval: 5000
+2020-09-24 17:59:22,646 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=64 --lr=1e-05 --n_steps=2 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175922-cbeihbg2
+wandb: Syncing run generous-sweep-20
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/cbeihbg2
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:59:27,656 - wandb.wandb_agent - INFO - Running runs: ['cbeihbg2']
+
+Using GPU for training.
+Epoch 0, Score 6.0000, Loss 45.1326, Time 0.2885
+wandb: Waiting for W&B process to finish, PID 8487
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970367.707371
+wandb:             _step 5
+wandb:   episodic_reward 10.0
+wandb:          _runtime 4.025532960891724
+wandb:              time 0.2885243892669678
+wandb:              loss 45.132633209228516
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced generous-sweep-20: https://app.wandb.ai/dmriser/rlmp/runs/cbeihbg2
+2020-09-24 17:59:32,736 - wandb.wandb_agent - INFO - Cleaning up finished run: cbeihbg2
+2020-09-24 17:59:32,944 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:59:32,944 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 3
+	update_interval: 25000
+2020-09-24 17:59:33,005 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=16 --lr=0.0001 --n_steps=3 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175932-gygwmnqd
+wandb: Syncing run serene-sweep-21
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/gygwmnqd
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:59:38,013 - wandb.wandb_agent - INFO - Running runs: ['gygwmnqd']
+
+wandb: Waiting for W&B process to finish, PID 8541
+Using GPU for training.
+Epoch 0, Score 1.0000, Loss 131.4011, Time 0.3549
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 8
+wandb:        _timestamp 1600970378.114034
+wandb:   episodic_reward 11.0
+wandb:          _runtime 4.082387208938599
+wandb:              time 0.35494518280029297
+wandb:              loss 131.401123046875
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced serene-sweep-21: https://app.wandb.ai/dmriser/rlmp/runs/gygwmnqd
+2020-09-24 17:59:43,089 - wandb.wandb_agent - INFO - Cleaning up finished run: gygwmnqd
+2020-09-24 17:59:43,240 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:59:43,240 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 3
+	update_interval: 1000
+2020-09-24 17:59:43,302 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=50000 --hidden_dims=16 --lr=0.0001 --n_steps=3 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175943-14m5krxh
+wandb: Syncing run dulcet-sweep-22
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/14m5krxh
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:59:48,312 - wandb.wandb_agent - INFO - Running runs: ['14m5krxh']
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+wandb: Waiting for W&B process to finish, PID 8595
+Using GPU for training.
+Epoch 0, Score 3.0000, Loss    nan, Time 0.0836
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 7.0
+wandb:          _runtime 3.9433960914611816
+wandb:        _timestamp 1600970388.3113544
+wandb:             _step 11
+wandb:              time 0.08359169960021973
+wandb:              loss nan
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced dulcet-sweep-22: https://app.wandb.ai/dmriser/rlmp/runs/14m5krxh
+2020-09-24 17:59:53,394 - wandb.wandb_agent - INFO - Cleaning up finished run: 14m5krxh
+2020-09-24 17:59:53,560 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 17:59:53,561 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 50000
+	hidden_dims: 32
+	lr: 1e-05
+	n_steps: 1
+	update_interval: 5000
+2020-09-24 17:59:53,623 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=50000 --hidden_dims=32 --lr=1e-05 --n_steps=1 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_175953-dwcw7ngq
+wandb: Syncing run autumn-sweep-23
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/dwcw7ngq
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 17:59:58,633 - wandb.wandb_agent - INFO - Running runs: ['dwcw7ngq']
+Using GPU for training.
+Epoch 0, Score 63.0000, Loss    nan, Time 0.0223
+
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+wandb: Waiting for W&B process to finish, PID 8647
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970398.410045
+wandb:          _runtime 3.759701728820801
+wandb:             _step 2
+wandb:   episodic_reward 17.0
+wandb:              time 0.02236199378967285
+wandb:              loss nan
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced autumn-sweep-23: https://app.wandb.ai/dmriser/rlmp/runs/dwcw7ngq
+2020-09-24 18:00:03,709 - wandb.wandb_agent - INFO - Cleaning up finished run: dwcw7ngq
+2020-09-24 18:00:03,860 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:00:03,860 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 50000
+	hidden_dims: 64
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 25000
+2020-09-24 18:00:03,922 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=50000 --hidden_dims=64 --lr=0.0001 --n_steps=1 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180003-vahd34sg
+wandb: Syncing run legendary-sweep-24
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/vahd34sg
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:00:08,931 - wandb.wandb_agent - INFO - Running runs: ['vahd34sg']
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+
+wandb: Waiting for W&B process to finish, PID 8699
+Using GPU for training.
+Epoch 0, Score 3.0000, Loss    nan, Time 0.0301
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970408.7370133
+wandb:             _step 3
+wandb:          _runtime 3.790665864944458
+wandb:   episodic_reward 49.0
+wandb:              loss nan
+wandb:              time 0.030144214630126953
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: | 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced legendary-sweep-24: https://app.wandb.ai/dmriser/rlmp/runs/vahd34sg
+2020-09-24 18:00:14,016 - wandb.wandb_agent - INFO - Cleaning up finished run: vahd34sg
+2020-09-24 18:00:14,173 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:00:14,173 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 5000
+	hidden_dims: 16
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 25000
+2020-09-24 18:00:14,231 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=5000 --hidden_dims=16 --lr=1e-05 --n_steps=3 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180014-bo93zjub
+wandb: Syncing run fancy-sweep-25
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/bo93zjub
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:00:19,240 - wandb.wandb_agent - INFO - Running runs: ['bo93zjub']
+
+Using GPU for training.
+Epoch 0, Score 6.0000, Loss    nan, Time 0.0628
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+wandb: Waiting for W&B process to finish, PID 8751
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970419.0635514
+wandb:   episodic_reward 11.0
+wandb:             _step 7
+wandb:          _runtime 3.804495334625244
+wandb:              loss nan
+wandb:              time 0.06278848648071289
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced fancy-sweep-25: https://app.wandb.ai/dmriser/rlmp/runs/bo93zjub
+2020-09-24 18:00:24,308 - wandb.wandb_agent - INFO - Cleaning up finished run: bo93zjub
+2020-09-24 18:00:24,460 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:00:24,460 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 50000
+	hidden_dims: 32
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 25000
+2020-09-24 18:00:24,522 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=50000 --hidden_dims=32 --lr=1e-05 --n_steps=3 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180024-wtx6jcad
+wandb: Syncing run driven-sweep-26
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/wtx6jcad
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:00:29,531 - wandb.wandb_agent - INFO - Running runs: ['wtx6jcad']
+
+Using GPU for training.
+Epoch 0, Score 2.0000, Loss 79.5048, Time 0.3216
+wandb: Waiting for W&B process to finish, PID 8803
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 14.0
+wandb:          _runtime 4.045109987258911
+wandb:        _timestamp 1600970429.5923526
+wandb:             _step 6
+wandb:              time 0.32158970832824707
+wandb:              loss 79.50476837158203
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced driven-sweep-26: https://app.wandb.ai/dmriser/rlmp/runs/wtx6jcad
+2020-09-24 18:00:34,621 - wandb.wandb_agent - INFO - Cleaning up finished run: wtx6jcad
+2020-09-24 18:00:34,785 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:00:34,785 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 32
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 25000
+2020-09-24 18:00:34,845 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=32 --lr=1e-05 --n_steps=3 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180034-muaudq8t
+wandb: Syncing run pretty-sweep-27
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/muaudq8t
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:00:39,855 - wandb.wandb_agent - INFO - Running runs: ['muaudq8t']
+
+wandb: Waiting for W&B process to finish, PID 8857
+Using GPU for training.
+Epoch 0, Score 24.0000, Loss 192.1515, Time 0.3674
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 9
+wandb:   episodic_reward 11.0
+wandb:        _timestamp 1600970439.9690309
+wandb:          _runtime 4.084481477737427
+wandb:              loss 192.15150451660156
+wandb:              time 0.36740660667419434
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced pretty-sweep-27: https://app.wandb.ai/dmriser/rlmp/runs/muaudq8t
+2020-09-24 18:00:44,930 - wandb.wandb_agent - INFO - Cleaning up finished run: muaudq8t
+2020-09-24 18:00:45,073 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:00:45,073 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 0.001
+	n_steps: 1
+	update_interval: 10000
+2020-09-24 18:00:45,154 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=250000 --hidden_dims=32 --lr=0.001 --n_steps=1 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180045-vq1z40zm
+wandb: Syncing run devout-sweep-28
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/vq1z40zm
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:00:50,163 - wandb.wandb_agent - INFO - Running runs: ['vq1z40zm']
+
+Using GPU for training.
+Epoch 0, Score 14.0000, Loss 0.4105, Time 0.3107
+wandb: Waiting for W&B process to finish, PID 8911
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 4.024009466171265
+wandb:        _timestamp 1600970450.2197108
+wandb:             _step 4
+wandb:   episodic_reward 11.0
+wandb:              time 0.31069517135620117
+wandb:              loss 0.41046085953712463
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced devout-sweep-28: https://app.wandb.ai/dmriser/rlmp/runs/vq1z40zm
+2020-09-24 18:00:55,233 - wandb.wandb_agent - INFO - Cleaning up finished run: vq1z40zm
+2020-09-24 18:00:55,406 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:00:55,406 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 0.001
+	n_steps: 1
+	update_interval: 10000
+2020-09-24 18:00:55,468 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=50000 --hidden_dims=16 --lr=0.001 --n_steps=1 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180055-yfaxxtgb
+wandb: Syncing run dry-sweep-29
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/yfaxxtgb
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:01:00,477 - wandb.wandb_agent - INFO - Running runs: ['yfaxxtgb']
+
+Using GPU for training.
+Epoch 0, Score 11.0000, Loss 0.6996, Time 0.3135
+wandb: Waiting for W&B process to finish, PID 8965
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:             _step 4
+wandb:          _runtime 4.011889219284058
+wandb:   episodic_reward 13.0
+wandb:        _timestamp 1600970460.5068276
+wandb:              time 0.31353139877319336
+wandb:              loss 0.6996309757232666
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced dry-sweep-29: https://app.wandb.ai/dmriser/rlmp/runs/yfaxxtgb
+2020-09-24 18:01:05,556 - wandb.wandb_agent - INFO - Cleaning up finished run: yfaxxtgb
+2020-09-24 18:01:05,751 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:01:05,751 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 1e-05
+	n_steps: 2
+	update_interval: 1000
+2020-09-24 18:01:05,814 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=50000 --hidden_dims=16 --lr=1e-05 --n_steps=2 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180105-6vpzuieq
+wandb: Syncing run sweet-sweep-30
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/6vpzuieq
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:01:10,823 - wandb.wandb_agent - INFO - Running runs: ['6vpzuieq']
+
+Using GPU for training.
+Epoch 0, Score 8.0000, Loss 61.4619, Time 0.3014
+wandb: Waiting for W&B process to finish, PID 9019
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 12.0
+wandb:          _runtime 4.0584893226623535
+wandb:             _step 7
+wandb:        _timestamp 1600970470.904586
+wandb:              time 0.30138206481933594
+wandb:              loss 61.46194839477539
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced sweet-sweep-30: https://app.wandb.ai/dmriser/rlmp/runs/6vpzuieq
+2020-09-24 18:01:15,902 - wandb.wandb_agent - INFO - Cleaning up finished run: 6vpzuieq
+2020-09-24 18:01:16,061 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:01:16,062 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 250000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 2
+	update_interval: 5000
+2020-09-24 18:01:16,121 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=250000 --hidden_dims=16 --lr=0.0001 --n_steps=2 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180116-a7357c6o
+wandb: Syncing run cool-sweep-31
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/a7357c6o
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:01:21,130 - wandb.wandb_agent - INFO - Running runs: ['a7357c6o']
+Using GPU for training.
+Epoch 0, Score 5.0000, Loss 25.8475, Time 0.4613
+
+wandb: Waiting for W&B process to finish, PID 9073
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970481.3345017
+wandb:          _runtime 4.177278518676758
+wandb:             _step 6
+wandb:   episodic_reward 13.0
+wandb:              loss 25.84750747680664
+wandb:              time 0.4613168239593506
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced cool-sweep-31: https://app.wandb.ai/dmriser/rlmp/runs/a7357c6o
+2020-09-24 18:01:26,228 - wandb.wandb_agent - INFO - Cleaning up finished run: a7357c6o
+2020-09-24 18:01:26,416 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:01:26,416 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	eps_decay: 250000
+	hidden_dims: 32
+	lr: 0.0001
+	n_steps: 1
+	update_interval: 5000
+2020-09-24 18:01:26,475 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=128 --eps_decay=250000 --hidden_dims=32 --lr=0.0001 --n_steps=1 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180126-84jk3e43
+wandb: Syncing run playful-sweep-32
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/84jk3e43
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:01:31,481 - wandb.wandb_agent - INFO - Running runs: ['84jk3e43']
+
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Using GPU for training.
+Epoch 0, Score 45.0000, Loss    nan, Time 0.0241
+wandb: Waiting for W&B process to finish, PID 9127
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 40.0
+wandb:             _step 2
+wandb:          _runtime 3.732532024383545
+wandb:        _timestamp 1600970491.2381463
+wandb:              loss nan
+wandb:              time 0.024068355560302734
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced playful-sweep-32: https://app.wandb.ai/dmriser/rlmp/runs/84jk3e43
+2020-09-24 18:01:36,549 - wandb.wandb_agent - INFO - Cleaning up finished run: 84jk3e43
+2020-09-24 18:01:36,730 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:01:36,730 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 64
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 10000
+2020-09-24 18:01:36,789 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=64 --lr=1e-05 --n_steps=3 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180136-kdhf0swt
+wandb: Syncing run dutiful-sweep-33
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/kdhf0swt
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:01:41,798 - wandb.wandb_agent - INFO - Running runs: ['kdhf0swt']
+
+wandb: Waiting for W&B process to finish, PID 9179
+Using GPU for training.
+Epoch 0, Score 19.0000, Loss 123.0327, Time 0.3317
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 6.0
+wandb:        _timestamp 1600970501.876406
+wandb:          _runtime 4.061299800872803
+wandb:             _step 7
+wandb:              loss 123.03266906738281
+wandb:              time 0.3317534923553467
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced dutiful-sweep-33: https://app.wandb.ai/dmriser/rlmp/runs/kdhf0swt
+2020-09-24 18:01:46,868 - wandb.wandb_agent - INFO - Cleaning up finished run: kdhf0swt
+2020-09-24 18:01:47,012 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:01:47,012 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 250000
+	hidden_dims: 16
+	lr: 1e-05
+	n_steps: 1
+	update_interval: 25000
+2020-09-24 18:01:47,076 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=250000 --hidden_dims=16 --lr=1e-05 --n_steps=1 --update_interval=25000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180147-mohs00x4
+wandb: Syncing run autumn-sweep-34
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/mohs00x4
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:01:52,085 - wandb.wandb_agent - INFO - Running runs: ['mohs00x4']
+
+wandb: Waiting for W&B process to finish, PID 9233
+Using GPU for training.
+Epoch 0, Score 0.0000, Loss 1.1669, Time 0.3259
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970512.1558754
+wandb:             _step 6
+wandb:   episodic_reward 14.0
+wandb:          _runtime 4.050614595413208
+wandb:              loss 1.1669425964355469
+wandb:              time 0.3259541988372803
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced autumn-sweep-34: https://app.wandb.ai/dmriser/rlmp/runs/mohs00x4
+2020-09-24 18:01:57,159 - wandb.wandb_agent - INFO - Cleaning up finished run: mohs00x4
+2020-09-24 18:01:57,325 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:01:57,325 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 50000
+	hidden_dims: 16
+	lr: 1e-05
+	n_steps: 2
+	update_interval: 5000
+2020-09-24 18:01:57,399 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=50000 --hidden_dims=16 --lr=1e-05 --n_steps=2 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180157-y8msfmgm
+wandb: Syncing run leafy-sweep-35
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/y8msfmgm
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:02:02,409 - wandb.wandb_agent - INFO - Running runs: ['y8msfmgm']
+Using GPU for training.
+Epoch 0, Score 17.0000, Loss 13.1689, Time 0.4488
+
+wandb: Waiting for W&B process to finish, PID 9287
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:   episodic_reward 8.0
+wandb:             _step 4
+wandb:        _timestamp 1600970522.5991986
+wandb:          _runtime 4.170948028564453
+wandb:              loss 13.168871879577637
+wandb:              time 0.4488658905029297
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: | 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced leafy-sweep-35: https://app.wandb.ai/dmriser/rlmp/runs/y8msfmgm
+2020-09-24 18:02:07,492 - wandb.wandb_agent - INFO - Cleaning up finished run: y8msfmgm
+2020-09-24 18:02:07,777 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:02:07,778 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	eps_decay: 5000
+	hidden_dims: 16
+	lr: 0.0001
+	n_steps: 3
+	update_interval: 10000
+2020-09-24 18:02:07,841 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=64 --eps_decay=5000 --hidden_dims=16 --lr=0.0001 --n_steps=3 --update_interval=10000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180207-x6tw87hz
+wandb: Syncing run ancient-sweep-36
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/x6tw87hz
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:02:12,849 - wandb.wandb_agent - INFO - Running runs: ['x6tw87hz']
+Using GPU for training.
+Epoch 0, Score 4.0000, Loss 70.1287, Time 0.3120
+
+wandb: Waiting for W&B process to finish, PID 9341
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:          _runtime 4.105976343154907
+wandb:   episodic_reward 15.0
+wandb:        _timestamp 1600970532.988491
+wandb:             _step 6
+wandb:              time 0.31200122833251953
+wandb:              loss 70.12867736816406
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb: \ 0.03MB of 0.03MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced ancient-sweep-36: https://app.wandb.ai/dmriser/rlmp/runs/x6tw87hz
+2020-09-24 18:02:17,927 - wandb.wandb_agent - INFO - Cleaning up finished run: x6tw87hz
+2020-09-24 18:02:18,135 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:02:18,135 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 5000
+	hidden_dims: 64
+	lr: 1e-05
+	n_steps: 3
+	update_interval: 5000
+2020-09-24 18:02:18,198 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=5000 --hidden_dims=64 --lr=1e-05 --n_steps=3 --update_interval=5000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_180218-tguxess2
+wandb: Syncing run visionary-sweep-37
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/xs0mhunm
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/tguxess2
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:02:23,207 - wandb.wandb_agent - INFO - Running runs: ['tguxess2']
+Using GPU for training.
+Epoch 0, Score 9.0000, Loss 117.3348, Time 0.4989
+
+wandb: Waiting for W&B process to finish, PID 9395
+wandb: Program ended successfully.
+wandb: Run summary:
+wandb:        _timestamp 1600970543.6975589
+wandb:          _runtime 4.46773099899292
+wandb:             _step 8
+wandb:   episodic_reward 15.0
+wandb:              loss 117.33477783203125
+wandb:              time 0.4989011287689209
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: \ 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: | 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb: / 0.04MB of 0.04MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced visionary-sweep-37: https://app.wandb.ai/dmriser/rlmp/runs/tguxess2
+2020-09-24 18:02:33,344 - wandb.wandb_agent - INFO - Cleaning up finished run: tguxess2
+2020-09-24 18:02:38,411 - wandb.wandb_agent - INFO - Running runs: []
+2020-09-24 18:02:38,565 - wandb.wandb_agent - INFO - Agent received command: exit
+2020-09-24 18:02:38,565 - wandb.wandb_agent - INFO - Received exit command. Killing runs and quitting.
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
+wandb: Starting wandb agent 🕵️
+2020-09-24 18:12:54,230 - wandb.wandb_agent - INFO - Running runs: []
+2020-09-24 18:12:54,416 - wandb.wandb_agent - INFO - Agent received command: run
+2020-09-24 18:12:54,416 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	eps_decay: 5000
+	hidden_dims: 32
+	lr: 0.0001
+	n_steps: 3
+	update_interval: 1000
+2020-09-24 18:12:54,477 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --batch_size=32 --eps_decay=5000 --hidden_dims=32 --lr=0.0001 --n_steps=3 --update_interval=1000
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200924_181254-0tlixaex
+wandb: Syncing run scarlet-sweep-1
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🧹 View sweep at https://app.wandb.ai/dmriser/rlmp/sweeps/ehmwcc61
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/0tlixaex
+wandb: Run `wandb off` to turn off syncing.
+
+2020-09-24 18:12:59,487 - wandb.wandb_agent - INFO - Running runs: ['0tlixaex']
+Using GPU for training.
+Epoch 0, Score 0.0000, Loss 279.1931, Time 2.3910
+Epoch 1, Score 2.0000, Loss 1635.6333, Time 2.7715
+Epoch 2, Score 2.0000, Loss 2343.4099, Time 2.8863
+Epoch 3, Score 4.0000, Loss 2003.0485, Time 3.0466
+Epoch 4, Score 2.0000, Loss 1828.9976, Time 3.1732
+Epoch 5, Score 6.0000, Loss 1890.8540, Time 3.3660
+Epoch 6, Score 1.0000, Loss 1901.9821, Time 3.4478
+Epoch 7, Score 4.0000, Loss 1939.0444, Time 3.5824
+Epoch 8, Score 0.0000, Loss 2029.9052, Time 3.6815
+Epoch 9, Score 4.0000, Loss 2011.8823, Time 3.8973
+Epoch 10, Score 5.0000, Loss 2008.9319, Time 4.0678
+Epoch 11, Score 1.0000, Loss 2025.7690, Time 4.1484
+Epoch 12, Score 5.0000, Loss 2014.8906, Time 4.2929
+Epoch 13, Score 9.0000, Loss 2019.4368, Time 4.4309
+Epoch 14, Score 5.0000, Loss 1985.1968, Time 4.6172
+Epoch 15, Score 5.0000, Loss 1945.6295, Time 4.7196
+Epoch 16, Score 7.0000, Loss 1958.6488, Time 4.8925
+Epoch 17, Score 5.0000, Loss 1917.8101, Time 5.1836
+Epoch 18, Score 5.0000, Loss 1909.1740, Time 5.2093
+Epoch 19, Score 6.0000, Loss 1931.3057, Time 5.3326
+Epoch 20, Score 0.0000, Loss 1879.8516, Time 5.5084
+Epoch 21, Score 2.0000, Loss 1884.8442, Time 5.5982
+Epoch 22, Score 4.0000, Loss 1836.3461, Time 5.8509
+Epoch 23, Score 6.0000, Loss 1826.7253, Time 5.9392
+Epoch 24, Score 4.0000, Loss 1771.2059, Time 6.0467
+Epoch 25, Score 2.0000, Loss 1798.4926, Time 6.1956
+Epoch 26, Score 2.0000, Loss 1715.6964, Time 6.3364
+Epoch 27, Score 1.0000, Loss 1772.2759, Time 6.4581
+Epoch 28, Score 5.0000, Loss 1746.9962, Time 6.5771
+Epoch 29, Score 0.0000, Loss 1743.3137, Time 6.7533
+Epoch 30, Score 0.0000, Loss 1730.2496, Time 6.8872
+Epoch 31, Score 3.0000, Loss 1717.5016, Time 7.6204
+Epoch 32, Score 5.0000, Loss 1716.6503, Time 7.3136
+Epoch 33, Score 5.0000, Loss 1701.8599, Time 7.3465
+Epoch 34, Score 3.0000, Loss 1666.6296, Time 7.4262
+Epoch 35, Score 1.0000, Loss 1648.0852, Time 7.6203
+Epoch 36, Score 5.0000, Loss 1644.6179, Time 7.7671
+Epoch 37, Score 5.0000, Loss 1622.4429, Time 7.8834
+Epoch 38, Score 0.0000, Loss 1602.0028, Time 8.0852
+Epoch 39, Score 5.0000, Loss 1619.5391, Time 8.7927
+Epoch 40, Score 1.0000, Loss 1601.2728, Time 9.2897
+Epoch 41, Score 0.0000, Loss 1577.7209, Time 8.6145
+Epoch 42, Score 1.0000, Loss 1623.1750, Time 8.7593
+Epoch 43, Score 3.0000, Loss 1579.3921, Time 8.8579
+Epoch 44, Score 3.0000, Loss 1615.1566, Time 9.1005
+Epoch 45, Score 1.0000, Loss 1582.6947, Time 9.1327
+Epoch 46, Score 7.0000, Loss 1621.8037, Time 9.3419
+Epoch 47, Score 0.0000, Loss 1572.0402, Time 9.4890
+Epoch 48, Score 7.0000, Loss 1568.6644, Time 9.7017
+Epoch 49, Score 5.0000, Loss 1549.0266, Time 10.4825
+Epoch 50, Score 4.0000, Loss 1570.0872, Time 10.8457
+Epoch 51, Score 0.0000, Loss 1522.6155, Time 10.1349
+Epoch 52, Score 0.0000, Loss 1551.8322, Time 10.2400
+Epoch 53, Score 1.0000, Loss 1566.1815, Time 10.2030
+Epoch 54, Score 3.0000, Loss 1557.2690, Time 10.4416
+Epoch 55, Score 5.0000, Loss 1519.4200, Time 10.6679
+Epoch 56, Score 5.0000, Loss 1548.3744, Time 10.8042
+Epoch 57, Score 0.0000, Loss 1510.2303, Time 10.9487
+Epoch 58, Score 2.0000, Loss 1515.4094, Time 11.1159
+Epoch 59, Score 4.0000, Loss 1524.6887, Time 11.3066
+Epoch 60, Score 4.0000, Loss 1543.9609, Time 11.5649
+Epoch 61, Score 0.0000, Loss 1508.3600, Time 11.6556
+Epoch 62, Score 1.0000, Loss 1551.8220, Time 11.8027
+Epoch 63, Score 5.0000, Loss 1517.6981, Time 11.9378
+Epoch 64, Score 4.0000, Loss 1531.0344, Time 12.0267
+Epoch 65, Score 2.0000, Loss 1523.8558, Time 12.3734
+Epoch 66, Score 2.0000, Loss 1506.8197, Time 12.4092
+Epoch 67, Score 3.0000, Loss 1531.6010, Time 12.6666
+Epoch 68, Score 2.0000, Loss 1547.7466, Time 12.9453
+Epoch 69, Score 6.0000, Loss 1534.6464, Time 12.9711
+Epoch 70, Score 4.0000, Loss 1539.4810, Time 13.2415
+Epoch 71, Score 3.0000, Loss 1537.8800, Time 13.2418
+Epoch 72, Score 3.0000, Loss 1547.9130, Time 13.5405
+Epoch 73, Score 6.0000, Loss 1537.6724, Time 13.6820
+Epoch 74, Score 2.0000, Loss 1576.7065, Time 13.9928
+Epoch 75, Score 6.0000, Loss 1541.0741, Time 13.9856
+Epoch 76, Score 3.0000, Loss 1597.6865, Time 14.4696
+Epoch 77, Score 0.0000, Loss 1579.0178, Time 15.1959
+Epoch 78, Score 1.0000, Loss 1555.6891, Time 15.3451
+Epoch 79, Score 3.0000, Loss 1583.9951, Time 14.9020
+Epoch 80, Score 6.0000, Loss 1597.4882, Time 15.1106
+Epoch 81, Score 6.0000, Loss 1555.2108, Time 15.3009
+Epoch 82, Score 3.0000, Loss 1572.1606, Time 15.6333
+Epoch 83, Score 4.0000, Loss 1550.9059, Time 15.6338
+Epoch 84, Score 3.0000, Loss 1586.2362, Time 16.5401
+Epoch 85, Score 5.0000, Loss 1585.3352, Time 15.7818
+Epoch 86, Score 1.0000, Loss 1571.6082, Time 16.0913
+Epoch 87, Score 0.0000, Loss 1567.8726, Time 16.1370
+Epoch 88, Score 0.0000, Loss 1592.8956, Time 16.4232
+Epoch 89, Score 0.0000, Loss 1616.1587, Time 16.5261
+Epoch 90, Score 3.0000, Loss 1611.7786, Time 16.7734
+Epoch 91, Score 1.0000, Loss 1626.7661, Time 17.0084
+Epoch 92, Score 4.0000, Loss 1628.2725, Time 18.6114
+Epoch 93, Score 2.0000, Loss 1683.3002, Time 18.3610
+Epoch 94, Score 2.0000, Loss 1630.6418, Time 17.4796
+Epoch 95, Score 0.0000, Loss 1643.1892, Time 17.7200
+Epoch 96, Score 2.0000, Loss 1599.1544, Time 17.7933
+Epoch 97, Score 2.0000, Loss 1642.7344, Time 18.0499
+Epoch 98, Score 3.0000, Loss 1636.6965, Time 18.2236
+Epoch 99, Score 4.0000, Loss 1645.5088, Time 18.3226
+Epoch 100, Score 4.0000, Loss 1641.3392, Time 18.8099
+Epoch 101, Score 2.0000, Loss 1638.3688, Time 18.7969
+Epoch 102, Score 3.0000, Loss 1613.3575, Time 18.9074
+Epoch 103, Score 2.0000, Loss 1621.8354, Time 19.2785
+Epoch 104, Score 2.0000, Loss 1538.7706, Time 19.4005
+Epoch 105, Score 2.0000, Loss 1571.6702, Time 19.5427
+Epoch 106, Score 19.0000, Loss 1567.4106, Time 19.7614
+Epoch 107, Score 2.0000, Loss 1602.2762, Time 19.9444
+Epoch 108, Score 1.0000, Loss 1582.3688, Time 20.1470
+Epoch 109, Score 2.0000, Loss 1572.8772, Time 20.3773
+Epoch 110, Score 6.0000, Loss 1585.8838, Time 20.5227
+Epoch 111, Score 19.0000, Loss 1591.3260, Time 20.4943
+Epoch 112, Score 1.0000, Loss 1623.2716, Time 20.5246
+Epoch 113, Score 41.0000, Loss 1613.0610, Time 20.9421
+Epoch 114, Score 2.0000, Loss 1547.5190, Time 21.0870
+Epoch 115, Score 4.0000, Loss 1542.3647, Time 21.4278
+Epoch 116, Score 3.0000, Loss 1536.9688, Time 21.4597
+Epoch 117, Score 1.0000, Loss 1571.7015, Time 21.5379
+Epoch 118, Score 0.0000, Loss 1579.1031, Time 21.9333
+Epoch 119, Score 6.0000, Loss 1567.0297, Time 21.9513
+Epoch 120, Score 29.0000, Loss 1558.5691, Time 22.0067
+Epoch 121, Score 5.0000, Loss 1569.9836, Time 22.0767
+Epoch 122, Score 42.0000, Loss 1575.4231, Time 22.1499
+Epoch 123, Score 1.0000, Loss 1545.9285, Time 22.5324
+Epoch 124, Score 11.0000, Loss 1580.7965, Time 22.7278
+Epoch 125, Score 2.0000, Loss 1544.9486, Time 22.4079
+Epoch 126, Score 4.0000, Loss 1583.0233, Time 22.7667
+Epoch 127, Score 4.0000, Loss 1581.0145, Time 23.5554
+Epoch 128, Score 11.0000, Loss 1557.4611, Time 23.4127
+Epoch 129, Score 17.0000, Loss 1554.6969, Time 22.8776
+Epoch 130, Score 0.0000, Loss 1607.5919, Time 23.0702
+Epoch 131, Score 11.0000, Loss 1582.6346, Time 23.2334
+Epoch 132, Score 4.0000, Loss 1559.3259, Time 23.4791
+Epoch 133, Score 0.0000, Loss 1554.4246, Time 23.8572
+Epoch 134, Score 6.0000, Loss 1540.4625, Time 24.1894
+Epoch 135, Score 2.0000, Loss 1533.9435, Time 23.9382
+Epoch 136, Score 19.0000, Loss 1549.6373, Time 23.8352
+Epoch 137, Score 3.0000, Loss 1554.7222, Time 24.3776
+Epoch 138, Score 10.0000, Loss 1547.4038, Time 24.5565
+Epoch 139, Score 1.0000, Loss 1545.4907, Time 25.2093
+Epoch 140, Score 3.0000, Loss 1559.3834, Time 24.4673
+Epoch 141, Score 10.0000, Loss 1562.8789, Time 24.6254
+Epoch 142, Score 5.0000, Loss 1585.3472, Time 24.7519
+Epoch 143, Score 2.0000, Loss 1541.6575, Time 25.2501
+Epoch 144, Score 43.0000, Loss 1549.8575, Time 25.1208
+Epoch 145, Score 8.0000, Loss 1532.6791, Time 25.4073
+Epoch 146, Score 2.0000, Loss 1573.1678, Time 25.7448
+Epoch 147, Score 7.0000, Loss 1538.4337, Time 25.8890
+Epoch 148, Score 4.0000, Loss 1609.8827, Time 25.8177
+Epoch 149, Score 0.0000, Loss 1560.6106, Time 27.0004
+Epoch 150, Score 6.0000, Loss 1579.0939, Time 25.8445
+Epoch 151, Score 5.0000, Loss 1532.5414, Time 26.6630
+Epoch 152, Score 3.0000, Loss 1524.0515, Time 26.8814
+Epoch 153, Score 4.0000, Loss 1557.8818, Time 26.9818
+Epoch 154, Score 2.0000, Loss 1582.2831, Time 27.5555
+Epoch 155, Score 3.0000, Loss 1622.8175, Time 26.9867
+Epoch 156, Score 2.0000, Loss 1549.1251, Time 27.5412
+Epoch 157, Score 28.0000, Loss 1527.3785, Time 27.6040
+Epoch 158, Score 7.0000, Loss 1571.7588, Time 27.1642
+Epoch 159, Score 3.0000, Loss 1565.8605, Time 27.6849
+Epoch 160, Score 5.0000, Loss 1577.1954, Time 27.9765
+Epoch 161, Score 4.0000, Loss 1564.4591, Time 28.2919
+Epoch 162, Score 6.0000, Loss 1520.8059, Time 28.4795
+Epoch 163, Score 3.0000, Loss 1538.6639, Time 28.5356
+Epoch 164, Score 7.0000, Loss 1564.4960, Time 28.2438
+Epoch 165, Score 8.0000, Loss 1626.7284, Time 28.2569
+Epoch 166, Score 12.0000, Loss 1554.8331, Time 28.1187
+Epoch 167, Score 61.0000, Loss 1543.8354, Time 28.3524
+Epoch 168, Score 2.0000, Loss 1565.3228, Time 28.4987
+Epoch 169, Score 4.0000, Loss 1570.9485, Time 28.6820
+Epoch 170, Score 10.0000, Loss 1567.5686, Time 28.7844
+Epoch 171, Score 9.0000, Loss 1587.0493, Time 28.9541
+Epoch 172, Score 11.0000, Loss 1530.6981, Time 29.2604
+Epoch 173, Score 0.0000, Loss 1508.6067, Time 29.6717
+Epoch 174, Score 5.0000, Loss 1540.5800, Time 30.0865
+Epoch 175, Score 0.0000, Loss 1558.7975, Time 30.2562
+Epoch 176, Score 2.0000, Loss 1577.1924, Time 30.5250
+Epoch 177, Score 1.0000, Loss 1534.9803, Time 31.2659
+Epoch 178, Score 2.0000, Loss 1577.9988, Time 30.0725
+Epoch 179, Score 24.0000, Loss 1543.8682, Time 30.7593
+Epoch 180, Score 3.0000, Loss 1552.7085, Time 30.5831
+Epoch 181, Score 4.0000, Loss 1529.3800, Time 31.1769
+Epoch 182, Score 3.0000, Loss 1530.6575, Time 31.9296
+Epoch 183, Score 3.0000, Loss 1568.8298, Time 31.1499
+Epoch 184, Score 2.0000, Loss 1591.9047, Time 30.6879
+Epoch 185, Score 9.0000, Loss 1572.9297, Time 30.9268
+Epoch 186, Score 0.0000, Loss 1523.5916, Time 31.3255
+Epoch 187, Score 0.0000, Loss 1531.8037, Time 31.6464
+Epoch 188, Score 3.0000, Loss 1522.3250, Time 32.1816
+Epoch 189, Score 4.0000, Loss 1544.3610, Time 31.7212
+Epoch 190, Score 9.0000, Loss 1529.8434, Time 32.0057
+Epoch 191, Score 2.0000, Loss 1518.1372, Time 32.3763
+Epoch 192, Score 6.0000, Loss 1553.0409, Time 32.6180
+Epoch 193, Score 10.0000, Loss 1565.2209, Time 32.6602
+Epoch 194, Score 8.0000, Loss 1603.3768, Time 32.2504
+Epoch 195, Score 8.0000, Loss 1551.2573, Time 32.1672
+Epoch 196, Score 1.0000, Loss 1555.3434, Time 32.6042
+Epoch 197, Score 7.0000, Loss 1588.1116, Time 32.7971
+Epoch 198, Score 106.0000, Loss 1597.1278, Time 32.5289
+Epoch 199, Score 16.0000, Loss 1609.6475, Time 32.4616
+Epoch 200, Score 1.0000, Loss 1609.9017, Time 33.0206
+Epoch 201, Score 2.0000, Loss 1618.4174, Time 33.4204
+Epoch 202, Score 0.0000, Loss 1554.7716, Time 33.8601
+Epoch 203, Score 19.0000, Loss 1557.1801, Time 33.5038
+Epoch 204, Score 0.0000, Loss 1649.6548, Time 33.2121
+Epoch 205, Score 8.0000, Loss 1618.1597, Time 33.1944
+Epoch 206, Score 5.0000, Loss 1548.8882, Time 33.7529
+Epoch 207, Score 6.0000, Loss 1576.1372, Time 34.1253
+Epoch 208, Score 4.0000, Loss 1548.2847, Time 34.3229
+Epoch 209, Score 2.0000, Loss 1595.8922, Time 34.6100
+Epoch 210, Score 4.0000, Loss 1587.4365, Time 34.2217
+Epoch 211, Score 3.0000, Loss 1524.4275, Time 34.6418
+Epoch 212, Score 10.0000, Loss 1567.5468, Time 34.7984
+Epoch 213, Score 7.0000, Loss 1552.7375, Time 34.2423
+Epoch 214, Score 4.0000, Loss 1564.9379, Time 35.0781
+Epoch 215, Score 6.0000, Loss 1540.2972, Time 35.1949
+Epoch 216, Score 2.0000, Loss 1549.5825, Time 35.3681
+Epoch 217, Score 6.0000, Loss 1539.6986, Time 35.4287
+Epoch 218, Score 3.0000, Loss 1590.6349, Time 35.5950
+Epoch 219, Score 2.0000, Loss 1564.4039, Time 35.9235
+Epoch 220, Score 4.0000, Loss 1570.1622, Time 35.7540
+Epoch 221, Score 1.0000, Loss 1534.3522, Time 35.9472
+Epoch 222, Score 0.0000, Loss 1566.3671, Time 36.0543
+Epoch 223, Score 2.0000, Loss 1566.1647, Time 36.1474
+Epoch 224, Score 1.0000, Loss 1556.7603, Time 36.2563
+Epoch 225, Score 0.0000, Loss 1551.1655, Time 35.9556
+Epoch 226, Score 3.0000, Loss 1533.6597, Time 36.1432
+Epoch 227, Score 2.0000, Loss 1527.1132, Time 36.5092
+Epoch 228, Score 3.0000, Loss 1527.2141, Time 37.3562
+Epoch 229, Score 1.0000, Loss 1530.9883, Time 36.8082
+Epoch 230, Score 1.0000, Loss 1522.6628, Time 37.0303
+Epoch 231, Score 2.0000, Loss 1546.8625, Time 37.4527
+Epoch 232, Score 1.0000, Loss 1538.5525, Time 37.0245
+Epoch 233, Score 5.0000, Loss 1509.6051, Time 36.7004
+Epoch 234, Score 20.0000, Loss 1522.6971, Time 36.7404
+Epoch 235, Score 46.0000, Loss 1521.6863, Time 36.7964
+Epoch 236, Score 2.0000, Loss 1512.1932, Time 37.1559
+Epoch 237, Score 12.0000, Loss 1504.2628, Time 37.5495
+Epoch 238, Score 1.0000, Loss 1488.3376, Time 37.7825
+Epoch 239, Score 11.0000, Loss 1541.8450, Time 37.2741
+Epoch 240, Score 1.0000, Loss 1532.2050, Time 37.0405
+Epoch 241, Score 11.0000, Loss 1527.8782, Time 36.7450
+Epoch 242, Score 16.0000, Loss 1487.3192, Time 37.0294
+Epoch 243, Score 4.0000, Loss 1545.4246, Time 37.4374
+Epoch 244, Score 5.0000, Loss 1493.4580, Time 38.0290
+Epoch 245, Score 4.0000, Loss 1538.7944, Time 38.1709
+Epoch 246, Score 1.0000, Loss 1506.4169, Time 38.2861
+Epoch 247, Score 0.0000, Loss 1515.2432, Time 38.5463
+Epoch 248, Score 0.0000, Loss 1492.7290, Time 38.6403
+Epoch 249, Score 10.0000, Loss 1536.3143, Time 38.4751
+Epoch 250, Score 4.0000, Loss 1487.4041, Time 38.3858
+Epoch 251, Score 2.0000, Loss 1519.7894, Time 38.8586
+Epoch 252, Score 1.0000, Loss 1492.6931, Time 39.1295
+Epoch 253, Score 0.0000, Loss 1534.9291, Time 38.9021
+Epoch 254, Score 5.0000, Loss 1441.0422, Time 39.1630
+Epoch 255, Score 5.0000, Loss 1511.5089, Time 39.4036
+Epoch 256, Score 4.0000, Loss 1487.4789, Time 39.6364
+Epoch 257, Score 1.0000, Loss 1512.7499, Time 39.3827
+Epoch 258, Score 2.0000, Loss 1472.2209, Time 39.6645
+Epoch 259, Score 6.0000, Loss 1488.4884, Time 39.8459
+Epoch 260, Score 7.0000, Loss 1489.2494, Time 40.0173
+Epoch 261, Score 16.0000, Loss 1513.8960, Time 39.3078
+Epoch 262, Score 5.0000, Loss 1467.6318, Time 40.1725
+Epoch 263, Score 1.0000, Loss 1482.4397, Time 40.2673
+Epoch 264, Score 16.0000, Loss 1491.9374, Time 40.2010
+Epoch 265, Score 5.0000, Loss 1513.4441, Time 39.6961
+Epoch 266, Score 3.0000, Loss 1486.6240, Time 39.8556
+Epoch 267, Score 0.0000, Loss 1463.2944, Time 40.4383
+Epoch 268, Score 2.0000, Loss 1471.6757, Time 40.7310
+Epoch 269, Score 3.0000, Loss 1469.0669, Time 40.9905
+Epoch 270, Score 2.0000, Loss 1460.5962, Time 40.9805
+Epoch 271, Score 3.0000, Loss 1492.0530, Time 40.6880
+Epoch 272, Score 4.0000, Loss 1443.7867, Time 41.0474
+Epoch 273, Score 3.0000, Loss 1481.0106, Time 41.2909
+Epoch 274, Score 5.0000, Loss 1443.6868, Time 41.3690
+Epoch 275, Score 2.0000, Loss 1465.8306, Time 41.4725
+Epoch 276, Score 8.0000, Loss 1525.7690, Time 41.0757
+Epoch 277, Score 16.0000, Loss 1521.3794, Time 40.8759
+Epoch 278, Score 12.0000, Loss 1457.4781, Time 40.8149
+Epoch 279, Score 20.0000, Loss 1420.4615, Time 41.5154
+Epoch 280, Score 1.0000, Loss 1517.1663, Time 41.1008
+Epoch 281, Score 3.0000, Loss 1432.3804, Time 41.4215
+Epoch 282, Score 11.0000, Loss 1431.6619, Time 41.8746
+Epoch 283, Score 14.0000, Loss 1427.1775, Time 41.2299
+Epoch 284, Score 5.0000, Loss 1466.5822, Time 42.1503
+Epoch 285, Score 11.0000, Loss 1451.9926, Time 41.6163
+Epoch 286, Score 10.0000, Loss 1475.1356, Time 41.3785
+Epoch 287, Score 8.0000, Loss 1449.9569, Time 41.4615
+Epoch 288, Score 5.0000, Loss 1476.9884, Time 41.5698
+Epoch 289, Score 2.0000, Loss 1432.5953, Time 42.1981
+Epoch 290, Score 3.0000, Loss 1435.5820, Time 42.3642
+Epoch 291, Score 2.0000, Loss 1430.5292, Time 42.2836
+Epoch 292, Score 2.0000, Loss 1460.8353, Time 42.5104
+Epoch 293, Score 2.0000, Loss 1432.8671, Time 42.6014
+Epoch 294, Score 4.0000, Loss 1480.0944, Time 42.6801
+Epoch 295, Score 1.0000, Loss 1459.8359, Time 42.9950
+Epoch 296, Score 3.0000, Loss 1442.0425, Time 43.0214
+Epoch 297, Score 3.0000, Loss 1474.8472, Time 43.1504
+Epoch 298, Score 3.0000, Loss 1471.5453, Time 43.2782
+Epoch 299, Score 0.0000, Loss 1412.5138, Time 43.4304
+Epoch 300, Score 1.0000, Loss 1476.4591, Time 43.6153
+Epoch 301, Score 3.0000, Loss 1440.5958, Time 43.7555
+Epoch 302, Score 5.0000, Loss 1443.4938, Time 43.9094
+Epoch 303, Score 4.0000, Loss 1449.7756, Time 43.9672
+Epoch 304, Score 0.0000, Loss 1452.7394, Time 44.1144
+Epoch 305, Score 6.0000, Loss 1450.3159, Time 44.1639

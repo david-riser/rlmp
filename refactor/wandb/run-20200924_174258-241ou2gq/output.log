@@ -1,0 +1,4 @@
+Using GPU for training.
+Epoch 0, Score 5.0000, Loss 0.0437, Time 4.4469
+Epoch 1, Score 5.0000, Loss 0.0262, Time 4.9321
+Epoch 2, Score 2.0000, Loss 0.0564, Time 5.4094

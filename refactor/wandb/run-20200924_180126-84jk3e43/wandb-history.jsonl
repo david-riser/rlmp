@@ -1,0 +1,3 @@
+{"episodic_reward": 15.0, "_runtime": 3.7109882831573486, "_timestamp": 1600970491.2166026, "_step": 0}
+{"episodic_reward": 40.0, "_runtime": 3.721383571624756, "_timestamp": 1600970491.2269979, "_step": 1}
+{"time": 0.024068355560302734, "loss": NaN, "_runtime": 3.732532024383545, "_timestamp": 1600970491.2381463, "_step": 2}

@@ -1,0 +1,5 @@
+{"episodic_reward": 14.0, "_runtime": 3.700685739517212, "_timestamp": 1600970460.195624, "_step": 0}
+{"episodic_reward": 31.0, "_runtime": 3.7670516967773438, "_timestamp": 1600970460.26199, "_step": 1}
+{"episodic_reward": 31.0, "_runtime": 3.898455858230591, "_timestamp": 1600970460.3933942, "_step": 2}
+{"episodic_reward": 13.0, "_runtime": 3.9558932781219482, "_timestamp": 1600970460.4508317, "_step": 3}
+{"time": 0.31353139877319336, "loss": 0.6996309757232666, "_runtime": 4.011889219284058, "_timestamp": 1600970460.5068276, "_step": 4}

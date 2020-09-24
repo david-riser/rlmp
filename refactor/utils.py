@@ -4,7 +4,7 @@ import torch
 from collections import namedtuple
 
 
-Transition = namedtuple('Transition', 'state action next_state nth_state reward discounted_reward done')
+Transition = namedtuple('Transition', 'state action next_state nth_state reward discounted_reward done n')
 
 
 def rolling(array, operation, window, pad=False):
@@ -27,7 +27,7 @@ def expand_transitions(transitions, torchify=True):
         calculation in batch mode.
     """
     states, actions, rewards, next_states, dones = [], [], [], [], []
-    nth_states, discounted_rewards = [], []
+    nth_states, discounted_rewards, ns = [], [], []
     for trans in transitions:
         states.append(trans.state)
         actions.append(trans.action)
@@ -36,7 +36,8 @@ def expand_transitions(transitions, torchify=True):
         dones.append(trans.done)
         nth_states.append(trans.nth_state)
         discounted_rewards.append(trans.discounted_reward)
-
+        ns.append(trans.n)
+        
     if torchify:
         device = "cuda" if torch.cuda.is_available() else "cpu"
         states = torch.FloatTensor(states).to(device)
@@ -46,5 +47,6 @@ def expand_transitions(transitions, torchify=True):
         dones = torch.FloatTensor(dones).to(device)
         discounted_rewards = torch.FloatTensor(discounted_rewards).to(device)
         nth_states = torch.FloatTensor(nth_states).to(device)
-
-    return states, actions, rewards, next_states, discounted_rewards, nth_states, dones
+        ns = torch.LongTensor(ns).to(device)
+        
+    return states, actions, rewards, next_states, discounted_rewards, nth_states, dones, ns

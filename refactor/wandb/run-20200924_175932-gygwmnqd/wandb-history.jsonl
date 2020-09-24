@@ -1,0 +1,9 @@
+{"episodic_reward": 15.0, "_runtime": 3.7311360836029053, "_timestamp": 1600970377.7627828, "_step": 0}
+{"episodic_reward": 11.0, "_runtime": 3.739370584487915, "_timestamp": 1600970377.7710173, "_step": 1}
+{"episodic_reward": 6.0, "_runtime": 3.745415210723877, "_timestamp": 1600970377.777062, "_step": 2}
+{"episodic_reward": 9.0, "_runtime": 3.7520041465759277, "_timestamp": 1600970377.7836509, "_step": 3}
+{"episodic_reward": 9.0, "_runtime": 3.758718490600586, "_timestamp": 1600970377.7903652, "_step": 4}
+{"episodic_reward": 20.0, "_runtime": 3.873231887817383, "_timestamp": 1600970377.9048786, "_step": 5}
+{"episodic_reward": 18.0, "_runtime": 3.9949307441711426, "_timestamp": 1600970378.0265775, "_step": 6}
+{"episodic_reward": 11.0, "_runtime": 4.071547746658325, "_timestamp": 1600970378.1031945, "_step": 7}
+{"time": 0.35494518280029297, "loss": 131.401123046875, "_runtime": 4.082387208938599, "_timestamp": 1600970378.114034, "_step": 8}

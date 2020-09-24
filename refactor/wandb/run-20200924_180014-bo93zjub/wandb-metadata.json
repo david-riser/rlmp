@@ -1,0 +1,29 @@
+{
+    "root": "/home/ubuntu/rlmp",
+    "program": "/home/ubuntu/anaconda3/envs/pytorch_p36/bin/wandb",
+    "git": {
+        "remote": "https://github.com/david-riser/rlmp",
+        "commit": "df2129303c3190601cf6568b812bbac0d99a843e"
+    },
+    "email": null,
+    "startedAt": "2020-09-24T18:00:15.945417",
+    "host": "ip-172-31-39-187",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/pytorch_p36/bin/python",
+    "os": "Linux-5.4.0-1025-aws-x86_64-with-debian-buster-sid",
+    "python": "3.6.10",
+    "gpu": "Tesla M60",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": "10.0.130",
+    "args": [
+        "agent",
+        "dmriser/rlmp/xs0mhunm"
+    ],
+    "state": "finished",
+    "jobType": null,
+    "mode": "run",
+    "project": "rlmp",
+    "heartbeatAt": "2020-09-24T18:00:19.721749",
+    "exitcode": 0
+}

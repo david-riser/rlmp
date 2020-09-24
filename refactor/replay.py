@@ -56,10 +56,5 @@ class PrioritizedReplayBuffer:
 
 
     def update_priorities(self, prios, indices):
-
-        if isinstance(prios, torch.FloatTensor):
-            print("Casting priorities to numpy")
-            prios = prios.detach().cpu().numpy()
-
         for index, prio in zip(indices, prios):
             self.priorities[index] = prio
