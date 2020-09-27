@@ -1,0 +1,23 @@
+Using GPU for training.
+Traceback (most recent call last):
+  File "train.py", line 119, in <module>
+    trainer.train()
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 73, in train
+    self.prime_buffer(env)
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 55, in prime_buffer
+    action = self.online_network(self.state_transformer(self.state))
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/rlmp/refactor/network.py", line 73, in forward
+    features = self.features(state)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 345, in forward
+    return self.conv2d_forward(input, self.weight)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 342, in conv2d_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Expected 4-dimensional input for 4-dimensional weight 32 4 8 8, but got 2-dimensional input of size [28224, 1] instead

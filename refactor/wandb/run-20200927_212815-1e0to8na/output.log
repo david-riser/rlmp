@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train.py", line 94, in <module>
+    online_network = ConvNetwork(env.observation_space.shape, env.action_space.n, args.hidden_dims)
+  File "/home/ubuntu/rlmp/refactor/network.py", line 57, in __init__
+    nn.Linear(self.feature_size(), self.hidden_dim),
+  File "/home/ubuntu/rlmp/refactor/network.py", line 81, in feature_size
+    return self.features(torch.autograd.Variable(
+NameError: name 'torch' is not defined

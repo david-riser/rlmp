@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "train.py", line 94, in <module>
+    online_network = ConvNetwork(env.observation_space.shape, env.action_space.n, args.hidden_dims)
+  File "/home/ubuntu/rlmp/refactor/network.py", line 44, in __init__
+    super(Network, self).__init__()
+TypeError: super(type, obj): obj must be an instance or subtype of type

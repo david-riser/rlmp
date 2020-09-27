@@ -1,0 +1,11 @@
+Using GPU for training.
+Traceback (most recent call last):
+  File "train.py", line 119, in <module>
+    trainer.train()
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 73, in train
+    self.prime_buffer(env)
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 55, in prime_buffer
+    action = self.online_network(self.state_transformer(self.state))
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 36, in state_transformer
+    state = state.view(1, *self.online_model.obs_shape)
+AttributeError: 'NStepTrainer' object has no attribute 'online_model'

@@ -1,0 +1,35 @@
+5184
+5184
+5184
+5184
+Using GPU for training.
+ST: input <class 'stable_baselines.common.atari_wrappers.LazyFrames'>
+ST: len() > 1 <class 'numpy.ndarray'> (4, 84, 84)
+ST: shape==3 <class 'torch.Tensor'> torch.Size([1, 4, 84, 84])
+torch.Size([1, 4, 84, 84]) (4, 84, 84)
+ST: input <class 'stable_baselines.common.atari_wrappers.LazyFrames'>
+ST: len() > 1 <class 'numpy.ndarray'> (4, 84, 84)
+ST: shape==3 <class 'torch.Tensor'> torch.Size([1, 4, 84, 84])
+torch.Size([1, 64, 9, 9])
+Traceback (most recent call last):
+  File "train.py", line 119, in <module>
+    trainer.train()
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 79, in train
+    self.prime_buffer(env)
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 61, in prime_buffer
+    action = self.online_network(self.state_transformer(self.state))
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/rlmp/refactor/network.py", line 76, in forward
+    value = self.value(features)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/functional.py", line 1372, in linear
+    output = input.matmul(weight.t())
+RuntimeError: size mismatch, m1: [576 x 9], m2: [5184 x 32] at /opt/conda/conda-bld/pytorch_1579022034529/work/aten/src/THC/generic/THCTensorMathBlas.cu:290

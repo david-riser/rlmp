@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "train.py", line 94, in <module>
+    online_network = ConvNetwork(env.observation_space.shape, env.action_space.n, args.hidden_dims)
+  File "/home/ubuntu/rlmp/refactor/network.py", line 57, in __init__
+    nn.Linear(self.feature_size(), self.hidden_dim),
+  File "/home/ubuntu/rlmp/refactor/network.py", line 82, in feature_size
+    torch.zeros(1, *self.obs_shape))).view(1, -1).size(1)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 345, in forward
+    return self.conv2d_forward(input, self.weight)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 342, in conv2d_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Calculated padded input size per channel: (160 x 3). Kernel size: (8 x 8). Kernel size can't be greater than actual input size

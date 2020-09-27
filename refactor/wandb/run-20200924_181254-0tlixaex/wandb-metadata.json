@@ -20,9 +20,10 @@
         "agent",
         "dmriser/rlmp/ehmwcc61"
     ],
-    "state": "running",
+    "state": "finished",
     "jobType": null,
     "mode": "run",
     "project": "rlmp",
-    "heartbeatAt": "2020-09-24T21:01:56.102618"
+    "heartbeatAt": "2020-09-24T21:39:04.554083",
+    "exitcode": 0
 }

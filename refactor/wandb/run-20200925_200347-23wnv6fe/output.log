@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/gym/envs/registration.py", line 121, in spec
+    return self.env_specs[id]
+KeyError: 'LunarLander-ram-v0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 72, in <module>
+    env = env_builder()
+  File "train.py", line 71, in <lambda>
+    env_builder = lambda: gym.make(args.env)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/gym/envs/registration.py", line 145, in make
+    return registry.make(id, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/gym/envs/registration.py", line 89, in make
+    spec = self.spec(path)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/gym/envs/registration.py", line 131, in spec
+    raise error.UnregisteredEnv('No registered env with id: {}'.format(id))
+gym.error.UnregisteredEnv: No registered env with id: LunarLander-ram-v0

@@ -1,0 +1,478 @@
+{"episodic_reward": 12.0, "_runtime": 3.7381389141082764, "_timestamp": 1601064024.4139264, "_step": 0}
+{"episodic_reward": 11.0, "_runtime": 3.7460248470306396, "_timestamp": 1601064024.4218123, "_step": 1}
+{"episodic_reward": 10.0, "_runtime": 3.7773373126983643, "_timestamp": 1601064024.4531248, "_step": 2}
+{"episodic_reward": 17.0, "_runtime": 3.8808822631835938, "_timestamp": 1601064024.5566697, "_step": 3}
+{"episodic_reward": 15.0, "_runtime": 3.972428560256958, "_timestamp": 1601064024.648216, "_step": 4}
+{"episodic_reward": 22.0, "_runtime": 4.104860544204712, "_timestamp": 1601064024.780648, "_step": 5}
+{"time": 0.44845056533813477, "loss": 2.594038248062134, "_runtime": 4.18380880355835, "_timestamp": 1601064024.8595963, "_step": 6}
+{"episodic_reward": 16.0, "_runtime": 4.207184314727783, "_timestamp": 1601064024.8829718, "_step": 7}
+{"episodic_reward": 33.0, "_runtime": 4.403530120849609, "_timestamp": 1601064025.0793176, "_step": 8}
+{"episodic_reward": 13.0, "_runtime": 4.484637975692749, "_timestamp": 1601064025.1604254, "_step": 9}
+{"episodic_reward": 10.0, "_runtime": 4.549978971481323, "_timestamp": 1601064025.2257664, "_step": 10}
+{"episodic_reward": 22.0, "_runtime": 4.683597564697266, "_timestamp": 1601064025.359385, "_step": 11}
+{"episodic_reward": 8.0, "_runtime": 4.735576629638672, "_timestamp": 1601064025.411364, "_step": 12}
+{"time": 0.6162669658660889, "loss": 0.39753109216690063, "_runtime": 4.804861545562744, "_timestamp": 1601064025.480649, "_step": 13}
+{"episodic_reward": 18.0, "_runtime": 4.851866006851196, "_timestamp": 1601064025.5276535, "_step": 14}
+{"episodic_reward": 11.0, "_runtime": 4.923452138900757, "_timestamp": 1601064025.5992396, "_step": 15}
+{"episodic_reward": 13.0, "_runtime": 5.006747007369995, "_timestamp": 1601064025.6825345, "_step": 16}
+{"episodic_reward": 15.0, "_runtime": 5.100876808166504, "_timestamp": 1601064025.7766643, "_step": 17}
+{"episodic_reward": 18.0, "_runtime": 5.212615489959717, "_timestamp": 1601064025.888403, "_step": 18}
+{"episodic_reward": 10.0, "_runtime": 5.2774176597595215, "_timestamp": 1601064025.953205, "_step": 19}
+{"episodic_reward": 9.0, "_runtime": 5.33616042137146, "_timestamp": 1601064026.0119479, "_step": 20}
+{"episodic_reward": 12.0, "_runtime": 5.412676572799683, "_timestamp": 1601064026.088464, "_step": 21}
+{"time": 0.6386473178863525, "loss": 0.3554397523403168, "_runtime": 5.44840407371521, "_timestamp": 1601064026.1241915, "_step": 22}
+{"episodic_reward": 15.0, "_runtime": 5.513567924499512, "_timestamp": 1601064026.1893554, "_step": 23}
+{"episodic_reward": 11.0, "_runtime": 5.584789276123047, "_timestamp": 1601064026.2605767, "_step": 24}
+{"episodic_reward": 39.0, "_runtime": 5.8208417892456055, "_timestamp": 1601064026.4966292, "_step": 25}
+{"episodic_reward": 15.0, "_runtime": 5.915860891342163, "_timestamp": 1601064026.5916483, "_step": 26}
+{"episodic_reward": 12.0, "_runtime": 5.993304252624512, "_timestamp": 1601064026.6690917, "_step": 27}
+{"episodic_reward": 12.0, "_runtime": 6.071590900421143, "_timestamp": 1601064026.7473783, "_step": 28}
+{"time": 0.6295311450958252, "loss": 0.3709951341152191, "_runtime": 6.08282732963562, "_timestamp": 1601064026.7586148, "_step": 29}
+{"episodic_reward": 16.0, "_runtime": 6.177743911743164, "_timestamp": 1601064026.8535314, "_step": 30}
+{"episodic_reward": 22.0, "_runtime": 6.315128326416016, "_timestamp": 1601064026.9909158, "_step": 31}
+{"episodic_reward": 12.0, "_runtime": 6.39231538772583, "_timestamp": 1601064027.0681028, "_step": 32}
+{"episodic_reward": 8.0, "_runtime": 6.445321559906006, "_timestamp": 1601064027.121109, "_step": 33}
+{"episodic_reward": 21.0, "_runtime": 6.5763726234436035, "_timestamp": 1601064027.25216, "_step": 34}
+{"episodic_reward": 14.0, "_runtime": 6.66844367980957, "_timestamp": 1601064027.3442311, "_step": 35}
+{"time": 0.6327242851257324, "loss": 0.3575993776321411, "_runtime": 6.719921588897705, "_timestamp": 1601064027.395709, "_step": 36}
+{"episodic_reward": 18.0, "_runtime": 6.78583288192749, "_timestamp": 1601064027.4616203, "_step": 37}
+{"episodic_reward": 8.0, "_runtime": 6.838840961456299, "_timestamp": 1601064027.5146284, "_step": 38}
+{"episodic_reward": 34.0, "_runtime": 7.048079967498779, "_timestamp": 1601064027.7238674, "_step": 39}
+{"episodic_reward": 10.0, "_runtime": 7.1144022941589355, "_timestamp": 1601064027.7901897, "_step": 40}
+{"episodic_reward": 10.0, "_runtime": 7.180495023727417, "_timestamp": 1601064027.8562825, "_step": 41}
+{"episodic_reward": 10.0, "_runtime": 7.246906757354736, "_timestamp": 1601064027.9226942, "_step": 42}
+{"episodic_reward": 12.0, "_runtime": 7.326105833053589, "_timestamp": 1601064028.0018933, "_step": 43}
+{"time": 0.6428117752075195, "loss": 0.37018439173698425, "_runtime": 7.367156028747559, "_timestamp": 1601064028.0429435, "_step": 44}
+{"episodic_reward": 17.0, "_runtime": 7.440115928649902, "_timestamp": 1601064028.1159034, "_step": 45}
+{"episodic_reward": 10.0, "_runtime": 7.506142854690552, "_timestamp": 1601064028.1819303, "_step": 46}
+{"episodic_reward": 26.0, "_runtime": 7.667822360992432, "_timestamp": 1601064028.3436098, "_step": 47}
+{"episodic_reward": 11.0, "_runtime": 7.739079475402832, "_timestamp": 1601064028.414867, "_step": 48}
+{"episodic_reward": 11.0, "_runtime": 7.810608863830566, "_timestamp": 1601064028.4863963, "_step": 49}
+{"episodic_reward": 12.0, "_runtime": 7.888417720794678, "_timestamp": 1601064028.5642052, "_step": 50}
+{"episodic_reward": 15.0, "_runtime": 7.985215663909912, "_timestamp": 1601064028.661003, "_step": 51}
+{"time": 0.6423287391662598, "loss": 0.35908278822898865, "_runtime": 8.014577150344849, "_timestamp": 1601064028.6903646, "_step": 52}
+{"episodic_reward": 58.0, "_runtime": 8.345478534698486, "_timestamp": 1601064029.021266, "_step": 53}
+{"episodic_reward": 28.0, "_runtime": 8.521297216415405, "_timestamp": 1601064029.1970847, "_step": 54}
+{"time": 0.6150622367858887, "loss": 0.36311283707618713, "_runtime": 8.634516716003418, "_timestamp": 1601064029.3103042, "_step": 55}
+{"episodic_reward": 33.0, "_runtime": 8.732285737991333, "_timestamp": 1601064029.4080732, "_step": 56}
+{"episodic_reward": 12.0, "_runtime": 8.810048580169678, "_timestamp": 1601064029.485836, "_step": 57}
+{"episodic_reward": 11.0, "_runtime": 8.882390022277832, "_timestamp": 1601064029.5581775, "_step": 58}
+{"episodic_reward": 11.0, "_runtime": 8.953376293182373, "_timestamp": 1601064029.6291637, "_step": 59}
+{"episodic_reward": 12.0, "_runtime": 9.03153109550476, "_timestamp": 1601064029.7073185, "_step": 60}
+{"episodic_reward": 11.0, "_runtime": 9.105320692062378, "_timestamp": 1601064029.7811081, "_step": 61}
+{"episodic_reward": 8.0, "_runtime": 9.1588613986969, "_timestamp": 1601064029.8346488, "_step": 62}
+{"time": 0.6447451114654541, "loss": 0.37061256170272827, "_runtime": 9.283967733383179, "_timestamp": 1601064029.9597552, "_step": 63}
+{"episodic_reward": 23.0, "_runtime": 9.307878494262695, "_timestamp": 1601064029.983666, "_step": 64}
+{"episodic_reward": 30.0, "_runtime": 9.496440649032593, "_timestamp": 1601064030.172228, "_step": 65}
+{"episodic_reward": 20.0, "_runtime": 9.628700256347656, "_timestamp": 1601064030.3044877, "_step": 66}
+{"episodic_reward": 12.0, "_runtime": 9.707768440246582, "_timestamp": 1601064030.383556, "_step": 67}
+{"episodic_reward": 9.0, "_runtime": 9.769112348556519, "_timestamp": 1601064030.4448998, "_step": 68}
+{"episodic_reward": 24.0, "_runtime": 9.921146631240845, "_timestamp": 1601064030.596934, "_step": 69}
+{"time": 0.6503326892852783, "loss": 0.37141990661621094, "_runtime": 9.938440561294556, "_timestamp": 1601064030.614228, "_step": 70}
+{"episodic_reward": 55.0, "_runtime": 10.271126508712769, "_timestamp": 1601064030.946914, "_step": 71}
+{"episodic_reward": 25.0, "_runtime": 10.434014081954956, "_timestamp": 1601064031.1098015, "_step": 72}
+{"time": 0.6277098655700684, "loss": 0.2897355258464813, "_runtime": 10.574300765991211, "_timestamp": 1601064031.2500882, "_step": 73}
+{"episodic_reward": 30.0, "_runtime": 10.629686832427979, "_timestamp": 1601064031.3054743, "_step": 74}
+{"episodic_reward": 9.0, "_runtime": 10.691319704055786, "_timestamp": 1601064031.3671072, "_step": 75}
+{"episodic_reward": 26.0, "_runtime": 10.855505228042603, "_timestamp": 1601064031.5312927, "_step": 76}
+{"episodic_reward": 24.0, "_runtime": 11.007164239883423, "_timestamp": 1601064031.6829517, "_step": 77}
+{"episodic_reward": 15.0, "_runtime": 11.106021881103516, "_timestamp": 1601064031.7818093, "_step": 78}
+{"time": 0.6416511535644531, "loss": 0.24880921840667725, "_runtime": 11.221746444702148, "_timestamp": 1601064031.897534, "_step": 79}
+{"episodic_reward": 19.0, "_runtime": 11.234672784805298, "_timestamp": 1601064031.9104602, "_step": 80}
+{"episodic_reward": 35.0, "_runtime": 11.455207586288452, "_timestamp": 1601064032.130995, "_step": 81}
+{"episodic_reward": 9.0, "_runtime": 11.516764640808105, "_timestamp": 1601064032.192552, "_step": 82}
+{"episodic_reward": 8.0, "_runtime": 11.5760817527771, "_timestamp": 1601064032.2518692, "_step": 83}
+{"episodic_reward": 9.0, "_runtime": 11.638398170471191, "_timestamp": 1601064032.3141856, "_step": 84}
+{"episodic_reward": 11.0, "_runtime": 11.714937925338745, "_timestamp": 1601064032.3907254, "_step": 85}
+{"time": 0.6605043411254883, "loss": 0.22684738039970398, "_runtime": 11.887840032577515, "_timestamp": 1601064032.5636275, "_step": 86}
+{"episodic_reward": 31.0, "_runtime": 11.924213171005249, "_timestamp": 1601064032.6000006, "_step": 87}
+{"episodic_reward": 37.0, "_runtime": 12.164272546768188, "_timestamp": 1601064032.84006, "_step": 88}
+{"episodic_reward": 14.0, "_runtime": 12.259551525115967, "_timestamp": 1601064032.935339, "_step": 89}
+{"episodic_reward": 14.0, "_runtime": 12.35538101196289, "_timestamp": 1601064033.0311685, "_step": 90}
+{"episodic_reward": 30.0, "_runtime": 12.550071001052856, "_timestamp": 1601064033.2258584, "_step": 91}
+{"time": 0.6627540588378906, "loss": 0.21263918280601501, "_runtime": 12.561570644378662, "_timestamp": 1601064033.237358, "_step": 92}
+{"episodic_reward": 10.0, "_runtime": 12.622991800308228, "_timestamp": 1601064033.2987792, "_step": 93}
+{"episodic_reward": 16.0, "_runtime": 12.726566791534424, "_timestamp": 1601064033.4023542, "_step": 94}
+{"episodic_reward": 10.0, "_runtime": 12.795177936553955, "_timestamp": 1601064033.4709654, "_step": 95}
+{"episodic_reward": 14.0, "_runtime": 12.889992713928223, "_timestamp": 1601064033.5657802, "_step": 96}
+{"episodic_reward": 16.0, "_runtime": 12.999791145324707, "_timestamp": 1601064033.6755786, "_step": 97}
+{"episodic_reward": 25.0, "_runtime": 13.161760568618774, "_timestamp": 1601064033.837548, "_step": 98}
+{"time": 0.6666321754455566, "loss": 0.20829448103904724, "_runtime": 13.233039617538452, "_timestamp": 1601064033.908827, "_step": 99}
+{"episodic_reward": 13.0, "_runtime": 13.261983871459961, "_timestamp": 1601064033.9377713, "_step": 100}
+{"episodic_reward": 21.0, "_runtime": 13.400974750518799, "_timestamp": 1601064034.0767622, "_step": 101}
+{"episodic_reward": 9.0, "_runtime": 13.465792655944824, "_timestamp": 1601064034.14158, "_step": 102}
+{"episodic_reward": 16.0, "_runtime": 13.575121402740479, "_timestamp": 1601064034.2509089, "_step": 103}
+{"episodic_reward": 17.0, "_runtime": 13.686086177825928, "_timestamp": 1601064034.3618736, "_step": 104}
+{"episodic_reward": 15.0, "_runtime": 13.79052734375, "_timestamp": 1601064034.4663148, "_step": 105}
+{"episodic_reward": 12.0, "_runtime": 13.87337064743042, "_timestamp": 1601064034.549158, "_step": 106}
+{"time": 0.6798667907714844, "loss": 0.20531171560287476, "_runtime": 13.921819925308228, "_timestamp": 1601064034.5976074, "_step": 107}
+{"episodic_reward": 10.0, "_runtime": 13.959214210510254, "_timestamp": 1601064034.6350017, "_step": 108}
+{"episodic_reward": 31.0, "_runtime": 14.160278081893921, "_timestamp": 1601064034.8360655, "_step": 109}
+{"episodic_reward": 16.0, "_runtime": 14.26877212524414, "_timestamp": 1601064034.9445596, "_step": 110}
+{"episodic_reward": 12.0, "_runtime": 14.352068424224854, "_timestamp": 1601064035.0278559, "_step": 111}
+{"episodic_reward": 29.0, "_runtime": 14.548264741897583, "_timestamp": 1601064035.2240522, "_step": 112}
+{"time": 0.6711380481719971, "loss": 0.2067449390888214, "_runtime": 14.610737562179565, "_timestamp": 1601064035.286525, "_step": 113}
+{"episodic_reward": 29.0, "_runtime": 14.740975618362427, "_timestamp": 1601064035.416763, "_step": 114}
+{"episodic_reward": 74.0, "_runtime": 15.214201927185059, "_timestamp": 1601064035.8899894, "_step": 115}
+{"time": 0.6422886848449707, "loss": 0.20154441893100739, "_runtime": 15.258469104766846, "_timestamp": 1601064035.9342566, "_step": 116}
+{"episodic_reward": 35.0, "_runtime": 15.449127674102783, "_timestamp": 1601064036.1249151, "_step": 117}
+{"episodic_reward": 11.0, "_runtime": 15.525947093963623, "_timestamp": 1601064036.2017345, "_step": 118}
+{"episodic_reward": 10.0, "_runtime": 15.595450162887573, "_timestamp": 1601064036.2712376, "_step": 119}
+{"episodic_reward": 32.0, "_runtime": 15.8009614944458, "_timestamp": 1601064036.476749, "_step": 120}
+{"time": 0.6528639793395996, "loss": 0.2025817483663559, "_runtime": 15.91833233833313, "_timestamp": 1601064036.5941198, "_step": 121}
+{"episodic_reward": 31.0, "_runtime": 16.0061674118042, "_timestamp": 1601064036.6819549, "_step": 122}
+{"episodic_reward": 26.0, "_runtime": 16.174049139022827, "_timestamp": 1601064036.8498366, "_step": 123}
+{"episodic_reward": 7.0, "_runtime": 16.223687410354614, "_timestamp": 1601064036.8994749, "_step": 124}
+{"episodic_reward": 22.0, "_runtime": 16.36744451522827, "_timestamp": 1601064037.043232, "_step": 125}
+{"episodic_reward": 15.0, "_runtime": 16.46841597557068, "_timestamp": 1601064037.1442034, "_step": 126}
+{"time": 0.6593313217163086, "loss": 0.19487233459949493, "_runtime": 16.581667184829712, "_timestamp": 1601064037.2574546, "_step": 127}
+{"episodic_reward": 23.0, "_runtime": 16.625839948654175, "_timestamp": 1601064037.3016274, "_step": 128}
+{"episodic_reward": 40.0, "_runtime": 16.891619443893433, "_timestamp": 1601064037.567407, "_step": 129}
+{"episodic_reward": 12.0, "_runtime": 16.973596811294556, "_timestamp": 1601064037.6493843, "_step": 130}
+{"episodic_reward": 9.0, "_runtime": 17.035943269729614, "_timestamp": 1601064037.7117307, "_step": 131}
+{"episodic_reward": 12.0, "_runtime": 17.117263317108154, "_timestamp": 1601064037.7930508, "_step": 132}
+{"episodic_reward": 14.0, "_runtime": 17.21163845062256, "_timestamp": 1601064037.887426, "_step": 133}
+{"time": 0.6739225387573242, "loss": 0.6219921708106995, "_runtime": 17.260436534881592, "_timestamp": 1601064037.936224, "_step": 134}
+{"episodic_reward": 26.0, "_runtime": 17.386067628860474, "_timestamp": 1601064038.061855, "_step": 135}
+{"episodic_reward": 17.0, "_runtime": 17.500669717788696, "_timestamp": 1601064038.1764572, "_step": 136}
+{"episodic_reward": 10.0, "_runtime": 17.570759057998657, "_timestamp": 1601064038.2465465, "_step": 137}
+{"episodic_reward": 10.0, "_runtime": 17.64142680168152, "_timestamp": 1601064038.3172143, "_step": 138}
+{"time": 0.6635324954986572, "loss": 0.6085551977157593, "_runtime": 17.928632974624634, "_timestamp": 1601064038.6044204, "_step": 139}
+{"episodic_reward": 56.0, "_runtime": 18.011619567871094, "_timestamp": 1601064038.687407, "_step": 140}
+{"episodic_reward": 22.0, "_runtime": 18.160163402557373, "_timestamp": 1601064038.8359509, "_step": 141}
+{"episodic_reward": 10.0, "_runtime": 18.230297327041626, "_timestamp": 1601064038.9060848, "_step": 142}
+{"episodic_reward": 8.0, "_runtime": 18.286916494369507, "_timestamp": 1601064038.962704, "_step": 143}
+{"episodic_reward": 34.0, "_runtime": 18.509514331817627, "_timestamp": 1601064039.1853018, "_step": 144}
+{"episodic_reward": 14.0, "_runtime": 18.603658199310303, "_timestamp": 1601064039.2794456, "_step": 145}
+{"time": 0.6746108531951904, "loss": 0.6370325684547424, "_runtime": 18.607683897018433, "_timestamp": 1601064039.2834713, "_step": 146}
+{"episodic_reward": 44.0, "_runtime": 18.894149780273438, "_timestamp": 1601064039.5699372, "_step": 147}
+{"episodic_reward": 16.0, "_runtime": 19.00146460533142, "_timestamp": 1601064039.677252, "_step": 148}
+{"episodic_reward": 11.0, "_runtime": 19.07706642150879, "_timestamp": 1601064039.7528539, "_step": 149}
+{"episodic_reward": 16.0, "_runtime": 19.184656620025635, "_timestamp": 1601064039.860444, "_step": 150}
+{"time": 0.6601777076721191, "loss": 0.6514040231704712, "_runtime": 19.27191138267517, "_timestamp": 1601064039.9476988, "_step": 151}
+{"episodic_reward": 20.0, "_runtime": 19.322622299194336, "_timestamp": 1601064039.9984097, "_step": 152}
+{"episodic_reward": 42.0, "_runtime": 19.603010177612305, "_timestamp": 1601064040.2787976, "_step": 153}
+{"episodic_reward": 16.0, "_runtime": 19.714300632476807, "_timestamp": 1601064040.390088, "_step": 154}
+{"episodic_reward": 14.0, "_runtime": 19.81055450439453, "_timestamp": 1601064040.486342, "_step": 155}
+{"time": 0.6756961345672607, "loss": 0.6713184118270874, "_runtime": 19.95157027244568, "_timestamp": 1601064040.6273577, "_step": 156}
+{"episodic_reward": 24.0, "_runtime": 19.976471185684204, "_timestamp": 1601064040.6522586, "_step": 157}
+{"time": 0.6567230224609375, "loss": 0.6706492900848389, "_runtime": 20.61291217803955, "_timestamp": 1601064041.2886996, "_step": 158}
+{"episodic_reward": 111.0, "_runtime": 20.711952924728394, "_timestamp": 1601064041.3877404, "_step": 159}
+{"episodic_reward": 22.0, "_runtime": 20.862219095230103, "_timestamp": 1601064041.5380065, "_step": 160}
+{"episodic_reward": 8.0, "_runtime": 20.921509504318237, "_timestamp": 1601064041.597297, "_step": 161}
+{"episodic_reward": 39.0, "_runtime": 21.18323540687561, "_timestamp": 1601064041.8590229, "_step": 162}
+{"time": 0.681725025177002, "loss": 0.6849169135093689, "_runtime": 21.29972791671753, "_timestamp": 1601064041.9755154, "_step": 163}
+{"episodic_reward": 33.0, "_runtime": 21.411036491394043, "_timestamp": 1601064042.086824, "_step": 164}
+{"episodic_reward": 18.0, "_runtime": 21.536213636398315, "_timestamp": 1601064042.212001, "_step": 165}
+{"episodic_reward": 36.0, "_runtime": 21.783409118652344, "_timestamp": 1601064042.4591966, "_step": 166}
+{"episodic_reward": 18.0, "_runtime": 21.906596422195435, "_timestamp": 1601064042.5823839, "_step": 167}
+{"time": 0.6830050945281982, "loss": 0.6913473010063171, "_runtime": 21.988951444625854, "_timestamp": 1601064042.664739, "_step": 168}
+{"episodic_reward": 54.0, "_runtime": 22.271703958511353, "_timestamp": 1601064042.9474914, "_step": 169}
+{"episodic_reward": 38.0, "_runtime": 22.529773235321045, "_timestamp": 1601064043.2055607, "_step": 170}
+{"time": 0.6732358932495117, "loss": 0.6915926337242126, "_runtime": 22.66631531715393, "_timestamp": 1601064043.3421028, "_step": 171}
+{"episodic_reward": 37.0, "_runtime": 22.78339195251465, "_timestamp": 1601064043.4591794, "_step": 172}
+{"episodic_reward": 15.0, "_runtime": 22.889087677001953, "_timestamp": 1601064043.5648751, "_step": 173}
+{"episodic_reward": 18.0, "_runtime": 23.01394009590149, "_timestamp": 1601064043.6897275, "_step": 174}
+{"episodic_reward": 11.0, "_runtime": 23.09329104423523, "_timestamp": 1601064043.7690785, "_step": 175}
+{"episodic_reward": 29.0, "_runtime": 23.290393114089966, "_timestamp": 1601064043.9661806, "_step": 176}
+{"time": 0.6902205944061279, "loss": 0.693917989730835, "_runtime": 23.36037516593933, "_timestamp": 1601064044.0361626, "_step": 177}
+{"episodic_reward": 12.0, "_runtime": 23.378936290740967, "_timestamp": 1601064044.0547237, "_step": 178}
+{"episodic_reward": 41.0, "_runtime": 23.656888723373413, "_timestamp": 1601064044.3326762, "_step": 179}
+{"episodic_reward": 27.0, "_runtime": 23.83889389038086, "_timestamp": 1601064044.5146813, "_step": 180}
+{"episodic_reward": 24.0, "_runtime": 24.00440812110901, "_timestamp": 1601064044.6801956, "_step": 181}
+{"time": 0.6858577728271484, "loss": 1.0120716094970703, "_runtime": 24.050169229507446, "_timestamp": 1601064044.7259567, "_step": 182}
+{"episodic_reward": 18.0, "_runtime": 24.136517763137817, "_timestamp": 1601064044.8123052, "_step": 183}
+{"episodic_reward": 72.0, "_runtime": 24.623499155044556, "_timestamp": 1601064045.2992866, "_step": 184}
+{"episodic_reward": 7.0, "_runtime": 24.675939559936523, "_timestamp": 1601064045.351727, "_step": 185}
+{"time": 0.6838576793670654, "loss": 1.0259100198745728, "_runtime": 24.740320444107056, "_timestamp": 1601064045.416108, "_step": 186}
+{"episodic_reward": 18.0, "_runtime": 24.807974100112915, "_timestamp": 1601064045.4837615, "_step": 187}
+{"episodic_reward": 78.0, "_runtime": 25.333040952682495, "_timestamp": 1601064046.0088284, "_step": 188}
+{"time": 0.6780657768249512, "loss": 1.0242855548858643, "_runtime": 25.42497968673706, "_timestamp": 1601064046.1007671, "_step": 189}
+{"time": 0.6766493320465088, "loss": 1.0448157787322998, "_runtime": 26.107559204101562, "_timestamp": 1601064046.7833467, "_step": 190}
+{"episodic_reward": 163.0, "_runtime": 26.451924562454224, "_timestamp": 1601064047.127712, "_step": 191}
+{"episodic_reward": 9.0, "_runtime": 26.520016193389893, "_timestamp": 1601064047.1958036, "_step": 192}
+{"time": 0.6855528354644775, "loss": 1.0358625650405884, "_runtime": 26.798048734664917, "_timestamp": 1601064047.4738362, "_step": 193}
+{"episodic_reward": 60.0, "_runtime": 26.932355880737305, "_timestamp": 1601064047.6081433, "_step": 194}
+{"episodic_reward": 11.0, "_runtime": 27.012770891189575, "_timestamp": 1601064047.6885583, "_step": 195}
+{"time": 0.6890201568603516, "loss": 1.0659853219985962, "_runtime": 27.491917371749878, "_timestamp": 1601064048.1677048, "_step": 196}
+{"episodic_reward": 117.0, "_runtime": 27.827342748641968, "_timestamp": 1601064048.5031302, "_step": 197}
+{"episodic_reward": 15.0, "_runtime": 27.934118032455444, "_timestamp": 1601064048.6099055, "_step": 198}
+{"episodic_reward": 11.0, "_runtime": 28.015625715255737, "_timestamp": 1601064048.6914132, "_step": 199}
+{"time": 0.694913387298584, "loss": 1.036604642868042, "_runtime": 28.20185112953186, "_timestamp": 1601064048.8776386, "_step": 200}
+{"episodic_reward": 53.0, "_runtime": 28.384752988815308, "_timestamp": 1601064049.0605404, "_step": 201}
+{"episodic_reward": 65.0, "_runtime": 28.832184314727783, "_timestamp": 1601064049.5079718, "_step": 202}
+{"time": 0.6923854351043701, "loss": 1.0472453832626343, "_runtime": 28.89926505088806, "_timestamp": 1601064049.5750525, "_step": 203}
+{"time": 0.6782896518707275, "loss": 1.041405439376831, "_runtime": 29.58269953727722, "_timestamp": 1601064050.258487, "_step": 204}
+{"episodic_reward": 118.0, "_runtime": 29.648223638534546, "_timestamp": 1601064050.324011, "_step": 205}
+{"episodic_reward": 32.0, "_runtime": 29.873889923095703, "_timestamp": 1601064050.5496774, "_step": 206}
+{"time": 0.697704553604126, "loss": 1.0392147302627563, "_runtime": 30.28446078300476, "_timestamp": 1601064050.9602482, "_step": 207}
+{"episodic_reward": 81.0, "_runtime": 30.444616317749023, "_timestamp": 1601064051.1204038, "_step": 208}
+{"episodic_reward": 48.0, "_runtime": 30.78244161605835, "_timestamp": 1601064051.458229, "_step": 209}
+{"time": 0.7056765556335449, "loss": 1.16788911819458, "_runtime": 30.99491310119629, "_timestamp": 1601064051.6707006, "_step": 210}
+{"episodic_reward": 47.0, "_runtime": 31.115790367126465, "_timestamp": 1601064051.7915778, "_step": 211}
+{"episodic_reward": 16.0, "_runtime": 31.2329363822937, "_timestamp": 1601064051.9087238, "_step": 212}
+{"episodic_reward": 28.0, "_runtime": 31.431608200073242, "_timestamp": 1601064052.1073956, "_step": 213}
+{"time": 0.7052030563354492, "loss": 1.1658939123153687, "_runtime": 31.70453929901123, "_timestamp": 1601064052.3803267, "_step": 214}
+{"episodic_reward": 58.0, "_runtime": 31.84442973136902, "_timestamp": 1601064052.5202172, "_step": 215}
+{"time": 0.7057242393493652, "loss": 1.1377702951431274, "_runtime": 32.414981842041016, "_timestamp": 1601064053.0907693, "_step": 216}
+{"time": 0.7018787860870361, "loss": 1.1499125957489014, "_runtime": 33.12266254425049, "_timestamp": 1601064053.79845, "_step": 217}
+{"episodic_reward": 198.0, "_runtime": 33.249247550964355, "_timestamp": 1601064053.925035, "_step": 218}
+{"episodic_reward": 27.0, "_runtime": 33.443615198135376, "_timestamp": 1601064054.1194026, "_step": 219}
+{"episodic_reward": 15.0, "_runtime": 33.55339527130127, "_timestamp": 1601064054.2291827, "_step": 220}
+{"episodic_reward": 11.0, "_runtime": 33.637218713760376, "_timestamp": 1601064054.3130062, "_step": 221}
+{"episodic_reward": 29.0, "_runtime": 33.84835481643677, "_timestamp": 1601064054.5241423, "_step": 222}
+{"time": 0.7337355613708496, "loss": 1.1692034006118774, "_runtime": 33.861907958984375, "_timestamp": 1601064054.5376954, "_step": 223}
+{"episodic_reward": 51.0, "_runtime": 34.2186381816864, "_timestamp": 1601064054.8944256, "_step": 224}
+{"time": 0.706474781036377, "loss": 1.1625844240188599, "_runtime": 34.57450604438782, "_timestamp": 1601064055.2502935, "_step": 225}
+{"episodic_reward": 74.0, "_runtime": 34.74739480018616, "_timestamp": 1601064055.4231822, "_step": 226}
+{"episodic_reward": 16.0, "_runtime": 34.86429214477539, "_timestamp": 1601064055.5400796, "_step": 227}
+{"episodic_reward": 11.0, "_runtime": 34.94888424873352, "_timestamp": 1601064055.6246717, "_step": 228}
+{"episodic_reward": 44.0, "_runtime": 35.2660608291626, "_timestamp": 1601064055.9418483, "_step": 229}
+{"time": 0.7260880470275879, "loss": 1.1788641214370728, "_runtime": 35.30464053153992, "_timestamp": 1601064055.980428, "_step": 230}
+{"time": 0.7108993530273438, "loss": 1.1536571979522705, "_runtime": 36.01996850967407, "_timestamp": 1601064056.695756, "_step": 231}
+{"episodic_reward": 114.0, "_runtime": 36.08975028991699, "_timestamp": 1601064056.7655377, "_step": 232}
+{"episodic_reward": 86.0, "_runtime": 36.70754265785217, "_timestamp": 1601064057.38333, "_step": 233}
+{"time": 0.7226121425628662, "loss": 1.1517695188522339, "_runtime": 36.747276067733765, "_timestamp": 1601064057.4230635, "_step": 234}
+{"episodic_reward": 58.0, "_runtime": 37.13508987426758, "_timestamp": 1601064057.8108773, "_step": 235}
+{"episodic_reward": 12.0, "_runtime": 37.22679924964905, "_timestamp": 1601064057.9025867, "_step": 236}
+{"time": 0.7293181419372559, "loss": 1.1869781017303467, "_runtime": 37.481433153152466, "_timestamp": 1601064058.1572206, "_step": 237}
+{"episodic_reward": 47.0, "_runtime": 37.573401927948, "_timestamp": 1601064058.2491894, "_step": 238}
+{"episodic_reward": 41.0, "_runtime": 37.87719678878784, "_timestamp": 1601064058.5529842, "_step": 239}
+{"time": 0.7317097187042236, "loss": 1.1015276908874512, "_runtime": 38.21812915802002, "_timestamp": 1601064058.8939166, "_step": 240}
+{"time": 0.7193751335144043, "loss": 1.0850493907928467, "_runtime": 38.942706823349, "_timestamp": 1601064059.6184943, "_step": 241}
+{"episodic_reward": 152.0, "_runtime": 38.985687255859375, "_timestamp": 1601064059.6614747, "_step": 242}
+{"episodic_reward": 65.0, "_runtime": 39.45979380607605, "_timestamp": 1601064060.1355813, "_step": 243}
+{"episodic_reward": 23.0, "_runtime": 39.6314492225647, "_timestamp": 1601064060.3072367, "_step": 244}
+{"time": 0.7390620708465576, "loss": 1.1073088645935059, "_runtime": 39.68759489059448, "_timestamp": 1601064060.3633823, "_step": 245}
+{"episodic_reward": 23.0, "_runtime": 39.81182551383972, "_timestamp": 1601064060.487613, "_step": 246}
+{"episodic_reward": 7.0, "_runtime": 39.868399143218994, "_timestamp": 1601064060.5441866, "_step": 247}
+{"episodic_reward": 24.0, "_runtime": 40.04710865020752, "_timestamp": 1601064060.722896, "_step": 248}
+{"episodic_reward": 43.0, "_runtime": 40.36386442184448, "_timestamp": 1601064061.0396519, "_step": 249}
+{"time": 0.7489035129547119, "loss": 1.1176892518997192, "_runtime": 40.44122791290283, "_timestamp": 1601064061.1170154, "_step": 250}
+{"episodic_reward": 11.0, "_runtime": 40.45641899108887, "_timestamp": 1601064061.1322064, "_step": 251}
+{"episodic_reward": 13.0, "_runtime": 40.55612134933472, "_timestamp": 1601064061.2319088, "_step": 252}
+{"time": 0.7379975318908691, "loss": 1.0962743759155273, "_runtime": 41.18526577949524, "_timestamp": 1601064061.8610532, "_step": 253}
+{"episodic_reward": 118.0, "_runtime": 41.42552089691162, "_timestamp": 1601064062.1013083, "_step": 254}
+{"time": 0.7406082153320312, "loss": 1.1209626197814941, "_runtime": 41.93064498901367, "_timestamp": 1601064062.6064324, "_step": 255}
+{"time": 0.7322103977203369, "loss": 1.1202971935272217, "_runtime": 42.66740965843201, "_timestamp": 1601064063.343197, "_step": 256}
+{"episodic_reward": 198.0, "_runtime": 42.89751982688904, "_timestamp": 1601064063.5733073, "_step": 257}
+{"time": 0.7455968856811523, "loss": 1.1371139287948608, "_runtime": 43.42045283317566, "_timestamp": 1601064064.0962403, "_step": 258}
+{"episodic_reward": 81.0, "_runtime": 43.50858020782471, "_timestamp": 1601064064.1843677, "_step": 259}
+{"time": 0.7507495880126953, "loss": 1.124963641166687, "_runtime": 44.17661213874817, "_timestamp": 1601064064.8523996, "_step": 260}
+{"episodic_reward": 109.0, "_runtime": 44.3405065536499, "_timestamp": 1601064065.016294, "_step": 261}
+{"episodic_reward": 74.0, "_runtime": 44.89458179473877, "_timestamp": 1601064065.5703692, "_step": 262}
+{"time": 0.7520649433135986, "loss": 1.0926456451416016, "_runtime": 44.94517374038696, "_timestamp": 1601064065.6209612, "_step": 263}
+{"episodic_reward": 26.0, "_runtime": 45.10222005844116, "_timestamp": 1601064065.7780075, "_step": 264}
+{"episodic_reward": 23.0, "_runtime": 45.279683113098145, "_timestamp": 1601064065.9554706, "_step": 265}
+{"episodic_reward": 44.0, "_runtime": 45.61405634880066, "_timestamp": 1601064066.2898438, "_step": 266}
+{"time": 0.7644791603088379, "loss": 1.1625378131866455, "_runtime": 45.7168664932251, "_timestamp": 1601064066.392654, "_step": 267}
+{"episodic_reward": 24.0, "_runtime": 45.805798292160034, "_timestamp": 1601064066.4815857, "_step": 268}
+{"episodic_reward": 24.0, "_runtime": 45.99035143852234, "_timestamp": 1601064066.666139, "_step": 269}
+{"time": 0.7596313953399658, "loss": 1.1711512804031372, "_runtime": 46.48254060745239, "_timestamp": 1601064067.158328, "_step": 270}
+{"episodic_reward": 150.0, "_runtime": 47.12836265563965, "_timestamp": 1601064067.80415, "_step": 271}
+{"time": 0.7562267780303955, "loss": 1.153225302696228, "_runtime": 47.245129108428955, "_timestamp": 1601064067.9209166, "_step": 272}
+{"episodic_reward": 50.0, "_runtime": 47.5138840675354, "_timestamp": 1601064068.1896715, "_step": 273}
+{"episodic_reward": 48.0, "_runtime": 47.8816876411438, "_timestamp": 1601064068.557475, "_step": 274}
+{"time": 0.7645175457000732, "loss": 1.1420725584030151, "_runtime": 48.01458740234375, "_timestamp": 1601064068.6903749, "_step": 275}
+{"episodic_reward": 71.0, "_runtime": 48.428317070007324, "_timestamp": 1601064069.1041045, "_step": 276}
+{"time": 0.757662296295166, "loss": 1.1513137817382812, "_runtime": 48.77723979949951, "_timestamp": 1601064069.4530272, "_step": 277}
+{"time": 0.7512505054473877, "loss": 1.153743863105774, "_runtime": 49.532859325408936, "_timestamp": 1601064070.2086468, "_step": 278}
+{"episodic_reward": 198.0, "_runtime": 49.93346834182739, "_timestamp": 1601064070.6092558, "_step": 279}
+{"time": 0.7615020275115967, "loss": 1.1331124305725098, "_runtime": 50.29848599433899, "_timestamp": 1601064070.9742734, "_step": 280}
+{"time": 0.7557187080383301, "loss": 1.1432522535324097, "_runtime": 51.05820846557617, "_timestamp": 1601064071.733996, "_step": 281}
+{"episodic_reward": 198.0, "_runtime": 51.445030212402344, "_timestamp": 1601064072.1208177, "_step": 282}
+{"time": 0.7656307220458984, "loss": 1.1530193090438843, "_runtime": 51.82788300514221, "_timestamp": 1601064072.5036705, "_step": 283}
+{"episodic_reward": 65.0, "_runtime": 51.947561264038086, "_timestamp": 1601064072.6233487, "_step": 284}
+{"time": 0.7679295539855957, "loss": 1.1628493070602417, "_runtime": 52.59995794296265, "_timestamp": 1601064073.2757454, "_step": 285}
+{"time": 0.7662057876586914, "loss": 1.1811658143997192, "_runtime": 53.3707640171051, "_timestamp": 1601064074.0465515, "_step": 286}
+{"episodic_reward": 198.0, "_runtime": 53.478174686431885, "_timestamp": 1601064074.1539621, "_step": 287}
+{"episodic_reward": 29.0, "_runtime": 53.70815706253052, "_timestamp": 1601064074.3839445, "_step": 288}
+{"time": 0.78568434715271, "loss": 1.172783374786377, "_runtime": 54.160728216171265, "_timestamp": 1601064074.8365157, "_step": 289}
+{"time": 0.7691729068756104, "loss": 1.1919639110565186, "_runtime": 54.93589997291565, "_timestamp": 1601064075.6116874, "_step": 290}
+{"episodic_reward": 198.0, "_runtime": 55.255088567733765, "_timestamp": 1601064075.930876, "_step": 291}
+{"episodic_reward": 45.0, "_runtime": 55.61421036720276, "_timestamp": 1601064076.2899978, "_step": 292}
+{"time": 0.7960383892059326, "loss": 1.1683655977249146, "_runtime": 55.737265825271606, "_timestamp": 1601064076.4130533, "_step": 293}
+{"time": 0.7801353931427002, "loss": 1.1638165712356567, "_runtime": 56.52449989318848, "_timestamp": 1601064077.2002873, "_step": 294}
+{"episodic_reward": 173.0, "_runtime": 56.98297071456909, "_timestamp": 1601064077.6587582, "_step": 295}
+{"episodic_reward": 27.0, "_runtime": 57.19782590866089, "_timestamp": 1601064077.8736134, "_step": 296}
+{"time": 0.7974164485931396, "loss": 1.188299298286438, "_runtime": 57.32653474807739, "_timestamp": 1601064078.0023222, "_step": 297}
+{"episodic_reward": 65.0, "_runtime": 57.724738121032715, "_timestamp": 1601064078.4005256, "_step": 298}
+{"episodic_reward": 20.0, "_runtime": 57.89387536048889, "_timestamp": 1601064078.5696628, "_step": 299}
+{"time": 0.8022162914276123, "loss": 1.1653660535812378, "_runtime": 58.13405776023865, "_timestamp": 1601064078.8098452, "_step": 300}
+{"episodic_reward": 68.0, "_runtime": 58.439878702163696, "_timestamp": 1601064079.1156662, "_step": 301}
+{"time": 0.7995328903198242, "loss": 1.1570206880569458, "_runtime": 58.93919372558594, "_timestamp": 1601064079.6149812, "_step": 302}
+{"time": 0.7858948707580566, "loss": 1.1864149570465088, "_runtime": 59.7331600189209, "_timestamp": 1601064080.4089475, "_step": 303}
+{"episodic_reward": 176.0, "_runtime": 59.84981060028076, "_timestamp": 1601064080.525598, "_step": 304}
+{"time": 0.8059265613555908, "loss": 1.1874728202819824, "_runtime": 60.54432821273804, "_timestamp": 1601064081.2201157, "_step": 305}
+{"episodic_reward": 141.0, "_runtime": 60.988595962524414, "_timestamp": 1601064081.6643834, "_step": 306}
+{"episodic_reward": 45.0, "_runtime": 61.351404428482056, "_timestamp": 1601064082.0271919, "_step": 307}
+{"time": 0.806682825088501, "loss": 1.1818368434906006, "_runtime": 61.35560727119446, "_timestamp": 1601064082.0313947, "_step": 308}
+{"episodic_reward": 31.0, "_runtime": 61.60909700393677, "_timestamp": 1601064082.2848845, "_step": 309}
+{"time": 0.8115184307098389, "loss": 1.1874110698699951, "_runtime": 62.17146015167236, "_timestamp": 1601064082.8472476, "_step": 310}
+{"episodic_reward": 162.0, "_runtime": 62.91728949546814, "_timestamp": 1601064083.593077, "_step": 311}
+{"time": 0.8012733459472656, "loss": 1.1750560998916626, "_runtime": 62.97796821594238, "_timestamp": 1601064083.6537557, "_step": 312}
+{"time": 0.8009257316589355, "loss": 1.1693987846374512, "_runtime": 63.813997983932495, "_timestamp": 1601064084.4897854, "_step": 313}
+{"episodic_reward": 141.0, "_runtime": 64.09314012527466, "_timestamp": 1601064084.7689276, "_step": 314}
+{"episodic_reward": 53.0, "_runtime": 64.52566909790039, "_timestamp": 1601064085.2014565, "_step": 315}
+{"time": 0.8170566558837891, "loss": 1.181039571762085, "_runtime": 64.63554120063782, "_timestamp": 1601064085.3113286, "_step": 316}
+{"episodic_reward": 30.0, "_runtime": 64.77824139595032, "_timestamp": 1601064085.4540288, "_step": 317}
+{"episodic_reward": 52.0, "_runtime": 65.20418214797974, "_timestamp": 1601064085.8799696, "_step": 318}
+{"time": 0.8199679851531982, "loss": 1.1865566968917847, "_runtime": 65.46046924591064, "_timestamp": 1601064086.1362567, "_step": 319}
+{"episodic_reward": 108.0, "_runtime": 66.08994555473328, "_timestamp": 1601064086.765733, "_step": 320}
+{"episodic_reward": 9.0, "_runtime": 66.16934943199158, "_timestamp": 1601064086.845137, "_step": 321}
+{"time": 0.8220622539520264, "loss": 1.2057318687438965, "_runtime": 66.28817534446716, "_timestamp": 1601064086.9639628, "_step": 322}
+{"time": 0.8101985454559326, "loss": 1.185498595237732, "_runtime": 67.10615611076355, "_timestamp": 1601064087.7819436, "_step": 323}
+{"episodic_reward": 159.0, "_runtime": 67.48018455505371, "_timestamp": 1601064088.155972, "_step": 324}
+{"time": 0.8208997249603271, "loss": 1.2018910646438599, "_runtime": 67.93457770347595, "_timestamp": 1601064088.6103652, "_step": 325}
+{"time": 0.8133447170257568, "loss": 1.2041809558868408, "_runtime": 68.7566590309143, "_timestamp": 1601064089.4324465, "_step": 326}
+{"episodic_reward": 188.0, "_runtime": 69.03528833389282, "_timestamp": 1601064089.7110758, "_step": 327}
+{"time": 0.8224849700927734, "loss": 1.2323287725448608, "_runtime": 69.58733654022217, "_timestamp": 1601064090.263124, "_step": 328}
+{"episodic_reward": 146.0, "_runtime": 70.24232268333435, "_timestamp": 1601064090.9181101, "_step": 329}
+{"time": 0.8267178535461426, "loss": 1.2308120727539062, "_runtime": 70.41925859451294, "_timestamp": 1601064091.095046, "_step": 330}
+{"episodic_reward": 108.0, "_runtime": 71.1473217010498, "_timestamp": 1601064091.8231091, "_step": 331}
+{"episodic_reward": 10.0, "_runtime": 71.2392086982727, "_timestamp": 1601064091.9149961, "_step": 332}
+{"time": 0.8464210033416748, "loss": 1.2320584058761597, "_runtime": 71.27069687843323, "_timestamp": 1601064091.9464843, "_step": 333}
+{"episodic_reward": 31.0, "_runtime": 71.51134061813354, "_timestamp": 1601064092.187128, "_step": 334}
+{"episodic_reward": 42.0, "_runtime": 71.87133359909058, "_timestamp": 1601064092.547121, "_step": 335}
+{"time": 0.8517587184906006, "loss": 1.222625732421875, "_runtime": 72.12791872024536, "_timestamp": 1601064092.8037062, "_step": 336}
+{"episodic_reward": 86.0, "_runtime": 72.59864783287048, "_timestamp": 1601064093.2744353, "_step": 337}
+{"time": 0.8524396419525146, "loss": 1.2362487316131592, "_runtime": 72.98533701896667, "_timestamp": 1601064093.6611245, "_step": 338}
+{"episodic_reward": 72.0, "_runtime": 73.22603344917297, "_timestamp": 1601064093.901821, "_step": 339}
+{"time": 0.8404557704925537, "loss": 1.2571887969970703, "_runtime": 73.8327693939209, "_timestamp": 1601064094.5085568, "_step": 340}
+{"time": 0.8362724781036377, "loss": 1.249998927116394, "_runtime": 74.67954683303833, "_timestamp": 1601064095.3553343, "_step": 341}
+{"episodic_reward": 198.0, "_runtime": 74.90700197219849, "_timestamp": 1601064095.5827894, "_step": 342}
+{"episodic_reward": 35.0, "_runtime": 75.20786643028259, "_timestamp": 1601064095.8836539, "_step": 343}
+{"time": 0.853607177734375, "loss": 1.2260277271270752, "_runtime": 75.54110789299011, "_timestamp": 1601064096.2168953, "_step": 344}
+{"episodic_reward": 42.0, "_runtime": 75.57877016067505, "_timestamp": 1601064096.2545576, "_step": 345}
+{"time": 0.8513357639312744, "loss": 1.2299182415008545, "_runtime": 76.40254831314087, "_timestamp": 1601064097.0783358, "_step": 346}
+{"time": 0.8530638217926025, "loss": 1.243970274925232, "_runtime": 77.28280806541443, "_timestamp": 1601064097.9585955, "_step": 347}
+{"episodic_reward": 198.0, "_runtime": 77.31603479385376, "_timestamp": 1601064097.9918222, "_step": 348}
+{"time": 0.8731887340545654, "loss": 1.174718976020813, "_runtime": 78.17864322662354, "_timestamp": 1601064098.8544307, "_step": 349}
+{"episodic_reward": 110.0, "_runtime": 78.30596232414246, "_timestamp": 1601064098.9817498, "_step": 350}
+{"time": 0.8679182529449463, "loss": 1.1707342863082886, "_runtime": 79.07921552658081, "_timestamp": 1601064099.755003, "_step": 351}
+{"time": 0.8450171947479248, "loss": 1.1587355136871338, "_runtime": 79.93114638328552, "_timestamp": 1601064100.6069338, "_step": 352}
+{"episodic_reward": 198.0, "_runtime": 80.01469993591309, "_timestamp": 1601064100.6904874, "_step": 353}
+{"time": 0.858069896697998, "loss": 1.1720974445343018, "_runtime": 80.79451370239258, "_timestamp": 1601064101.4703012, "_step": 354}
+{"episodic_reward": 146.0, "_runtime": 81.27038502693176, "_timestamp": 1601064101.9461725, "_step": 355}
+{"episodic_reward": 37.0, "_runtime": 81.59547877311707, "_timestamp": 1601064102.2712662, "_step": 356}
+{"time": 0.8684389591217041, "loss": 1.1660014390945435, "_runtime": 81.6675157546997, "_timestamp": 1601064102.3433032, "_step": 357}
+{"episodic_reward": 34.0, "_runtime": 81.8974916934967, "_timestamp": 1601064102.5732791, "_step": 358}
+{"episodic_reward": 29.0, "_runtime": 82.15139698982239, "_timestamp": 1601064102.8271844, "_step": 359}
+{"episodic_reward": 35.0, "_runtime": 82.46018290519714, "_timestamp": 1601064103.1359704, "_step": 360}
+{"time": 0.8794946670532227, "loss": 1.1847355365753174, "_runtime": 82.55133748054504, "_timestamp": 1601064103.227125, "_step": 361}
+{"time": 0.8558497428894043, "loss": 1.169363260269165, "_runtime": 83.41218781471252, "_timestamp": 1601064104.0879753, "_step": 362}
+{"episodic_reward": 196.0, "_runtime": 84.16045022010803, "_timestamp": 1601064104.8362377, "_step": 363}
+{"time": 0.8686389923095703, "loss": 1.1772581338882446, "_runtime": 84.28527879714966, "_timestamp": 1601064104.9610662, "_step": 364}
+{"episodic_reward": 27.0, "_runtime": 84.40525960922241, "_timestamp": 1601064105.081047, "_step": 365}
+{"episodic_reward": 39.0, "_runtime": 84.75117087364197, "_timestamp": 1601064105.4269583, "_step": 366}
+{"time": 0.8826594352722168, "loss": 1.1808040142059326, "_runtime": 85.17248058319092, "_timestamp": 1601064105.848268, "_step": 367}
+{"episodic_reward": 81.0, "_runtime": 85.46777677536011, "_timestamp": 1601064106.1435642, "_step": 368}
+{"time": 0.878089427947998, "loss": 1.1559268236160278, "_runtime": 86.05645108222961, "_timestamp": 1601064106.7322385, "_step": 369}
+{"episodic_reward": 128.0, "_runtime": 86.59514212608337, "_timestamp": 1601064107.2709296, "_step": 370}
+{"time": 0.8781096935272217, "loss": 1.100320816040039, "_runtime": 86.94045066833496, "_timestamp": 1601064107.616238, "_step": 371}
+{"episodic_reward": 45.0, "_runtime": 86.99989080429077, "_timestamp": 1601064107.6756783, "_step": 372}
+{"episodic_reward": 23.0, "_runtime": 87.20857524871826, "_timestamp": 1601064107.8843627, "_step": 373}
+{"episodic_reward": 55.0, "_runtime": 87.69510412216187, "_timestamp": 1601064108.3708916, "_step": 374}
+{"time": 0.8952569961547852, "loss": 1.0960752964019775, "_runtime": 87.8406572341919, "_timestamp": 1601064108.5164447, "_step": 375}
+{"episodic_reward": 29.0, "_runtime": 87.9625608921051, "_timestamp": 1601064108.6383483, "_step": 376}
+{"episodic_reward": 42.0, "_runtime": 88.33917450904846, "_timestamp": 1601064109.014962, "_step": 377}
+{"time": 0.8914484977722168, "loss": 1.0818382501602173, "_runtime": 88.73860049247742, "_timestamp": 1601064109.414388, "_step": 378}
+{"episodic_reward": 50.0, "_runtime": 88.79003739356995, "_timestamp": 1601064109.4658248, "_step": 379}
+{"time": 0.8897430896759033, "loss": 1.084423303604126, "_runtime": 89.63318276405334, "_timestamp": 1601064110.3089702, "_step": 380}
+{"time": 0.8853936195373535, "loss": 1.1042778491973877, "_runtime": 90.52467608451843, "_timestamp": 1601064111.2004635, "_step": 381}
+{"episodic_reward": 198.0, "_runtime": 90.55753588676453, "_timestamp": 1601064111.2333233, "_step": 382}
+{"episodic_reward": 26.0, "_runtime": 90.79187679290771, "_timestamp": 1601064111.4676642, "_step": 383}
+{"episodic_reward": 11.0, "_runtime": 90.895498752594, "_timestamp": 1601064111.5712862, "_step": 384}
+{"episodic_reward": 30.0, "_runtime": 91.1665940284729, "_timestamp": 1601064111.8423815, "_step": 385}
+{"time": 0.9072785377502441, "loss": 1.0958185195922852, "_runtime": 91.43641757965088, "_timestamp": 1601064112.112205, "_step": 386}
+{"episodic_reward": 43.0, "_runtime": 91.55866146087646, "_timestamp": 1601064112.234449, "_step": 387}
+{"episodic_reward": 29.0, "_runtime": 91.82170677185059, "_timestamp": 1601064112.4974942, "_step": 388}
+{"episodic_reward": 54.0, "_runtime": 92.31281566619873, "_timestamp": 1601064112.988603, "_step": 389}
+{"time": 0.9131472110748291, "loss": 1.0994888544082642, "_runtime": 92.35402035713196, "_timestamp": 1601064113.0298078, "_step": 390}
+{"episodic_reward": 46.0, "_runtime": 92.73238635063171, "_timestamp": 1601064113.4081738, "_step": 391}
+{"time": 0.896148681640625, "loss": 1.0771647691726685, "_runtime": 93.25545597076416, "_timestamp": 1601064113.9312434, "_step": 392}
+{"episodic_reward": 119.0, "_runtime": 93.80164170265198, "_timestamp": 1601064114.4774292, "_step": 393}
+{"episodic_reward": 27.0, "_runtime": 94.04682970046997, "_timestamp": 1601064114.7226171, "_step": 394}
+{"time": 0.8992676734924316, "loss": 1.091858983039856, "_runtime": 94.15919899940491, "_timestamp": 1601064114.8349864, "_step": 395}
+{"episodic_reward": 28.0, "_runtime": 94.30690884590149, "_timestamp": 1601064114.9826963, "_step": 396}
+{"episodic_reward": 33.0, "_runtime": 94.60877728462219, "_timestamp": 1601064115.2845647, "_step": 397}
+{"time": 0.9022486209869385, "loss": 1.086437702178955, "_runtime": 95.06636667251587, "_timestamp": 1601064115.7421541, "_step": 398}
+{"time": 0.8947107791900635, "loss": 1.110312819480896, "_runtime": 95.96667337417603, "_timestamp": 1601064116.6424608, "_step": 399}
+{"episodic_reward": 198.0, "_runtime": 96.39459300041199, "_timestamp": 1601064117.0703804, "_step": 400}
+{"episodic_reward": 37.0, "_runtime": 96.73638319969177, "_timestamp": 1601064117.4121706, "_step": 401}
+{"time": 0.910902738571167, "loss": 1.1173160076141357, "_runtime": 96.8835027217865, "_timestamp": 1601064117.5592902, "_step": 402}
+{"episodic_reward": 25.0, "_runtime": 96.97173380851746, "_timestamp": 1601064117.6475213, "_step": 403}
+{"episodic_reward": 56.0, "_runtime": 97.48449873924255, "_timestamp": 1601064118.1602862, "_step": 404}
+{"time": 0.919919490814209, "loss": 1.1026644706726074, "_runtime": 97.80797266960144, "_timestamp": 1601064118.48376, "_step": 405}
+{"episodic_reward": 104.0, "_runtime": 98.43770051002502, "_timestamp": 1601064119.113488, "_step": 406}
+{"episodic_reward": 19.0, "_runtime": 98.61730337142944, "_timestamp": 1601064119.2930908, "_step": 407}
+{"time": 0.9171438217163086, "loss": 1.1188338994979858, "_runtime": 98.72996425628662, "_timestamp": 1601064119.4057517, "_step": 408}
+{"time": 0.9020035266876221, "loss": 1.0913550853729248, "_runtime": 99.6366868019104, "_timestamp": 1601064120.3124743, "_step": 409}
+{"episodic_reward": 198.0, "_runtime": 100.42085146903992, "_timestamp": 1601064121.096639, "_step": 410}
+{"time": 0.9108185768127441, "loss": 1.1032545566558838, "_runtime": 100.5530014038086, "_timestamp": 1601064121.2287889, "_step": 411}
+{"episodic_reward": 53.0, "_runtime": 100.91381192207336, "_timestamp": 1601064121.5895994, "_step": 412}
+{"time": 0.9140713214874268, "loss": 1.1220355033874512, "_runtime": 101.47178077697754, "_timestamp": 1601064122.1475682, "_step": 413}
+{"episodic_reward": 90.0, "_runtime": 101.74325752258301, "_timestamp": 1601064122.419045, "_step": 414}
+{"episodic_reward": 26.0, "_runtime": 101.9879322052002, "_timestamp": 1601064122.6637197, "_step": 415}
+{"episodic_reward": 43.0, "_runtime": 102.38924837112427, "_timestamp": 1601064123.0650358, "_step": 416}
+{"time": 0.9354143142700195, "loss": 1.1181873083114624, "_runtime": 102.41227698326111, "_timestamp": 1601064123.0880644, "_step": 417}
+{"episodic_reward": 43.0, "_runtime": 102.79429745674133, "_timestamp": 1601064123.470085, "_step": 418}
+{"episodic_reward": 41.0, "_runtime": 103.17392325401306, "_timestamp": 1601064123.8497107, "_step": 419}
+{"time": 0.9267780780792236, "loss": 1.101102352142334, "_runtime": 103.34356307983398, "_timestamp": 1601064124.0193505, "_step": 420}
+{"episodic_reward": 44.0, "_runtime": 103.59039330482483, "_timestamp": 1601064124.2661808, "_step": 421}
+{"episodic_reward": 10.0, "_runtime": 103.69231462478638, "_timestamp": 1601064124.368102, "_step": 422}
+{"episodic_reward": 44.0, "_runtime": 104.10504245758057, "_timestamp": 1601064124.78083, "_step": 423}
+{"time": 0.9473409652709961, "loss": 1.0761113166809082, "_runtime": 104.2966582775116, "_timestamp": 1601064124.9724457, "_step": 424}
+{"episodic_reward": 50.0, "_runtime": 104.58421993255615, "_timestamp": 1601064125.2600074, "_step": 425}
+{"time": 0.930640459060669, "loss": 1.1729363203048706, "_runtime": 105.23531198501587, "_timestamp": 1601064125.9110994, "_step": 426}
+{"episodic_reward": 79.0, "_runtime": 105.33141589164734, "_timestamp": 1601064126.0072033, "_step": 427}
+{"episodic_reward": 20.0, "_runtime": 105.52949810028076, "_timestamp": 1601064126.2052855, "_step": 428}
+{"time": 0.9488861560821533, "loss": 1.1681792736053467, "_runtime": 106.19502878189087, "_timestamp": 1601064126.8708162, "_step": 429}
+{"time": 0.9334890842437744, "loss": 1.1224688291549683, "_runtime": 107.13469886779785, "_timestamp": 1601064127.8104863, "_step": 430}
+{"episodic_reward": 198.0, "_runtime": 107.39295554161072, "_timestamp": 1601064128.068743, "_step": 431}
+{"episodic_reward": 8.0, "_runtime": 107.47490429878235, "_timestamp": 1601064128.1506917, "_step": 432}
+{"episodic_reward": 64.0, "_runtime": 108.07650685310364, "_timestamp": 1601064128.7522943, "_step": 433}
+{"time": 0.9533376693725586, "loss": 1.162180781364441, "_runtime": 108.09389925003052, "_timestamp": 1601064128.7696867, "_step": 434}
+{"time": 0.9352319240570068, "loss": 1.1614787578582764, "_runtime": 109.03540921211243, "_timestamp": 1601064129.7111967, "_step": 435}
+{"episodic_reward": 198.0, "_runtime": 109.95428991317749, "_timestamp": 1601064130.6300774, "_step": 436}
+{"time": 0.9461078643798828, "loss": 1.1536757946014404, "_runtime": 109.9870924949646, "_timestamp": 1601064130.66288, "_step": 437}
+{"episodic_reward": 11.0, "_runtime": 110.06815266609192, "_timestamp": 1601064130.74394, "_step": 438}
+{"episodic_reward": 23.0, "_runtime": 110.29137635231018, "_timestamp": 1601064130.9671638, "_step": 439}
+{"episodic_reward": 40.0, "_runtime": 110.6758975982666, "_timestamp": 1601064131.351685, "_step": 440}
+{"time": 0.9604260921478271, "loss": 1.1517506837844849, "_runtime": 110.95219850540161, "_timestamp": 1601064131.627986, "_step": 441}
+{"time": 0.9391250610351562, "loss": 1.1365684270858765, "_runtime": 111.89588952064514, "_timestamp": 1601064132.571677, "_step": 442}
+{"episodic_reward": 144.0, "_runtime": 112.04419946670532, "_timestamp": 1601064132.719987, "_step": 443}
+{"time": 0.9478020668029785, "loss": 1.149425983428955, "_runtime": 112.84830498695374, "_timestamp": 1601064133.5240924, "_step": 444}
+{"time": 0.9398295879364014, "loss": 1.1795191764831543, "_runtime": 113.79289174079895, "_timestamp": 1601064134.4686792, "_step": 445}
+{"episodic_reward": 198.0, "_runtime": 113.9224534034729, "_timestamp": 1601064134.5982409, "_step": 446}
+{"episodic_reward": 10.0, "_runtime": 114.02281999588013, "_timestamp": 1601064134.6986074, "_step": 447}
+{"episodic_reward": 15.0, "_runtime": 114.16993618011475, "_timestamp": 1601064134.8457236, "_step": 448}
+{"episodic_reward": 11.0, "_runtime": 114.2842869758606, "_timestamp": 1601064134.9600744, "_step": 449}
+{"time": 0.9730901718139648, "loss": 1.2421358823776245, "_runtime": 114.7698061466217, "_timestamp": 1601064135.4455936, "_step": 450}
+{"episodic_reward": 123.0, "_runtime": 115.4561071395874, "_timestamp": 1601064136.1318946, "_step": 451}
+{"episodic_reward": 17.0, "_runtime": 115.62372517585754, "_timestamp": 1601064136.2995126, "_step": 452}
+{"time": 0.9576220512390137, "loss": 1.241503119468689, "_runtime": 115.73271083831787, "_timestamp": 1601064136.4084983, "_step": 453}
+{"episodic_reward": 32.0, "_runtime": 115.93733239173889, "_timestamp": 1601064136.6131198, "_step": 454}
+{"episodic_reward": 27.0, "_runtime": 116.20293307304382, "_timestamp": 1601064136.8787205, "_step": 455}
+{"time": 0.968019962310791, "loss": 1.2390334606170654, "_runtime": 116.70535182952881, "_timestamp": 1601064137.3811393, "_step": 456}
+{"time": 0.9511516094207764, "loss": 1.2151814699172974, "_runtime": 117.66231775283813, "_timestamp": 1601064138.3381052, "_step": 457}
+{"episodic_reward": 198.0, "_runtime": 118.10804462432861, "_timestamp": 1601064138.783832, "_step": 458}
+{"episodic_reward": 25.0, "_runtime": 118.35553884506226, "_timestamp": 1601064139.0313263, "_step": 459}
+{"time": 0.9681780338287354, "loss": 1.2212610244750977, "_runtime": 118.63800501823425, "_timestamp": 1601064139.3137925, "_step": 460}
+{"episodic_reward": 65.0, "_runtime": 118.99054956436157, "_timestamp": 1601064139.666337, "_step": 461}
+{"episodic_reward": 33.0, "_runtime": 119.31321430206299, "_timestamp": 1601064139.9890018, "_step": 462}
+{"episodic_reward": 25.0, "_runtime": 119.55836367607117, "_timestamp": 1601064140.2341511, "_step": 463}
+{"time": 0.9767203330993652, "loss": 1.220108151435852, "_runtime": 119.61970949172974, "_timestamp": 1601064140.295497, "_step": 464}
+{"episodic_reward": 27.0, "_runtime": 119.82784652709961, "_timestamp": 1601064140.503634, "_step": 465}
+{"episodic_reward": 9.0, "_runtime": 119.91975736618042, "_timestamp": 1601064140.5955448, "_step": 466}
+{"episodic_reward": 40.0, "_runtime": 120.31232118606567, "_timestamp": 1601064140.9881086, "_step": 467}
+{"time": 0.9812197685241699, "loss": 1.2179722785949707, "_runtime": 120.60492777824402, "_timestamp": 1601064141.2807152, "_step": 468}
+{"episodic_reward": 38.0, "_runtime": 120.68833184242249, "_timestamp": 1601064141.3641193, "_step": 469}
+{"time": 0.960709810256958, "loss": 1.2500519752502441, "_runtime": 121.57035708427429, "_timestamp": 1601064142.2461445, "_step": 470}
+{"time": 0.9686386585235596, "loss": 1.2175880670547485, "_runtime": 122.54341340065002, "_timestamp": 1601064143.2192008, "_step": 471}
+{"episodic_reward": 198.0, "_runtime": 122.60764956474304, "_timestamp": 1601064143.283437, "_step": 472}
+{"episodic_reward": 22.0, "_runtime": 122.8256139755249, "_timestamp": 1601064143.5014014, "_step": 473}
+{"episodic_reward": 30.0, "_runtime": 123.1199939250946, "_timestamp": 1601064143.7957814, "_step": 474}
+{"episodic_reward": 25.0, "_runtime": 123.36635255813599, "_timestamp": 1601064144.04214, "_step": 475}
+{"time": 0.9870123863220215, "loss": 1.2068685293197632, "_runtime": 123.53439140319824, "_timestamp": 1601064144.2101789, "_step": 476}
+{"best_episode": 198.0, "_runtime": 123.53907132148743, "_timestamp": 1601064144.2148588, "_step": 477}

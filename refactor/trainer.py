@@ -26,11 +26,20 @@ class NStepTrainer:
         self.nstep_buffer = []
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.best_episode = 0
+
         
     def state_transformer(self, state):
-        return torch.FloatTensor(state).to(self.device)
+        print("ST: input", type(state))
+        if len(state) > 1:
+            state = np.swapaxes(state, 2, 0)
+            print("ST: len() > 1", type(state), state.shape)
+        state = torch.FloatTensor(state).to(self.device)
+        if len(state.shape) == 3:
+            state = state.view(1, *self.online_network.obs_shape)
+            print("ST: shape==3", type(state), state.shape)
+        return state
 
-
+    
     def action_transformer(self, action):
         action = action.detach().cpu().numpy()
         action = np.argmax(action)
@@ -41,6 +50,10 @@ class NStepTrainer:
         """ Fill the n-step buffer each time the environment
             has been reset.
         """
+
+        # Maybe something is in there, clear it out. 
+        self.nstep_buffer = [] 
+
         for step in range(self.config['n_steps']):
             action = self.online_network(self.state_transformer(self.state))
             action = self.action_transformer(action)
@@ -116,7 +129,7 @@ class NStepTrainer:
                         delayed_trans = Transition(
                             state=delayed_states[i], action=delayed_actions[i],
                             reward=delayed_rewards[i], next_state=delayed_next_states[i],
-                            discounted_reward=np.sum([reward * self.config['gamma'] ** j for j, reward in enumerate(delayed_rewards[:self.config['n_steps']-i])]),
+                            discounted_reward=np.sum([reward * self.config['gamma'] ** j for j, reward in enumerate(delayed_rewards[i:])]),
                             nth_state=self.state, done=done, n=self.config['n_steps'] - i
                         )
                         self.buffer.add(delayed_trans)

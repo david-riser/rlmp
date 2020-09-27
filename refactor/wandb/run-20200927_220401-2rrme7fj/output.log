@@ -1,0 +1,15 @@
+5184
+5184
+5184
+5184
+Using GPU for training.
+Traceback (most recent call last):
+  File "train.py", line 119, in <module>
+    trainer.train()
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 79, in train
+    self.prime_buffer(env)
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 54, in prime_buffer
+    state = self.state_transformer(self.state)
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 32, in state_transformer
+    print("ST: input", type(state), state.shape)
+AttributeError: 'LazyFrames' object has no attribute 'shape'

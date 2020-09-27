@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "train.py", line 94, in <module>
+    input_shape = np.swapaxes(env.observation_space.shape, 2, 0)
+  File "<__array_function__ internals>", line 6, in swapaxes
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py", line 597, in swapaxes
+    return _wrapfunc(a, 'swapaxes', axis1, axis2)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py", line 58, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/numpy/core/fromnumeric.py", line 47, in _wrapit
+    result = getattr(asarray(obj), method)(*args, **kwds)
+numpy.AxisError: axis1: axis 2 is out of bounds for array of dimension 1

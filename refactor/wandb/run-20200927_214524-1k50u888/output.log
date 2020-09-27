@@ -1,0 +1,11 @@
+Using GPU for training.
+Traceback (most recent call last):
+  File "train.py", line 119, in <module>
+    trainer.train()
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 71, in train
+    self.prime_buffer(env)
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 53, in prime_buffer
+    action = self.online_network(self.state_transformer(self.state))
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 35, in state_transformer
+    return torch.FloatTensor(state).to(self.device)
+TypeError: can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, int64, int32, int16, int8, uint8, and bool.

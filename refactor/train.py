@@ -1,3 +1,9 @@
+"""
+No time to fix right now but the issue is that next_state
+has the wrong shape when it goes into the model in ntd_loss
+because the state transformer is not applied.
+
+"""
 import argparse
 import gym
 import matplotlib.pyplot as plt
@@ -6,7 +12,9 @@ import torch
 import torch.optim as optim
 import wandb
 
-from network import Network
+from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
+
+from network import ConvNetwork, Network
 from replay import PrioritizedReplayBuffer
 from schedules import BetaSchedule, EpsilonSchedule
 from trainer import NStepTrainer
@@ -46,7 +54,23 @@ def setup_wandb(config):
         config=config
     )
 
+
+def setup_env(env_name, train=True):
+    if env_name == "CartPole-v0":
+        env = gym.make(env_name)
+    else:
+        env = make_atari(env_name)
+        if train:
+            env = wrap_deepmind(env, episode_life=True, clip_rewards=False,
+                                frame_stack=True, scale=True)    
+        else:
+            env = wrap_deepmind(env, episode_life=False, clip_rewards=False,
+                                frame_stack=True, scale=True)    
+
+    return env
     
+    
+
 if __name__ == "__main__":
 
     args = get_args()
@@ -68,10 +92,18 @@ if __name__ == "__main__":
 
     setup_wandb(config)
     
-    env_builder = lambda: gym.make(args.env)
+    env_builder = lambda: setup_env(args.env)
     env = env_builder()
-    online_network = Network(env.observation_space.shape[0], env.action_space.n, args.hidden_dims)
-    target_network = Network(env.observation_space.shape[0], env.action_space.n, args.hidden_dims)
+    
+    use_cnn = len(env.observation_space.shape) > 2
+    if use_cnn:
+        input_shape = env.observation_space.shape
+        input_shape = (input_shape[2], input_shape[1], input_shape[0])
+        online_network = ConvNetwork(input_shape, env.action_space.n, args.hidden_dims)
+        target_network = ConvNetwork(input_shape, env.action_space.n, args.hidden_dims)
+    else:
+        online_network = Network(env.observation_space.shape[0], env.action_space.n, args.hidden_dims)
+        target_network = Network(env.observation_space.shape[0], env.action_space.n, args.hidden_dims)
 
     if torch.cuda.is_available():
         print("Using GPU for training.")

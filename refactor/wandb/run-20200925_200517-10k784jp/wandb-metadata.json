@@ -1,0 +1,31 @@
+{
+    "root": "/home/ubuntu/rlmp",
+    "program": "train.py",
+    "git": {
+        "remote": "https://github.com/david-riser/rlmp",
+        "commit": "46c052ae04de0579e38fd898d6a730b39a7c1064"
+    },
+    "email": null,
+    "startedAt": "2020-09-25T20:05:17.294596",
+    "host": "ip-172-31-39-187",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/pytorch_p36/bin/python",
+    "os": "Linux-5.4.0-1025-aws-x86_64-with-debian-buster-sid",
+    "python": "3.6.10",
+    "gpu": "Tesla M60",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": "10.0.130",
+    "args": [
+        "--n_epochs=150",
+        "--n_batches_per_epoch=100",
+        "--n_steps=1",
+        "--env=Pong-ram-v0"
+    ],
+    "state": "finished",
+    "jobType": null,
+    "mode": "run",
+    "project": "rlmp",
+    "heartbeatAt": "2020-09-25T20:07:23.187533",
+    "exitcode": 0
+}
