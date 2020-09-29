@@ -18,6 +18,7 @@ from network import ConvNetwork, Network
 from replay import PrioritizedReplayBuffer
 from schedules import BetaSchedule, EpsilonSchedule
 from trainer import NStepTrainer
+from transformers import action_transformer, cnn_state_transformer, flat_state_transformer
 from utils import rolling
 
 
@@ -105,11 +106,17 @@ if __name__ == "__main__":
         online_network = Network(env.observation_space.shape[0], env.action_space.n, args.hidden_dims)
         target_network = Network(env.observation_space.shape[0], env.action_space.n, args.hidden_dims)
 
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     if torch.cuda.is_available():
         print("Using GPU for training.")
-        online_network = online_network.to('cuda:0')
-        target_network = target_network.to('cuda:0')
+        online_network = online_network.to(device)
+        target_network = target_network.to(device)
 
+    if use_cnn:
+        state_transformer = lambda s: cnn_state_transformer(s, device)
+    else:
+        state_transformer = lambda s: flat_state_transformer(s, device)
+        
     target_network.load_state_dict(online_network.state_dict())
     env.close()
 
@@ -121,7 +128,7 @@ if __name__ == "__main__":
 
     trainer = NStepTrainer(config, online_network, target_network, optimizer,
                            buffer, epsilon_schedule, beta_schedule,
-                           env_builder)
+                           env_builder, action_transformer, state_transformer)
     trainer.train()
     torch.save(online_network, "network.pkl")
     

@@ -12,7 +12,9 @@ from utils import expand_transitions, Transition
 class NStepTrainer:
     """ A deep Q-network training class with n-step loss. """
     def __init__(self, config, online_network, target_network, optimizer,
-                 buffer, epsilon_schedule, beta_schedule, env_builder):
+                 buffer, epsilon_schedule, beta_schedule, env_builder,
+                 action_transformer, state_transformer
+    ):
         self.config = config
         self.online_network = online_network
         self.target_network = target_network
@@ -21,30 +23,15 @@ class NStepTrainer:
         self.epsilon_schedule = epsilon_schedule
         self.beta_schedule = beta_schedule
         self.env_builder = env_builder
+        self.action_transformer = action_transformer
+        self.state_transformer = state_transformer
         self.episodic_reward = []
         self.loss = []
         self.nstep_buffer = []
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.best_episode = 0
 
-        
-    def state_transformer(self, state):
-        print("ST: input", type(state))
-        if len(state) > 1:
-            state = np.swapaxes(state, 2, 0)
-            print("ST: len() > 1", type(state), state.shape)
-        state = torch.FloatTensor(state).to(self.device)
-        if len(state.shape) == 3:
-            state = state.view(1, *self.online_network.obs_shape)
-            print("ST: shape==3", type(state), state.shape)
-        return state
-
     
-    def action_transformer(self, action):
-        action = action.detach().cpu().numpy()
-        action = np.argmax(action)
-        return action 
-
 
     def prime_buffer(self, env):
         """ Fill the n-step buffer each time the environment
@@ -151,7 +138,8 @@ class NStepTrainer:
                     transitions, weights, indices = self.buffer.sample(
                         self.config['batch_size'], beta)
                     (states, actions, rewards, next_states, discounted_rewards,
-                     nth_states, dones, ns) = expand_transitions(transitions)
+                     nth_states, dones, ns) = expand_transitions(
+                         transitions, torchify=True, state_transformer=self.state_transformer)
                     
                     # Calculate the loss per transition.  This is not 
                     # aggregated so that we can make the importance sampling

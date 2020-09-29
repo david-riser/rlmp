@@ -50,7 +50,8 @@ class ConvNetwork(nn.Module):
             nn.Conv2d(self.obs_shape[0], 32, kernel_size=8, stride=4),
             nn.ReLU(),
             nn.Conv2d(32, 64, kernel_size=4, stride=2),
-            nn.ReLU()
+            nn.ReLU(),
+            nn.Flatten()
         )
         
         self.value = nn.Sequential(
@@ -71,8 +72,7 @@ class ConvNetwork(nn.Module):
             to the network.  Makes use of advantage estimate.
         """
         features = self.features(state)
-        features = features.view(features.size(), -1)
-        print(features.size())
+        #features = features.view(features.size(), -1)
         value = self.value(features)
         advantage = self.advantage(features)
         return value + advantage - advantage.mean()
@@ -81,5 +81,4 @@ class ConvNetwork(nn.Module):
     def feature_size(self):
         """ I took this from somewhere. """
         shape = self.features(torch.autograd.Variable(torch.zeros(1, *self.obs_shape))).view(1, -1).size(1)
-        print(shape)
         return shape
