@@ -58,3 +58,40 @@ class PrioritizedReplayBuffer:
     def update_priorities(self, prios, indices):
         for index, prio in zip(indices, prios):
             self.priorities[index] = prio
+
+
+
+class ReplayBuffer:
+    """ Dumb replay buffer that mimics the interface of the 
+        prioritized replay buffer shown above. 
+    """
+    def __init__(self, maxsize):
+        self.maxsize = maxsize
+        self.buffer = []
+        self.index_pool = np.arange(self.maxsize)
+
+    def __len__(self):
+        return len(self.buffer)
+
+    
+    def add(self, transition):
+        self.buffer.append(transition)
+        if len(self.buffer) > self.maxsize:
+            self.buffer.pop(0)
+
+
+    def sample(self, batch_size, beta):
+        indices = np.random.choice(self.index_pool[:len(self.buffer)],
+                                   batch_size)
+        weights = np.ones(batch_size)
+        transitions = []
+
+        for index in indices:
+            transitions.append(self.buffer[index])
+
+        return transitions, weights, indices
+    
+
+    def update_priorities(self, prios, indices):
+        pass 
+    
