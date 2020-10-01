@@ -1,9 +1,3 @@
-"""
-No time to fix right now but the issue is that next_state
-has the wrong shape when it goes into the model in ntd_loss
-because the state transformer is not applied.
-
-"""
 import argparse
 import gym
 import matplotlib.pyplot as plt
@@ -16,7 +10,7 @@ from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
 
 from network import ConvNetwork, Network
 from replay import PrioritizedReplayBuffer
-from schedules import BetaSchedule, EpsilonSchedule
+from schedules import BetaSchedule, EpsilonSchedule, FixedSchedule
 from trainer import NStepTrainer
 from transformers import action_transformer, cnn_state_transformer, flat_state_transformer
 from utils import rolling
@@ -31,6 +25,7 @@ def get_args():
     parser.add_argument('--n_epochs', type=int, default=400)
     parser.add_argument('--n_batches_per_epoch', type=int, default=400)
     parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--expert_batch_size', type=int, default=8)
     parser.add_argument('--update_interval', type=int, default=1000)
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--lr', type=float, default=0.001)
@@ -42,6 +37,8 @@ def get_args():
     parser.add_argument('--buffer_capacity', type=int, default=100000)
     parser.add_argument('--hidden_dims', type=int, default=32)
     parser.add_argument('--env', type=str, default='CartPole-v0')
+    parser.add_argument('--save_buffer', type=str, default=None)
+    parser.add_argument('--expert_buffer', type=str, default=None)
     return parser.parse_args()
 
 
@@ -88,7 +85,10 @@ if __name__ == "__main__":
         beta_frames = args.beta_frames,
         beta_start = args.beta_start,
         buffer_capacity = args.buffer_capacity,
-        hidden_dims = args.hidden_dims
+        hidden_dims = args.hidden_dims,
+        save_buffer = args.save_buffer,
+        expert_buffer = args.expert_buffer,
+        expert_batch_size = args.expert_batch_size
     )
 
     setup_wandb(config)
@@ -124,15 +124,30 @@ if __name__ == "__main__":
 
     optimizer = optim.Adam(online_network.parameters(), lr=config['lr'])
 
-    epsilon_schedule = EpsilonSchedule(1., args.eps_end, args.eps_decay)
+    if args.eps_decay == 0:
+        epsilon_schedule = FixedSchedule(args.eps_end)
+    else:
+        epsilon_schedule = EpsilonSchedule(1., args.eps_end, args.eps_decay)
     beta_schedule = BetaSchedule(args.beta_start, args.beta_frames)
     buffer = PrioritizedReplayBuffer(args.buffer_capacity, 0.6)
 
+    if args.expert_buffer is not None:
+        expert_buffer = PrioritizedReplayBuffer(args.buffer_capacity, 0.6)
+        expert_buffer.load(args.expert_buffer)
+    else:
+        expert_buffer = None
+
+        
     trainer = NStepTrainer(config, online_network, target_network, optimizer,
                            buffer, epsilon_schedule, beta_schedule,
-                           env_builder, action_transformer, state_transformer)
+                           env_builder, action_transformer, state_transformer,
+                           expert_buffer
+    )
     trainer.train()
     torch.save(online_network, "network.pkl")
+
+    if args.save_buffer is not None:
+        buffer.save(args.save_buffer)
     
     # Plot something to investigate
     mean_returns = rolling(trainer.episodic_reward, np.mean, 4, pad=True)

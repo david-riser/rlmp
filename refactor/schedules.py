@@ -15,6 +15,17 @@ class EpsilonSchedule:
         return self.end + (self.start - self.end) * np.exp(-1. * step / self.decay)
 
 
+class FixedSchedule:
+    """ A constant value regardless of step. 
+    """
+    def __init__(self, const):
+        self.const = const
+
+
+    def value(self, step):
+        return self.const
+
+    
 class BetaSchedule: 
     """ Beta annealing schedule for the prioritized replay 
         buffer importance sampling. 

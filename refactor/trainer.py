@@ -5,7 +5,7 @@ import time
 import torch
 import wandb
 
-from loss import ntd_loss
+from loss import margin_loss, ntd_loss
 from utils import expand_transitions, Transition
 
 
@@ -13,7 +13,8 @@ class NStepTrainer:
     """ A deep Q-network training class with n-step loss. """
     def __init__(self, config, online_network, target_network, optimizer,
                  buffer, epsilon_schedule, beta_schedule, env_builder,
-                 action_transformer, state_transformer
+                 action_transformer, state_transformer, expert_buffer=None,
+                 expert_coef=1., online_coef=1.
     ):
         self.config = config
         self.online_network = online_network
@@ -31,8 +32,13 @@ class NStepTrainer:
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.best_episode = 0
 
-    
+        # If we're training with a buffer of expert demonstration
+        self.expert_buffer = expert_buffer
+        total = expert_coef + online_coef
+        self.expert_coef = expert_coef / total
+        self.online_coef = online_coef / total
 
+        
     def prime_buffer(self, env):
         """ Fill the n-step buffer each time the environment
             has been reset.
@@ -140,7 +146,7 @@ class NStepTrainer:
                     (states, actions, rewards, next_states, discounted_rewards,
                      nth_states, dones, ns) = expand_transitions(
                          transitions, torchify=True, state_transformer=self.state_transformer)
-                    
+
                     # Calculate the loss per transition.  This is not 
                     # aggregated so that we can make the importance sampling
                     # correction to the loss.
@@ -173,6 +179,49 @@ class NStepTrainer:
                         nstep_loss = nstep_loss.mean()
                         loss += nstep_loss  
 
+                    # Maybe we have an expert buffer, if so we should train some
+                    # samples from that expert buffer.
+                    if self.expert_buffer is not None:
+                        e_transitions, e_weights, e_indices = self.expert_buffer.sample(
+                            self.config['expert_batch_size'], beta)
+
+                        (e_states, e_actions, e_rewards, e_next_states, e_discounted_rewards,
+                         e_nth_states, e_dones, e_ns) = expand_transitions(
+                             e_transitions, torchify=True, state_transformer=self.state_transformer)
+
+                        e_loss = ntd_loss(
+                            online_model=self.online_network, 
+                            target_model=self.target_network,
+                            states=e_states, actions=e_actions,
+                            next_states=e_next_states, rewards=e_rewards,
+                            dones=e_dones, gamma=0.99, n=1
+                        )       
+                        e_weights = torch.FloatTensor(e_weights).to(self.device)
+                        e_loss = e_loss * e_weights
+                        e_priorities = e_loss + 1e-5
+                        e_priorities = e_priorities.detach().cpu().numpy()
+                        self.expert_buffer.update_priorities(e_priorities, e_indices)
+                        e_loss = e_loss.mean()
+                    
+                        if self.config['n_steps'] > 1:
+                            e_nstep_loss = ntd_loss(
+                                online_model=self.online_network, 
+                                target_model=self.target_network,
+                                states=e_states, actions=e_actions,
+                                next_states=e_nth_states, rewards=e_discounted_rewards,
+                                dones=e_dones, gamma=0.99, n=e_ns
+                            )
+                            e_nstep_loss = e_nstep_loss.mean()
+                            e_loss += e_nstep_loss  
+
+
+                        q_values = self.online_network(e_states)
+                        e_loss += torch.mean(margin_loss(q_values, e_actions))
+                        
+                        # Finally, add this sucker to the loss if we do have expert samples.
+                        loss = loss * self.online_coef + e_loss * self.expert_coef
+                        
+                        
                     # Take the step of updating online network parameters
                     # based on this batch loss.
                     self.optimizer.zero_grad()
@@ -211,3 +260,5 @@ class NStepTrainer:
             })
 
         wandb.log({"best_episode":self.best_episode})
+
+

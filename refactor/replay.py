@@ -1,4 +1,5 @@
 import numpy as np
+import pickle
 import torch
 
 
@@ -15,7 +16,25 @@ class PrioritizedReplayBuffer:
     def __len__(self):
         return len(self.buffer)
 
+
+    def save(self, output):
+        """ Save the buffer and priorities to an output file
+            to be loaded at a later time.
+        """
+        with open(output, "wb") as ofile:
+            pickle.dump({"buffer":self.buffer, "priorities":self.priorities}, ofile)
+
+
+    def load(self, inputfile):
+        """ Load the buffer and priorities from the file provided.
+        """
+        with open(inputfile, "rb") as ifile:
+            data = pickle.load(ifile)
+        self.buffer = data["buffer"]
+        self.priorities = data["priorities"]
+        del data
         
+    
     def add(self, transition):
         """ Add to the buffer and ensure that it is 
             not too full. 

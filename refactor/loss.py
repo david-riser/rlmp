@@ -15,3 +15,19 @@ def ntd_loss(online_model, target_model, states, actions,
     qhat = (rewards + gamma**n * next_q_values * (1 - dones))
     loss = (q_values - qhat.detach()).pow(2)
     return loss
+
+
+def margin_loss(q_values, expert_actions, margin=0.8):
+    """ Margin loss in torch. """
+    
+    # Calculate the margins and set them to zero where
+    # expert has chosen action. 
+    margins = torch.ones_like(q_values) * margin
+    
+    for i, action in enumerate(expert_actions):
+        margins[i, action] = 0.
+    
+    loss_term1 = torch.max(q_values + margins, axis=1)[0]
+    loss_term2 = torch.take(q_values, expert_actions)
+    
+    return loss_term1 - loss_term2
