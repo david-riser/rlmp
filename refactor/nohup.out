@@ -1,0 +1,1449 @@
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200929_185227-1rirbtij
+wandb: Syncing run sleek-snow-297
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/1rirbtij
+wandb: Run `wandb off` to turn off syncing.
+
+Using GPU for training.
+Epoch 0, Score -16.0000, Loss 0.1803, Time 23.6663
+Epoch 1, Score -18.0000, Loss 0.2184, Time 24.6187
+Epoch 2, Score -17.0000, Loss 0.2301, Time 25.0416
+Epoch 3, Score -18.0000, Loss 0.2378, Time 25.4158
+Epoch 4, Score -17.0000, Loss 0.2486, Time 25.6087
+Epoch 5, Score -15.0000, Loss 0.2589, Time 25.6287
+Epoch 6, Score -14.0000, Loss 0.2580, Time 25.8862
+Epoch 7, Score -16.0000, Loss 0.2212, Time 25.9790
+Epoch 8, Score -1.0000, Loss 0.1883, Time 26.4073
+Epoch 9, Score -16.0000, Loss 0.1671, Time 26.4865
+Epoch 10, Score -3.0000, Loss 0.1539, Time 27.0746
+Epoch 11, Score -6.0000, Loss 0.1420, Time 26.9398
+Epoch 12, Score -11.0000, Loss 0.1339, Time 27.6780
+Epoch 13, Score -17.0000, Loss 0.1251, Time 27.5961
+Epoch 14, Score -20.0000, Loss 0.1205, Time 28.1447
+Epoch 15, Score -2.0000, Loss 0.1177, Time 28.0886
+Epoch 16, Score -2.0000, Loss 0.1135, Time 28.6191
+Epoch 17, Score -5.0000, Loss 0.1018, Time 28.9337
+Epoch 18, Score -4.0000, Loss 0.1027, Time 28.9655
+Epoch 19, Score -8.0000, Loss 0.0987, Time 29.1139
+Epoch 20, Score -12.0000, Loss 0.0928, Time 29.8397
+Epoch 21, Score -11.0000, Loss 0.0895, Time 29.9959
+Epoch 22, Score -11.0000, Loss 0.0913, Time 30.3489
+Epoch 23, Score -19.0000, Loss 0.0895, Time 31.5688
+Epoch 24, Score -3.0000, Loss 0.0822, Time 31.5938
+Epoch 25, Score -2.0000, Loss 0.0801, Time 31.8768
+Epoch 26, Score -5.0000, Loss 0.0796, Time 32.2523
+Epoch 27, Score -3.0000, Loss 0.0794, Time 32.2161
+Epoch 28, Score -3.0000, Loss 0.0756, Time 32.9333
+Epoch 29, Score -5.0000, Loss 0.0763, Time 33.6560
+Epoch 30, Score -9.0000, Loss 0.0761, Time 33.9010
+Epoch 31, Score -8.0000, Loss 0.0739, Time 33.9427
+Epoch 32, Score -11.0000, Loss 0.0716, Time 34.5635
+Epoch 33, Score -15.0000, Loss 0.0724, Time 34.4701
+Epoch 34, Score -17.0000, Loss 0.0718, Time 35.2781
+Epoch 35, Score -2.0000, Loss 0.0693, Time 35.3461
+Epoch 36, Score -4.0000, Loss 0.0635, Time 35.2416
+Epoch 37, Score -7.0000, Loss 0.0640, Time 35.7221
+Epoch 38, Score -13.0000, Loss 0.0635, Time 35.8563
+Epoch 39, Score -17.0000, Loss 0.0621, Time 35.9725
+Epoch 40, Score -18.0000, Loss 0.0592, Time 36.4346
+Epoch 41, Score -1.0000, Loss 0.0583, Time 36.8851
+Epoch 42, Score 0.0000, Loss 0.0563, Time 36.6619
+Epoch 43, Score -6.0000, Loss 0.0568, Time 36.6432
+Epoch 44, Score -7.0000, Loss 0.0561, Time 36.8909
+Epoch 45, Score -5.0000, Loss 0.0536, Time 36.9829
+Epoch 46, Score -9.0000, Loss 0.0522, Time 37.6032
+Epoch 47, Score -13.0000, Loss 0.0504, Time 37.9664
+Epoch 48, Score -15.0000, Loss 0.0509, Time 37.8662
+Epoch 49, Score -20.0000, Loss 0.0502, Time 38.5501
+Epoch 50, Score 0.0000, Loss 0.0496, Time 39.1116
+Epoch 51, Score -6.0000, Loss 0.0471, Time 38.8826
+Epoch 52, Score -11.0000, Loss 0.0448, Time 39.2716
+Epoch 53, Score -10.0000, Loss 0.0462, Time 39.4010
+Epoch 54, Score -12.0000, Loss 0.0466, Time 40.0422
+Epoch 55, Score -17.0000, Loss 0.0435, Time 40.1164
+Epoch 56, Score -18.0000, Loss 0.0454, Time 40.6786
+Epoch 57, Score 0.0000, Loss 0.0433, Time 40.9256
+Epoch 58, Score -19.0000, Loss 0.0433, Time 40.9517
+Epoch 59, Score -3.0000, Loss 0.0420, Time 41.1235
+Epoch 60, Score -4.0000, Loss 0.0419, Time 41.6736
+Epoch 61, Score -9.0000, Loss 0.0415, Time 41.3310
+Epoch 62, Score -15.0000, Loss 0.0403, Time 41.9942
+Epoch 63, Score -20.0000, Loss 0.0387, Time 41.9996
+Epoch 64, Score -2.0000, Loss 0.0393, Time 42.2321
+Epoch 65, Score -2.0000, Loss 0.0384, Time 42.2127
+Epoch 66, Score -10.0000, Loss 0.0384, Time 42.6911
+Epoch 67, Score -13.0000, Loss 0.0373, Time 42.9251
+Epoch 68, Score -17.0000, Loss 0.0380, Time 43.6070
+Epoch 69, Score -20.0000, Loss 0.0364, Time 43.2706
+Epoch 70, Score -5.0000, Loss 0.0364, Time 43.9284
+Epoch 71, Score -7.0000, Loss 0.0343, Time 44.0442
+Epoch 72, Score -12.0000, Loss 0.0343, Time 44.1037
+Epoch 73, Score -17.0000, Loss 0.0343, Time 44.3268
+Epoch 74, Score 0.0000, Loss 0.0328, Time 45.0824
+Epoch 75, Score -2.0000, Loss 0.0321, Time 45.1773
+Epoch 76, Score -8.0000, Loss 0.0323, Time 45.6095
+Epoch 77, Score -10.0000, Loss 0.0321, Time 45.0692
+Epoch 78, Score -14.0000, Loss 0.0324, Time 45.3760
+Epoch 79, Score -18.0000, Loss 0.0325, Time 46.1731
+Epoch 80, Score -4.0000, Loss 0.0310, Time 46.4524
+Epoch 81, Score -8.0000, Loss 0.0314, Time 46.4894
+Epoch 82, Score -9.0000, Loss 0.0295, Time 46.7686
+Epoch 83, Score -16.0000, Loss 0.0292, Time 47.2786
+Epoch 84, Score 0.0000, Loss 0.0284, Time 47.0829
+Epoch 85, Score -7.0000, Loss 0.0285, Time 47.3425
+Epoch 86, Score -14.0000, Loss 0.0281, Time 47.9178
+Epoch 87, Score -20.0000, Loss 0.0266, Time 48.0321
+Epoch 88, Score -2.0000, Loss 0.0272, Time 48.8568
+Epoch 89, Score -9.0000, Loss 0.0268, Time 49.1739
+Epoch 90, Score -14.0000, Loss 0.0257, Time 49.5244
+Epoch 91, Score -20.0000, Loss 0.0263, Time 49.7984
+Epoch 92, Score -3.0000, Loss 0.0258, Time 49.8084
+Epoch 93, Score -7.0000, Loss 0.0251, Time 50.1752
+Epoch 94, Score -12.0000, Loss 0.0236, Time 50.5057
+Epoch 95, Score -19.0000, Loss 0.0243, Time 50.3765
+Epoch 96, Score -3.0000, Loss 0.0240, Time 50.5213
+Epoch 97, Score -3.0000, Loss 0.0236, Time 51.6354
+Epoch 98, Score -8.0000, Loss 0.0227, Time 51.7106
+Epoch 99, Score -10.0000, Loss 0.0224, Time 51.3530
+Epoch 100, Score -15.0000, Loss 0.0219, Time 52.2124
+Epoch 101, Score -1.0000, Loss 0.0223, Time 51.7947
+Epoch 102, Score -2.0000, Loss 0.0219, Time 52.0680
+Epoch 103, Score -7.0000, Loss 0.0214, Time 52.3858
+Epoch 104, Score -7.0000, Loss 0.0206, Time 51.8862
+Epoch 105, Score -13.0000, Loss 0.0207, Time 51.8536
+Epoch 106, Score -17.0000, Loss 0.0199, Time 52.8369
+Epoch 107, Score -2.0000, Loss 0.0194, Time 53.1955
+Epoch 108, Score -8.0000, Loss 0.0210, Time 51.8349
+Epoch 109, Score -11.0000, Loss 0.0196, Time 52.1552
+Epoch 110, Score -16.0000, Loss 0.0180, Time 51.7526
+Epoch 111, Score 0.0000, Loss 0.0187, Time 52.8465
+Epoch 112, Score -6.0000, Loss 0.0195, Time 52.8618
+Epoch 113, Score -12.0000, Loss 0.0181, Time 52.2096
+Epoch 114, Score -18.0000, Loss 0.0193, Time 53.2525
+Epoch 115, Score -1.0000, Loss 0.0185, Time 53.0306
+Epoch 116, Score -7.0000, Loss 0.0174, Time 53.0304
+Epoch 117, Score -13.0000, Loss 0.0176, Time 52.1133
+Epoch 118, Score -19.0000, Loss 0.0169, Time 51.9247
+Epoch 119, Score -18.0000, Loss 0.0171, Time 52.7847
+Epoch 120, Score 0.0000, Loss 0.0174, Time 53.3736
+Epoch 121, Score -3.0000, Loss 0.0171, Time 53.2887
+Epoch 122, Score -5.0000, Loss 0.0172, Time 53.1802
+Epoch 123, Score -9.0000, Loss 0.0170, Time 53.1470
+Epoch 124, Score -16.0000, Loss 0.0162, Time 53.1402
+Epoch 125, Score 0.0000, Loss 0.0171, Time 53.5588
+Epoch 126, Score -3.0000, Loss 0.0159, Time 54.1464
+Epoch 127, Score -8.0000, Loss 0.0151, Time 52.7479
+Epoch 128, Score -15.0000, Loss 0.0154, Time 52.7516
+Epoch 129, Score 0.0000, Loss 0.0166, Time 53.1109
+Epoch 130, Score -5.0000, Loss 0.0146, Time 53.3351
+Epoch 131, Score -12.0000, Loss 0.0144, Time 52.9401
+Epoch 132, Score -18.0000, Loss 0.0146, Time 52.6134
+Epoch 133, Score -19.0000, Loss 0.0137, Time 53.2953
+Epoch 134, Score -4.0000, Loss 0.0139, Time 52.6032
+Epoch 135, Score -9.0000, Loss 0.0140, Time 53.2972
+Epoch 136, Score -15.0000, Loss 0.0137, Time 53.9597
+Epoch 137, Score 0.0000, Loss 0.0130, Time 53.2130
+Epoch 138, Score -5.0000, Loss 0.0130, Time 53.0570
+Epoch 139, Score -10.0000, Loss 0.0132, Time 53.4721
+Epoch 140, Score -15.0000, Loss 0.0134, Time 53.7413
+Epoch 141, Score 0.0000, Loss 0.0123, Time 53.3419
+Epoch 142, Score -6.0000, Loss 0.0124, Time 53.1049
+Epoch 143, Score -12.0000, Loss 0.0125, Time 52.6581
+Epoch 144, Score -19.0000, Loss 0.0118, Time 53.6959
+Epoch 145, Score -3.0000, Loss 0.0120, Time 53.4621
+Epoch 146, Score -9.0000, Loss 0.0114, Time 53.9108
+Epoch 147, Score -11.0000, Loss 0.0114, Time 53.6134
+Epoch 148, Score -18.0000, Loss 0.0111, Time 53.6159
+Epoch 149, Score 0.0000, Loss 0.0113, Time 53.6879
+Epoch 150, Score -7.0000, Loss 0.0109, Time 53.2154
+Epoch 151, Score -13.0000, Loss 0.0116, Time 53.5476
+Epoch 152, Score -18.0000, Loss 0.0105, Time 53.4473
+Epoch 153, Score -3.0000, Loss 0.0109, Time 53.7857
+Epoch 154, Score -9.0000, Loss 0.0108, Time 53.1632
+Epoch 155, Score -15.0000, Loss 0.0108, Time 54.2904
+Epoch 156, Score -20.0000, Loss 0.0098, Time 52.9802
+Epoch 157, Score -2.0000, Loss 0.0110, Time 53.3970
+Epoch 158, Score -4.0000, Loss 0.0103, Time 53.6999
+Epoch 159, Score -11.0000, Loss 0.0095, Time 53.9945
+Epoch 160, Score -14.0000, Loss 0.0098, Time 53.8049
+Epoch 161, Score -19.0000, Loss 0.0099, Time 53.5399
+Epoch 162, Score -4.0000, Loss 0.0102, Time 53.2398
+Epoch 163, Score -9.0000, Loss 0.0092, Time 53.8946
+Epoch 164, Score -11.0000, Loss 0.0101, Time 53.7820
+Epoch 165, Score -16.0000, Loss 0.0100, Time 53.9261
+Epoch 166, Score 0.0000, Loss 0.0093, Time 54.2424
+Epoch 167, Score -5.0000, Loss 0.0090, Time 53.3040
+Epoch 168, Score -11.0000, Loss 0.0091, Time 53.8397
+Epoch 169, Score -17.0000, Loss 0.0088, Time 53.4009
+Epoch 170, Score 0.0000, Loss 0.0087, Time 53.6508
+Epoch 171, Score -6.0000, Loss 0.0090, Time 53.7357
+Epoch 172, Score -10.0000, Loss 0.0090, Time 53.7134
+Epoch 173, Score -17.0000, Loss 0.0082, Time 53.5711
+Epoch 174, Score -1.0000, Loss 0.0084, Time 53.3705
+Epoch 175, Score -4.0000, Loss 0.0085, Time 53.3588
+Epoch 176, Score -10.0000, Loss 0.0082, Time 52.9777
+Epoch 177, Score -13.0000, Loss 0.0084, Time 54.2646
+Epoch 178, Score -16.0000, Loss 0.0080, Time 53.9606
+Epoch 179, Score -20.0000, Loss 0.0085, Time 53.8187
+Epoch 180, Score -2.0000, Loss 0.0081, Time 53.8704
+Epoch 181, Score -8.0000, Loss 0.0081, Time 53.5026
+Epoch 182, Score -14.0000, Loss 0.0079, Time 53.4913
+Epoch 183, Score -16.0000, Loss 0.0081, Time 54.1278
+Epoch 184, Score -19.0000, Loss 0.0081, Time 54.3760
+Epoch 185, Score -5.0000, Loss 0.0073, Time 53.6484
+Epoch 186, Score -7.0000, Loss 0.0080, Time 53.6558
+Epoch 187, Score -13.0000, Loss 0.0078, Time 53.2778
+Epoch 188, Score -16.0000, Loss 0.0080, Time 53.3300
+Epoch 189, Score -20.0000, Loss 0.0082, Time 54.6049
+Epoch 190, Score -2.0000, Loss 0.0076, Time 53.8423
+Epoch 191, Score -8.0000, Loss 0.0080, Time 54.0385
+Epoch 192, Score -12.0000, Loss 0.0076, Time 53.4520
+Epoch 193, Score -13.0000, Loss 0.0076, Time 53.8325
+Epoch 194, Score -20.0000, Loss 0.0077, Time 53.6111
+Epoch 195, Score -3.0000, Loss 0.0078, Time 54.5108
+Epoch 196, Score -8.0000, Loss 0.0075, Time 54.1330
+wandb: Waiting for W&B process to finish, PID 5970
+
+Epoch 197, Score -15.0000, Loss 0.0076, Time 53.3204
+Epoch 198, Score -20.0000, Loss 0.0072, Time 53.3873
+Epoch 199, Score -1.0000, Loss 0.0073, Time 53.2578
+Epoch 200, Score -8.0000, Loss 0.0075, Time 53.4130
+Epoch 201, Score -12.0000, Loss 0.0076, Time 53.7163
+Epoch 202, Score -18.0000, Loss 0.0073, Time 53.2811
+Epoch 203, Score 0.0000, Loss 0.0072, Time 53.1742
+Epoch 204, Score -5.0000, Loss 0.0072, Time 54.4771
+Epoch 205, Score -11.0000, Loss 0.0074, Time 54.0525
+Epoch 206, Score -17.0000, Loss 0.0075, Time 53.1542
+Epoch 207, Score 0.0000, Loss 0.0071, Time 53.5893
+Epoch 208, Score -3.0000, Loss 0.0076, Time 54.3465
+Epoch 209, Score -8.0000, Loss 0.0074, Time 53.9680
+Epoch 210, Score -12.0000, Loss 0.0072, Time 54.4030
+Epoch 211, Score -19.0000, Loss 0.0070, Time 54.1220
+Epoch 212, Score 0.0000, Loss 0.0073, Time 53.5554
+Epoch 213, Score -3.0000, Loss 0.0075, Time 54.4484
+Epoch 214, Score -10.0000, Loss 0.0073, Time 53.1264
+Epoch 215, Score -15.0000, Loss 0.0072, Time 53.6527
+Epoch 216, Score 0.0000, LosTraceback (most recent call last):
+  File "train.py", line 132, in <module>
+    trainer.train()
+  File "/home/ubuntu/rlmp/refactor/trainer.py", line 142, in train
+    transitions, torchify=True, state_transformer=self.state_transformer)
+  File "/home/ubuntu/rlmp/refactor/utils.py", line 32, in expand_transitions
+    states.append(trans.state if not state_transformer else state_transformer(trans.state))
+  File "train.py", line 116, in <lambda>
+    state_transformer = lambda s: cnn_state_transformer(s, device)
+  File "/home/ubuntu/rlmp/refactor/transformers.py", line 13, in cnn_state_transformer
+    state = torch.FloatTensor(state).to(device)
+KeyboardInterrupt
+wandb: Program failed with code 255. Press ctrl-c to abort syncing.
+s 0.0075, Time 53.4402
+Epoch 217, Score -4.0000, Loss 0.0075, Time 54.3978
+Epoch 218, Score -7.0000, Loss 0.0071, Time 54.4486
+Epoch 219, Score -10.0000, Loss 0.0070, Time 54.1776
+Epoch 220, Score -17.0000, Loss 0.0071, Time 53.0691
+Epoch 221, Score -1.0000, Loss 0.0072, Time 53.7543
+Epoch 222, Score -5.0000, Loss 0.0072, Time 54.5013
+Epoch 223, Score -11.0000, Loss 0.0071, Time 53.7062
+Epoch 224, Score -17.0000, Loss 0.0070, Time 53.4320
+Epoch 225, Score 0.0000, Loss 0.0071, Time 54.1221
+Epoch 226, Score -3.0000, Loss 0.0069, Time 53.7580
+Epoch 227, Score -2.0000, Loss 0.0068, Time 54.4601
+Epoch 228, Score -3.0000, Loss 0.0073, Time 54.3143
+Epoch 229, Score -8.0000, Loss 0.0072, Time 54.3259
+Epoch 230, Score -13.0000, Loss 0.0071, Time 54.3293
+Epoch 231, Score -17.0000, Loss 0.0069, Time 53.4774
+Epoch 232, Score 0.0000, Loss 0.0068, Time 53.8609
+Epoch 233, Score -1.0000, Loss 0.0067, Time 53.8832
+Epoch 234, Score -7.0000, Loss 0.0070, Time 54.5076
+Epoch 235, Score -9.0000, Loss 0.0071, Time 54.5614
+Epoch 236, Score -15.0000, Loss 0.0067, Time 54.1017
+Epoch 237, Score -18.0000, Loss 0.0067, Time 54.3447
+Epoch 238, Score -1.0000, Loss 0.0069, Time 54.3129
+Epoch 239, Score -6.0000, Loss 0.0071, Time 53.6900
+Epoch 240, Score -10.0000, Loss 0.0074, Time 53.1296
+Epoch 241, Score -15.0000, Loss 0.0070, Time 54.3996
+Epoch 242, Score -19.0000, Loss 0.0072, Time 54.1364
+Epoch 243, Score 0.0000, Loss 0.0074, Time 53.4660
+Epoch 244, Score -3.0000, Loss 0.0073, Time 53.4358
+Epoch 245, Score -8.0000, Loss 0.0070, Time 53.2828
+Epoch 246, Score -13.0000, Loss 0.0072, Time 53.8283
+Epoch 247, Score -20.0000, Loss 0.0070, Time 53.7153
+Epoch 248, Score -2.0000, Loss 0.0067, Time 53.6064
+Epoch 249, Score -4.0000, Loss 0.0067, Time 54.0141
+Epoch 250, Score -7.0000, Loss 0.0067, Time 54.6099
+Epoch 251, Score -14.0000, Loss 0.0069, Time 54.2523
+Epoch 252, Score -17.0000, Loss 0.0069, Time 53.8640
+Epoch 253, Score -19.0000, Loss 0.0065, Time 54.6148
+Epoch 254, Score -2.0000, Loss 0.0069, Time 54.2198
+Epoch 255, Score -3.0000, Loss 0.0068, Time 54.0115
+Epoch 256, Score -11.0000, Loss 0.0066, Time 53.7382
+Epoch 257, Score -14.0000, Loss 0.0064, Time 53.7559
+Epoch 258, Score -19.0000, Loss 0.0067, Time 54.4991
+Epoch 259, Score -1.0000, Loss 0.0064, Time 54.2816
+Epoch 260, Score -5.0000, Loss 0.0064, Time 54.3200
+Epoch 261, Score -5.0000, Loss 0.0065, Time 53.9809
+Epoch 262, Score -11.0000, Loss 0.0058, Time 54.4746
+Epoch 263, Score -12.0000, Loss 0.0064, Time 53.2964
+Epoch 264, Score -13.0000, Loss 0.0062, Time 53.4939
+Epoch 265, Score -18.0000, Loss 0.0064, Time 53.7191
+Epoch 266, Score 0.0000, Loss 0.0062, Time 54.0929
+Epoch 267, Score -2.0000, Loss 0.0062, Time 53.6040
+Epoch 268, Score -5.0000, Loss 0.0064, Time 54.1943
+Epoch 269, Score -11.0000, Loss 0.0064, Time 54.7065
+Epoch 270, Score -12.0000, Loss 0.0064, Time 54.0745
+Epoch 271, Score -16.0000, Loss 0.0063, Time 53.2522
+Epoch 272, Score 0.0000, Loss 0.0063, Time 53.3226
+Epoch 273, Score -4.0000, Loss 0.0063, Time 54.1867
+Epoch 274, Score -10.0000, Loss 0.0059, Time 54.7060
+Epoch 275, Score -11.0000, Loss 0.0062, Time 54.1134
+wandb: Run summary:
+wandb:        _timestamp 1601418813.4295805
+wandb:          _runtime 13268.75108218193
+wandb:              loss 0.006170664913952351
+wandb:              time 54.11338806152344
+wandb:             _step 602
+wandb:   episodic_reward -20.0
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: - 0.02MB of 0.02MB uploaded (0.00MB deduped)wandb: \ 0.02MB of 0.02MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced sleek-snow-297: https://app.wandb.ai/dmriser/rlmp/runs/1rirbtij
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: Tracking run with wandb version 0.9.4
+wandb: Wandb version 0.10.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200929_223409-t2bl7d59
+wandb: Syncing run graceful-pine-298
+wandb: ⭐️ View project at https://app.wandb.ai/dmriser/rlmp
+wandb: 🚀 View run at https://app.wandb.ai/dmriser/rlmp/runs/t2bl7d59
+wandb: Run `wandb off` to turn off syncing.
+
+Using GPU for training.
+Epoch 0, Score 0.0000, Loss 0.2093, Time 22.9208
+Epoch 1, Score -17.0000, Loss 0.2093, Time 24.1390
+Epoch 2, Score -18.0000, Loss 0.2223, Time 24.3529
+Epoch 3, Score -3.0000, Loss 0.2438, Time 24.4011
+Epoch 4, Score -7.0000, Loss 0.2580, Time 24.8872
+Epoch 5, Score -9.0000, Loss 0.2764, Time 25.0022
+Epoch 6, Score -16.0000, Loss 0.2751, Time 25.6749
+Epoch 7, Score 0.0000, Loss 0.2740, Time 25.8373
+Epoch 8, Score -3.0000, Loss 0.2827, Time 25.6434
+Epoch 9, Score -9.0000, Loss 0.2888, Time 26.2004
+Epoch 10, Score -16.0000, Loss 0.2850, Time 26.4421
+Epoch 11, Score -1.0000, Loss 0.2897, Time 26.7220
+Epoch 12, Score -8.0000, Loss 0.2939, Time 27.2382
+Epoch 13, Score -10.0000, Loss 0.2932, Time 28.0132
+Epoch 14, Score -14.0000, Loss 0.3022, Time 28.5160
+Epoch 15, Score 0.0000, Loss 0.3035, Time 28.3683
+Epoch 16, Score -4.0000, Loss 0.3054, Time 28.4064
+Epoch 17, Score -9.0000, Loss 0.3051, Time 29.0088
+Epoch 18, Score -10.0000, Loss 0.3044, Time 29.1865
+Epoch 19, Score -11.0000, Loss 0.3086, Time 29.9002
+Epoch 20, Score -15.0000, Loss 0.3076, Time 29.6712
+Epoch 21, Score 0.0000, Loss 0.3034, Time 30.2993
+Epoch 22, Score -4.0000, Loss 0.3052, Time 30.4031
+Epoch 23, Score -7.0000, Loss 0.3067, Time 31.0512
+Epoch 24, Score -9.0000, Loss 0.3021, Time 31.8050
+Epoch 25, Score -16.0000, Loss 0.3012, Time 32.5281
+Epoch 26, Score -16.0000, Loss 0.3004, Time 32.3318
+Epoch 27, Score 0.0000, Loss 0.2963, Time 32.4469
+Epoch 28, Score -2.0000, Loss 0.2926, Time 33.5407
+Epoch 29, Score -9.0000, Loss 0.2927, Time 33.2733
+Epoch 30, Score -11.0000, Loss 0.2929, Time 34.0711
+Epoch 31, Score -18.0000, Loss 0.2906, Time 33.7486
+Epoch 32, Score -2.0000, Loss 0.2913, Time 34.2247
+Epoch 33, Score -9.0000, Loss 0.2896, Time 33.9252
+Epoch 34, Score -14.0000, Loss 0.2885, Time 35.0134
+Epoch 35, Score -15.0000, Loss 0.2860, Time 34.9519
+Epoch 36, Score -16.0000, Loss 0.2866, Time 34.8481
+Epoch 37, Score -1.0000, Loss 0.2870, Time 35.8057
+Epoch 38, Score -4.0000, Loss 0.2900, Time 35.6775
+Epoch 39, Score -6.0000, Loss 0.2883, Time 35.7653
+Epoch 40, Score -11.0000, Loss 0.2923, Time 36.5308
+Epoch 41, Score -17.0000, Loss 0.2878, Time 36.8282
+Epoch 42, Score 0.0000, Loss 0.2877, Time 36.5220
+Epoch 43, Score -1.0000, Loss 0.2867, Time 37.1502
+Epoch 44, Score -5.0000, Loss 0.2850, Time 36.7542
+Epoch 45, Score -4.0000, Loss 0.2872, Time 37.4490
+Epoch 46, Score -8.0000, Loss 0.2824, Time 37.8471
+Epoch 47, Score -12.0000, Loss 0.2831, Time 37.3605
+Epoch 48, Score -15.0000, Loss 0.2807, Time 37.8152
+Epoch 49, Score -8.0000, Loss 0.2785, Time 38.5577
+Epoch 50, Score -16.0000, Loss 0.2752, Time 38.6903
+Epoch 51, Score 0.0000, Loss 0.2751, Time 38.6588
+Epoch 52, Score -5.0000, Loss 0.2749, Time 39.3101
+Epoch 53, Score -12.0000, Loss 0.2753, Time 39.3285
+Epoch 54, Score -14.0000, Loss 0.2743, Time 39.1545
+Epoch 55, Score -20.0000, Loss 0.2776, Time 39.7993
+Epoch 56, Score 0.0000, Loss 0.2734, Time 40.2233
+Epoch 57, Score -5.0000, Loss 0.2713, Time 40.4923
+Epoch 58, Score -10.0000, Loss 0.2740, Time 41.0560
+Epoch 59, Score -15.0000, Loss 0.2724, Time 40.4706
+Epoch 60, Score -20.0000, Loss 0.2688, Time 40.8988
+Epoch 61, Score -2.0000, Loss 0.2715, Time 41.7767
+Epoch 62, Score -8.0000, Loss 0.2716, Time 41.4996
+Epoch 63, Score -15.0000, Loss 0.2687, Time 41.5651
+Epoch 64, Score -1.0000, Loss 0.2674, Time 42.1997
+Epoch 65, Score -8.0000, Loss 0.2683, Time 42.4001
+Epoch 66, Score -12.0000, Loss 0.2700, Time 42.4301
+Epoch 67, Score -16.0000, Loss 0.2706, Time 43.1634
+Epoch 68, Score 0.0000, Loss 0.2683, Time 43.6907
+Epoch 69, Score -8.0000, Loss 0.2679, Time 43.8867
+Epoch 70, Score -12.0000, Loss 0.2683, Time 43.9557
+Epoch 71, Score -19.0000, Loss 0.2658, Time 43.9943
+Epoch 72, Score -5.0000, Loss 0.2642, Time 44.4436
+Epoch 73, Score -12.0000, Loss 0.2614, Time 44.8374
+Epoch 74, Score -19.0000, Loss 0.2593, Time 44.2474
+Epoch 75, Score -2.0000, Loss 0.2593, Time 45.2141
+Epoch 76, Score -9.0000, Loss 0.2577, Time 45.4110
+Epoch 77, Score -12.0000, Loss 0.2563, Time 46.0040
+Epoch 78, Score -19.0000, Loss 0.2565, Time 45.8055
+Epoch 79, Score -2.0000, Loss 0.2549, Time 46.6565
+Epoch 80, Score -6.0000, Loss 0.2561, Time 46.2562
+Epoch 81, Score -9.0000, Loss 0.2579, Time 47.1978
+Epoch 82, Score -14.0000, Loss 0.2559, Time 46.8492
+Epoch 83, Score -18.0000, Loss 0.2595, Time 46.8046
+Epoch 84, Score -5.0000, Loss 0.2589, Time 47.6003
+Epoch 85, Score -8.0000, Loss 0.2575, Time 47.3048
+Epoch 86, Score -16.0000, Loss 0.2558, Time 47.6676
+Epoch 87, Score -2.0000, Loss 0.2556, Time 48.7734
+Epoch 88, Score -7.0000, Loss 0.2552, Time 48.1128
+Epoch 89, Score -10.0000, Loss 0.2573, Time 49.3369
+Epoch 90, Score -16.0000, Loss 0.2566, Time 48.9248
+Epoch 91, Score -2.0000, Loss 0.2568, Time 49.7257
+Epoch 92, Score -7.0000, Loss 0.2567, Time 50.1338
+Epoch 93, Score -14.0000, Loss 0.2539, Time 50.3076
+Epoch 94, Score -19.0000, Loss 0.2529, Time 50.8947
+Epoch 95, Score -4.0000, Loss 0.2499, Time 51.2900
+Epoch 96, Score -11.0000, Loss 0.2468, Time 50.9542
+Epoch 97, Score -17.0000, Loss 0.2451, Time 50.8385
+Epoch 98, Score -20.0000, Loss 0.2422, Time 51.1261
+Epoch 99, Score -6.0000, Loss 0.2434, Time 51.7126
+Epoch 100, Score -12.0000, Loss 0.2458, Time 51.8483
+Epoch 101, Score -19.0000, Loss 0.2471, Time 51.7542
+Epoch 102, Score -4.0000, Loss 0.2455, Time 52.3398
+Epoch 103, Score -10.0000, Loss 0.2429, Time 51.3260
+Epoch 104, Score -9.0000, Loss 0.2450, Time 52.0716
+Epoch 105, Score -16.0000, Loss 0.2450, Time 52.0358
+Epoch 106, Score 0.0000, Loss 0.2459, Time 52.7564
+Epoch 107, Score -7.0000, Loss 0.2466, Time 53.1472
+Epoch 108, Score -14.0000, Loss 0.2495, Time 52.5506
+Epoch 109, Score -19.0000, Loss 0.2515, Time 52.1606
+Epoch 110, Score -2.0000, Loss 0.2528, Time 52.2142
+Epoch 111, Score -8.0000, Loss 0.2523, Time 52.2061
+Epoch 112, Score -15.0000, Loss 0.2505, Time 52.7673
+Epoch 113, Score -19.0000, Loss 0.2497, Time 52.2098
+Epoch 114, Score -5.0000, Loss 0.2477, Time 52.9422
+Epoch 115, Score -10.0000, Loss 0.2479, Time 52.7983
+Epoch 116, Score -15.0000, Loss 0.2498, Time 51.9588
+Epoch 117, Score -1.0000, Loss 0.2506, Time 52.1327
+Epoch 118, Score -5.0000, Loss 0.2504, Time 52.8530
+Epoch 119, Score -13.0000, Loss 0.2474, Time 52.8194
+Epoch 120, Score -20.0000, Loss 0.2417, Time 53.4437
+Epoch 121, Score -5.0000, Loss 0.2438, Time 53.0861
+Epoch 122, Score -12.0000, Loss 0.2442, Time 53.5160
+Epoch 123, Score -19.0000, Loss 0.2450, Time 52.9629
+Epoch 124, Score -1.0000, Loss 0.2461, Time 52.3689
+Epoch 125, Score -5.0000, Loss 0.2453, Time 53.6400
+Epoch 126, Score -12.0000, Loss 0.2438, Time 54.3207
+Epoch 127, Score -16.0000, Loss 0.2427, Time 52.7067
+Epoch 128, Score -2.0000, Loss 0.2454, Time 52.8424
+Epoch 129, Score -9.0000, Loss 0.2419, Time 52.5639
+Epoch 130, Score -16.0000, Loss 0.2439, Time 52.5643
+Epoch 131, Score -2.0000, Loss 0.2431, Time 53.4468
+Epoch 132, Score -7.0000, Loss 0.2426, Time 53.0483
+Epoch 133, Score -13.0000, Loss 0.2428, Time 53.2847
+Epoch 134, Score -20.0000, Loss 0.2470, Time 53.1835
+Epoch 135, Score -6.0000, Loss 0.2468, Time 53.2928
+Epoch 136, Score -9.0000, Loss 0.2414, Time 53.8041
+Epoch 137, Score -16.0000, Loss 0.2396, Time 53.1477
+Epoch 138, Score -2.0000, Loss 0.2410, Time 53.5736
+Epoch 139, Score -9.0000, Loss 0.2434, Time 54.0550
+Epoch 140, Score -16.0000, Loss 0.2428, Time 53.9055
+Epoch 141, Score -1.0000, Loss 0.2475, Time 53.6390
+Epoch 142, Score -19.0000, Loss 0.2463, Time 52.9872
+Epoch 143, Score -2.0000, Loss 0.2449, Time 53.8053
+Epoch 144, Score -5.0000, Loss 0.2440, Time 53.1797
+Epoch 145, Score -13.0000, Loss 0.2461, Time 53.7385
+Epoch 146, Score -20.0000, Loss 0.2463, Time 53.7989
+Epoch 147, Score -4.0000, Loss 0.2451, Time 54.2618
+Epoch 148, Score -8.0000, Loss 0.2432, Time 53.8231
+Epoch 149, Score -15.0000, Loss 0.2429, Time 54.2268
+Epoch 150, Score 0.0000, Loss 0.2462, Time 53.9085
+Epoch 151, Score -7.0000, Loss 0.2451, Time 52.9565
+Epoch 152, Score -14.0000, Loss 0.2458, Time 53.5035
+Epoch 153, Score 0.0000, Loss 0.2457, Time 54.0968
+Epoch 154, Score -7.0000, Loss 0.2466, Time 54.2960
+Epoch 155, Score -13.0000, Loss 0.2462, Time 54.0082
+Epoch 156, Score -20.0000, Loss 0.2437, Time 53.2248
+Epoch 157, Score -5.0000, Loss 0.2466, Time 53.8585
+Epoch 158, Score -12.0000, Loss 0.2470, Time 53.4452
+Epoch 159, Score -17.0000, Loss 0.2460, Time 54.3658
+Epoch 160, Score -3.0000, Loss 0.2469, Time 53.5924
+Epoch 161, Score -10.0000, Loss 0.2466, Time 54.3891
+Epoch 162, Score -17.0000, Loss 0.2481, Time 53.7393
+Epoch 163, Score -3.0000, Loss 0.2466, Time 54.3053
+Epoch 164, Score -9.0000, Loss 0.2476, Time 53.5740
+Epoch 165, Score -15.0000, Loss 0.2502, Time 53.3992
+Epoch 166, Score -20.0000, Loss 0.2486, Time 53.3557
+Epoch 167, Score -6.0000, Loss 0.2488, Time 54.0189
+Epoch 168, Score -12.0000, Loss 0.2481, Time 53.9021
+Epoch 169, Score -19.0000, Loss 0.2482, Time 53.1827
+Epoch 170, Score -5.0000, Loss 0.2488, Time 53.1601
+Epoch 171, Score -12.0000, Loss 0.2459, Time 54.2253
+Epoch 172, Score -18.0000, Loss 0.2459, Time 53.2949
+Epoch 173, Score -4.0000, Loss 0.2472, Time 53.8759
+Epoch 174, Score -9.0000, Loss 0.2464, Time 54.3258
+Epoch 175, Score -16.0000, Loss 0.2447, Time 54.5608
+Epoch 176, Score -18.0000, Loss 0.2458, Time 53.8471
+Epoch 177, Score -3.0000, Loss 0.2456, Time 54.0383
+Epoch 178, Score -10.0000, Loss 0.2457, Time 53.9655
+Epoch 179, Score -17.0000, Loss 0.2466, Time 54.0035
+Epoch 180, Score -2.0000, Loss 0.2456, Time 53.2540
+Epoch 181, Score -2.0000, Loss 0.2457, Time 53.3786
+Epoch 182, Score -9.0000, Loss 0.2449, Time 53.9831
+Epoch 183, Score -15.0000, Loss 0.2431, Time 53.6581
+Epoch 184, Score -1.0000, Loss 0.2406, Time 53.4861
+Epoch 185, Score -7.0000, Loss 0.2425, Time 53.7405
+Epoch 186, Score -12.0000, Loss 0.2395, Time 54.0927
+Epoch 187, Score -18.0000, Loss 0.2384, Time 53.9491
+Epoch 188, Score -1.0000, Loss 0.2386, Time 53.8068
+Epoch 189, Score -7.0000, Loss 0.2388, Time 53.2889
+Epoch 190, Score -12.0000, Loss 0.2402, Time 53.8929
+Epoch 191, Score -19.0000, Loss 0.2432, Time 53.9669
+Epoch 192, Score -4.0000, Loss 0.2447, Time 53.7944
+Epoch 193, Score -11.0000, Loss 0.2414, Time 53.0906
+Epoch 194, Score -16.0000, Loss 0.2439, Time 53.6962
+Epoch 195, Score -2.0000, Loss 0.2437, Time 53.4642
+Epoch 196, Score -7.0000, Loss 0.2448, Time 53.5257
+Epoch 197, Score -14.0000, Loss 0.2423, Time 53.6847
+Epoch 198, Score 0.0000, Loss 0.2418, Time 53.7051
+Epoch 199, Score -5.0000, Loss 0.2420, Time 54.4653
+Epoch 200, Score -12.0000, Loss 0.2425, Time 54.1565
+Epoch 201, Score -17.0000, Loss 0.2411, Time 53.4670
+Epoch 202, Score -3.0000, Loss 0.2422, Time 53.2480
+Epoch 203, Score -10.0000, Loss 0.2392, Time 53.5872
+Epoch 204, Score -17.0000, Loss 0.2402, Time 53.9439
+Epoch 205, Score -2.0000, Loss 0.2418, Time 53.9216
+Epoch 206, Score -8.0000, Loss 0.2409, Time 53.6378
+Epoch 207, Score -14.0000, Loss 0.2415, Time 53.9623
+Epoch 208, Score -20.0000, Loss 0.2428, Time 53.9949
+Epoch 209, Score 0.0000, Loss 0.2454, Time 54.2967
+Epoch 210, Score -6.0000, Loss 0.2438, Time 53.8787
+Epoch 211, Score -8.0000, Loss 0.2452, Time 53.9303
+Epoch 212, Score -14.0000, Loss 0.2449, Time 54.3936
+Epoch 213, Score 0.0000, Loss 0.2467, Time 53.5516
+Epoch 214, Score -5.0000, Loss 0.2432, Time 53.7735
+Epoch 215, Score -12.0000, Loss 0.2416, Time 53.6176
+Epoch 216, Score -19.0000, Loss 0.2435, Time 53.9538
+Epoch 217, Score -4.0000, Loss 0.2434, Time 53.7815
+Epoch 218, Score -11.0000, Loss 0.2445, Time 53.4920
+Epoch 219, Score -18.0000, Loss 0.2432, Time 53.3201
+Epoch 220, Score -3.0000, Loss 0.2428, Time 53.9499
+Epoch 221, Score -10.0000, Loss 0.2429, Time 53.6656
+Epoch 222, Score -17.0000, Loss 0.2430, Time 54.6764
+Epoch 223, Score -3.0000, Loss 0.2440, Time 53.7618
+Epoch 224, Score -10.0000, Loss 0.2429, Time 53.2883
+Epoch 225, Score -17.0000, Loss 0.2445, Time 53.6985
+Epoch 226, Score -2.0000, Loss 0.2442, Time 53.8568
+Epoch 227, Score -9.0000, Loss 0.2436, Time 54.0045
+Epoch 228, Score -16.0000, Loss 0.2414, Time 53.1838
+Epoch 229, Score -2.0000, Loss 0.2420, Time 53.7759
+Epoch 230, Score -9.0000, Loss 0.2424, Time 54.2770
+Epoch 231, Score -15.0000, Loss 0.2429, Time 53.4988
+Epoch 232, Score -1.0000, Loss 0.2430, Time 53.7023
+Epoch 233, Score -8.0000, Loss 0.2436, Time 54.4001
+Epoch 234, Score -13.0000, Loss 0.2440, Time 53.9558
+Epoch 235, Score -17.0000, Loss 0.2431, Time 53.2232
+Epoch 236, Score -3.0000, Loss 0.2415, Time 54.1222
+Epoch 237, Score -10.0000, Loss 0.2409, Time 53.8736
+Epoch 238, Score -17.0000, Loss 0.2413, Time 53.8808
+Epoch 239, Score -2.0000, Loss 0.2401, Time 53.6743
+Epoch 240, Score -6.0000, Loss 0.2398, Time 54.3232
+Epoch 241, Score -14.0000, Loss 0.2393, Time 53.8411
+Epoch 242, Score -19.0000, Loss 0.2399, Time 54.8030
+Epoch 243, Score -3.0000, Loss 0.2404, Time 54.5133
+Epoch 244, Score -8.0000, Loss 0.2382, Time 54.6012
+Epoch 245, Score -16.0000, Loss 0.2393, Time 53.6396
+Epoch 246, Score -1.0000, Loss 0.2382, Time 54.1691
+Epoch 247, Score -6.0000, Loss 0.2416, Time 53.7210
+Epoch 248, Score -12.0000, Loss 0.2389, Time 53.4943
+Epoch 249, Score -19.0000, Loss 0.2385, Time 53.8718
+Epoch 250, Score -4.0000, Loss 0.2369, Time 54.1546
+Epoch 251, Score -11.0000, Loss 0.2382, Time 54.2338
+Epoch 252, Score -18.0000, Loss 0.2411, Time 54.5352
+Epoch 253, Score -4.0000, Loss 0.2423, Time 54.1736
+Epoch 254, Score -11.0000, Loss 0.2418, Time 53.8329
+Epoch 255, Score -18.0000, Loss 0.2430, Time 53.7227
+Epoch 256, Score -3.0000, Loss 0.2449, Time 53.3192
+Epoch 257, Score -10.0000, Loss 0.2422, Time 53.3025
+Epoch 258, Score -17.0000, Loss 0.2415, Time 54.2281
+Epoch 259, Score -3.0000, Loss 0.2395, Time 53.4778
+Epoch 260, Score -7.0000, Loss 0.2400, Time 53.8587
+Epoch 261, Score -14.0000, Loss 0.2400, Time 53.4522
+Epoch 262, Score 0.0000, Loss 0.2408, Time 53.9840
+Epoch 263, Score -3.0000, Loss 0.2395, Time 54.2814
+Epoch 264, Score -10.0000, Loss 0.2408, Time 54.7674
+Epoch 265, Score -17.0000, Loss 0.2418, Time 53.7630
+Epoch 266, Score -3.0000, Loss 0.2419, Time 53.8562
+Epoch 267, Score -10.0000, Loss 0.2414, Time 53.8595
+Epoch 268, Score -17.0000, Loss 0.2383, Time 54.4349
+Epoch 269, Score -2.0000, Loss 0.2388, Time 54.0307
+Epoch 270, Score -9.0000, Loss 0.2386, Time 54.5966
+Epoch 271, Score -16.0000, Loss 0.2396, Time 54.7844
+Epoch 272, Score -2.0000, Loss 0.2416, Time 54.6861
+Epoch 273, Score -7.0000, Loss 0.2415, Time 53.6863
+Epoch 274, Score -11.0000, Loss 0.2414, Time 54.2351
+Epoch 275, Score -17.0000, Loss 0.2401, Time 53.7614
+Epoch 276, Score -3.0000, Loss 0.2410, Time 53.5476
+Epoch 277, Score -10.0000, Loss 0.2407, Time 54.0786
+Epoch 278, Score -17.0000, Loss 0.2424, Time 54.5422
+Epoch 279, Score -2.0000, Loss 0.2413, Time 54.7350
+Epoch 280, Score -9.0000, Loss 0.2405, Time 53.9000
+Epoch 281, Score -16.0000, Loss 0.2421, Time 54.6242
+Epoch 282, Score -2.0000, Loss 0.2420, Time 53.5862
+Epoch 283, Score -9.0000, Loss 0.2409, Time 54.1834
+Epoch 284, Score -16.0000, Loss 0.2387, Time 53.4658
+Epoch 285, Score -1.0000, Loss 0.2394, Time 54.1121
+Epoch 286, Score -7.0000, Loss 0.2399, Time 53.8880
+Epoch 287, Score -14.0000, Loss 0.2409, Time 54.3651
+Epoch 288, Score 0.0000, Loss 0.2412, Time 54.3197
+Epoch 289, Score -6.0000, Loss 0.2389, Time 53.8122
+Epoch 290, Score -13.0000, Loss 0.2399, Time 54.1989
+Epoch 291, Score -18.0000, Loss 0.2411, Time 54.8479
+Epoch 292, Score -2.0000, Loss 0.2426, Time 54.4765
+Epoch 293, Score -9.0000, Loss 0.2446, Time 54.7006
+Epoch 294, Score -16.0000, Loss 0.2458, Time 53.8502
+Epoch 295, Score -1.0000, Loss 0.2438, Time 54.5533
+Epoch 296, Score -5.0000, Loss 0.2429, Time 54.1655
+Epoch 297, Score -12.0000, Loss 0.2441, Time 54.1989
+Epoch 298, Score -19.0000, Loss 0.2432, Time 54.2627
+Epoch 299, Score -3.0000, Loss 0.2443, Time 54.5642
+Epoch 300, Score -8.0000, Loss 0.2450, Time 53.3343
+Epoch 301, Score -15.0000, Loss 0.2476, Time 53.7090
+Epoch 302, Score 0.0000, Loss 0.2455, Time 53.8162
+Epoch 303, Score -7.0000, Loss 0.2444, Time 54.2869
+Epoch 304, Score -14.0000, Loss 0.2416, Time 54.1587
+Epoch 305, Score 0.0000, Loss 0.2417, Time 53.8843
+Epoch 306, Score -7.0000, Loss 0.2442, Time 53.4269
+Epoch 307, Score -14.0000, Loss 0.2455, Time 53.9815
+Epoch 308, Score 0.0000, Loss 0.2449, Time 54.8229
+Epoch 309, Score -6.0000, Loss 0.2445, Time 54.3998
+Epoch 310, Score -13.0000, Loss 0.2435, Time 53.8925
+Epoch 311, Score -20.0000, Loss 0.2439, Time 54.7974
+Epoch 312, Score -5.0000, Loss 0.2460, Time 54.2380
+Epoch 313, Score -12.0000, Loss 0.2452, Time 54.3926
+Epoch 314, Score -17.0000, Loss 0.2470, Time 54.5237
+Epoch 315, Score -1.0000, Loss 0.2458, Time 54.6206
+Epoch 316, Score -8.0000, Loss 0.2438, Time 53.7732
+Epoch 317, Score -15.0000, Loss 0.2426, Time 53.8601
+Epoch 318, Score -1.0000, Loss 0.2422, Time 53.7493
+Epoch 319, Score -7.0000, Loss 0.2404, Time 54.6710
+Epoch 320, Score -12.0000, Loss 0.2422, Time 54.7248
+Epoch 321, Score -19.0000, Loss 0.2402, Time 54.4667
+Epoch 322, Score -5.0000, Loss 0.2410, Time 54.0201
+Epoch 323, Score -12.0000, Loss 0.2406, Time 54.7295
+Epoch 324, Score -19.0000, Loss 0.2413, Time 53.8460
+Epoch 325, Score -4.0000, Loss 0.2396, Time 53.9747
+Epoch 326, Score -11.0000, Loss 0.2421, Time 54.4173
+Epoch 327, Score -18.0000, Loss 0.2455, Time 54.2410
+Epoch 328, Score -4.0000, Loss 0.2467, Time 54.2976
+Epoch 329, Score -11.0000, Loss 0.2483, Time 54.4206
+Epoch 330, Score -18.0000, Loss 0.2471, Time 54.5160
+Epoch 331, Score -3.0000, Loss 0.2440, Time 54.0402
+Epoch 332, Score -10.0000, Loss 0.2440, Time 54.6956
+Epoch 333, Score -17.0000, Loss 0.2421, Time 54.6657
+Epoch 334, Score -2.0000, Loss 0.2426, Time 54.6404
+Epoch 335, Score -10.0000, Loss 0.2429, Time 53.3400
+Epoch 336, Score -17.0000, Loss 0.2443, Time 53.7396
+Epoch 337, Score -2.0000, Loss 0.2459, Time 54.1997
+Epoch 338, Score -9.0000, Loss 0.2469, Time 54.2920
+Epoch 339, Score -16.0000, Loss 0.2453, Time 53.7425
+Epoch 340, Score -2.0000, Loss 0.2454, Time 54.2933
+Epoch 341, Score -8.0000, Loss 0.2465, Time 53.5437
+Epoch 342, Score -15.0000, Loss 0.2464, Time 53.9032
+Epoch 343, Score 0.0000, Loss 0.2481, Time 53.6787
+Epoch 344, Score -7.0000, Loss 0.2472, Time 54.6404
+Epoch 345, Score -14.0000, Loss 0.2471, Time 53.7042
+Epoch 346, Score 0.0000, Loss 0.2490, Time 54.2870
+Epoch 347, Score -6.0000, Loss 0.2458, Time 53.7878
+Epoch 348, Score -13.0000, Loss 0.2431, Time 54.3416
+Epoch 349, Score -18.0000, Loss 0.2457, Time 54.6301
+Epoch 350, Score -2.0000, Loss 0.2431, Time 54.1756
+Epoch 351, Score -9.0000, Loss 0.2411, Time 54.6159
+Epoch 352, Score -16.0000, Loss 0.2423, Time 54.2709
+Epoch 353, Score -2.0000, Loss 0.2431, Time 54.7648
+Epoch 354, Score -9.0000, Loss 0.2424, Time 54.1618
+Epoch 355, Score -16.0000, Loss 0.2435, Time 54.5579
+Epoch 356, Score -1.0000, Loss 0.2448, Time 54.2606
+Epoch 357, Score -8.0000, Loss 0.2436, Time 54.0573
+Epoch 358, Score -14.0000, Loss 0.2434, Time 54.2255
+Epoch 359, Score -19.0000, Loss 0.2434, Time 54.0985
+Epoch 360, Score -4.0000, Loss 0.2455, Time 54.0450
+Epoch 361, Score -11.0000, Loss 0.2443, Time 54.5672
+Epoch 362, Score -18.0000, Loss 0.2462, Time 53.5800
+Epoch 363, Score -2.0000, Loss 0.2445, Time 53.5984
+Epoch 364, Score -9.0000, Loss 0.2438, Time 54.5137
+Epoch 365, Score -16.0000, Loss 0.2419, Time 53.9358
+Epoch 366, Score -2.0000, Loss 0.2423, Time 54.2627
+Epoch 367, Score -9.0000, Loss 0.2454, Time 54.0367
+Epoch 368, Score -16.0000, Loss 0.2448, Time 53.9332
+Epoch 369, Score -1.0000, Loss 0.2452, Time 53.4713
+Epoch 370, Score -8.0000, Loss 0.2438, Time 53.9904
+Epoch 371, Score -12.0000, Loss 0.2435, Time 54.0113
+Epoch 372, Score -19.0000, Loss 0.2436, Time 54.5435
+Epoch 373, Score -5.0000, Loss 0.2447, Time 54.5522
+Epoch 374, Score -10.0000, Loss 0.2431, Time 54.3865
+Epoch 375, Score -17.0000, Loss 0.2427, Time 54.0049
+Epoch 376, Score -2.0000, Loss 0.2433, Time 54.2348
+Epoch 377, Score -7.0000, Loss 0.2452, Time 54.1043
+Epoch 378, Score -14.0000, Loss 0.2458, Time 54.0499
+Epoch 379, Score 0.0000, Loss 0.2465, Time 53.3655
+Epoch 380, Score -7.0000, Loss 0.2461, Time 53.5961
+Epoch 381, Score -14.0000, Loss 0.2444, Time 54.0204
+Epoch 382, Score -18.0000, Loss 0.2454, Time 54.1493
+Epoch 383, Score -4.0000, Loss 0.2448, Time 54.6655
+Epoch 384, Score -11.0000, Loss 0.2445, Time 53.9897
+Epoch 385, Score -18.0000, Loss 0.2455, Time 54.4227
+Epoch 386, Score -3.0000, Loss 0.2435, Time 54.1522
+Epoch 387, Score -9.0000, Loss 0.2430, Time 54.2805
+Epoch 388, Score -12.0000, Loss 0.2433, Time 54.1748
+Epoch 389, Score -19.0000, Loss 0.2427, Time 54.0632
+Epoch 390, Score -4.0000, Loss 0.2404, Time 54.4474
+Epoch 391, Score -8.0000, Loss 0.2388, Time 54.5070
+Epoch 392, Score -15.0000, Loss 0.2401, Time 53.8486
+Epoch 393, Score 0.0000, Loss 0.2395, Time 54.3432
+Epoch 394, Score -7.0000, Loss 0.2412, Time 54.4682
+Epoch 395, Score -14.0000, Loss 0.2410, Time 54.1611
+Epoch 396, Score 0.0000, Loss 0.2410, Time 54.2797
+Epoch 397, Score -7.0000, Loss 0.2401, Time 54.2954
+Epoch 398, Score -14.0000, Loss 0.2374, Time 53.6858
+Epoch 399, Score -16.0000, Loss 0.2374, Time 54.0148
+Epoch 400, Score -1.0000, Loss 0.2400, Time 53.5695
+Epoch 401, Score -8.0000, Loss 0.2395, Time 54.4487
+Epoch 402, Score -15.0000, Loss 0.2404, Time 53.9624
+Epoch 403, Score 0.0000, Loss 0.2401, Time 54.6768
+Epoch 404, Score -8.0000, Loss 0.2402, Time 53.7597
+Epoch 405, Score -15.0000, Loss 0.2415, Time 54.0300
+Epoch 406, Score -16.0000, Loss 0.2420, Time 53.8105
+Epoch 407, Score -1.0000, Loss 0.2436, Time 54.7732
+Epoch 408, Score -3.0000, Loss 0.2433, Time 54.6489
+Epoch 409, Score -10.0000, Loss 0.2439, Time 53.4160
+Epoch 410, Score -17.0000, Loss 0.2442, Time 54.5872
+Epoch 411, Score -2.0000, Loss 0.2441, Time 54.4637
+Epoch 412, Score -9.0000, Loss 0.2449, Time 53.5506
+Epoch 413, Score -16.0000, Loss 0.2441, Time 53.3168
+Epoch 414, Score -1.0000, Loss 0.2417, Time 54.6662
+Epoch 415, Score -8.0000, Loss 0.2411, Time 54.3330
+Epoch 416, Score -15.0000, Loss 0.2420, Time 53.7636
+Epoch 417, Score 0.0000, Loss 0.2430, Time 54.1340
+Epoch 418, Score -7.0000, Loss 0.2412, Time 53.8242
+Epoch 419, Score -14.0000, Loss 0.2430, Time 54.4241
+Epoch 420, Score 0.0000, Loss 0.2434, Time 53.6701
+Epoch 421, Score -7.0000, Loss 0.2431, Time 53.8770
+Epoch 422, Score -13.0000, Loss 0.2420, Time 53.3772
+Epoch 423, Score -19.0000, Loss 0.2416, Time 53.2744
+Epoch 424, Score -4.0000, Loss 0.2434, Time 53.9912
+Epoch 425, Score -11.0000, Loss 0.2444, Time 54.6450
+Epoch 426, Score -18.0000, Loss 0.2455, Time 53.9810
+Epoch 427, Score -3.0000, Loss 0.2446, Time 54.1511
+Epoch 428, Score -11.0000, Loss 0.2445, Time 54.3682
+Epoch 429, Score -17.0000, Loss 0.2445, Time 54.7729
+Epoch 430, Score -1.0000, Loss 0.2423, Time 54.4803
+Epoch 431, Score -3.0000, Loss 0.2403, Time 53.7833
+Epoch 432, Score -10.0000, Loss 0.2388, Time 54.1019
+Epoch 433, Score -17.0000, Loss 0.2386, Time 54.1077
+Epoch 434, Score -2.0000, Loss 0.2385, Time 54.5348
+Epoch 435, Score -9.0000, Loss 0.2403, Time 54.2301
+Epoch 436, Score -16.0000, Loss 0.2418, Time 53.9509
+Epoch 437, Score -2.0000, Loss 0.2426, Time 54.6291
+Epoch 438, Score -9.0000, Loss 0.2426, Time 54.5030
+Epoch 439, Score -16.0000, Loss 0.2416, Time 54.1251
+Epoch 440, Score -2.0000, Loss 0.2421, Time 53.9466
+Epoch 441, Score -7.0000, Loss 0.2411, Time 53.8802
+Epoch 442, Score -14.0000, Loss 0.2438, Time 54.3403
+Epoch 443, Score 0.0000, Loss 0.2445, Time 54.6923
+Epoch 444, Score -7.0000, Loss 0.2428, Time 53.4157
+Epoch 445, Score -14.0000, Loss 0.2446, Time 53.4521
+Epoch 446, Score -18.0000, Loss 0.2443, Time 54.3395
+Epoch 447, Score -4.0000, Loss 0.2439, Time 54.7710
+Epoch 448, Score -9.0000, Loss 0.2408, Time 54.1050
+Epoch 449, Score -16.0000, Loss 0.2404, Time 53.5133
+Epoch 450, Score -2.0000, Loss 0.2418, Time 54.6928
+Epoch 451, Score -9.0000, Loss 0.2441, Time 53.3889
+Epoch 452, Score -14.0000, Loss 0.2452, Time 54.7024
+Epoch 453, Score -16.0000, Loss 0.2449, Time 54.0498
+Epoch 454, Score -1.0000, Loss 0.2452, Time 54.1933
+Epoch 455, Score -8.0000, Loss 0.2442, Time 54.1447
+Epoch 456, Score -15.0000, Loss 0.2463, Time 54.7201
+Epoch 457, Score -1.0000, Loss 0.2443, Time 54.5529
+Epoch 458, Score -8.0000, Loss 0.2415, Time 53.3882
+Epoch 459, Score -15.0000, Loss 0.2443, Time 54.5624
+Epoch 460, Score 0.0000, Loss 0.2458, Time 54.2452
+Epoch 461, Score -7.0000, Loss 0.2444, Time 53.8070
+Epoch 462, Score -4.0000, Loss 0.2466, Time 53.9593
+Epoch 463, Score -11.0000, Loss 0.2454, Time 53.3802
+Epoch 464, Score -16.0000, Loss 0.2435, Time 53.7524
+Epoch 465, Score 0.0000, Loss 0.2430, Time 54.4639
+Epoch 466, Score -7.0000, Loss 0.2436, Time 53.6523
+Epoch 467, Score -14.0000, Loss 0.2458, Time 53.9655
+Epoch 468, Score 0.0000, Loss 0.2453, Time 54.6088
+Epoch 469, Score -6.0000, Loss 0.2444, Time 54.4797
+Epoch 470, Score -13.0000, Loss 0.2452, Time 53.7244
+Epoch 471, Score -20.0000, Loss 0.2446, Time 53.9853
+Epoch 472, Score -6.0000, Loss 0.2446, Time 53.6612
+Epoch 473, Score -13.0000, Loss 0.2451, Time 53.7519
+Epoch 474, Score -20.0000, Loss 0.2471, Time 54.0087
+Epoch 475, Score -5.0000, Loss 0.2462, Time 54.2822
+Epoch 476, Score -12.0000, Loss 0.2472, Time 54.0453
+Epoch 477, Score -19.0000, Loss 0.2462, Time 54.1095
+Epoch 478, Score -5.0000, Loss 0.2443, Time 54.7397
+Epoch 479, Score -12.0000, Loss 0.2455, Time 54.4951
+Epoch 480, Score -18.0000, Loss 0.2461, Time 53.7991
+Epoch 481, Score -4.0000, Loss 0.2452, Time 54.0473
+Epoch 482, Score -11.0000, Loss 0.2441, Time 53.8670
+Epoch 483, Score -18.0000, Loss 0.2435, Time 53.9546
+Epoch 484, Score -3.0000, Loss 0.2433, Time 53.9802
+Epoch 485, Score -10.0000, Loss 0.2430, Time 54.3991
+Epoch 486, Score -14.0000, Loss 0.2417, Time 53.9582
+Epoch 487, Score -1.0000, Loss 0.2412, Time 54.1217
+Epoch 488, Score -8.0000, Loss 0.2396, Time 54.2176
+Epoch 489, Score -15.0000, Loss 0.2414, Time 54.4670
+Epoch 490, Score 0.0000, Loss 0.2411, Time 54.9252
+Epoch 491, Score -7.0000, Loss 0.2412, Time 54.3834
+Epoch 492, Score -13.0000, Loss 0.2420, Time 54.1852
+Epoch 493, Score -20.0000, Loss 0.2408, Time 54.6537
+Epoch 494, Score -6.0000, Loss 0.2418, Time 54.8337
+Epoch 495, Score -9.0000, Loss 0.2442, Time 54.8198
+Epoch 496, Score -17.0000, Loss 0.2435, Time 54.2122
+Epoch 497, Score -2.0000, Loss 0.2414, Time 54.2535
+Epoch 498, Score -9.0000, Loss 0.2409, Time 53.9792
+Epoch 499, Score -16.0000, Loss 0.2404, Time 54.3503
+Epoch 500, Score -1.0000, Loss 0.2421, Time 54.5315
+Epoch 501, Score -8.0000, Loss 0.2421, Time 54.4610
+Epoch 502, Score -15.0000, Loss 0.2417, Time 54.5219
+Epoch 503, Score -1.0000, Loss 0.2432, Time 54.0664
+Epoch 504, Score -8.0000, Loss 0.2432, Time 54.3259
+Epoch 505, Score -7.0000, Loss 0.2450, Time 54.1365
+Epoch 506, Score -14.0000, Loss 0.2463, Time 54.1336
+Epoch 507, Score 0.0000, Loss 0.2456, Time 54.2979
+Epoch 508, Score -7.0000, Loss 0.2453, Time 54.5243
+Epoch 509, Score -14.0000, Loss 0.2445, Time 54.2996
+Epoch 510, Score 0.0000, Loss 0.2423, Time 54.3764
+Epoch 511, Score -5.0000, Loss 0.2414, Time 53.8668
+Epoch 512, Score -12.0000, Loss 0.2422, Time 53.9071
+Epoch 513, Score -19.0000, Loss 0.2423, Time 54.8566
+Epoch 514, Score -4.0000, Loss 0.2425, Time 54.8397
+Epoch 515, Score -10.0000, Loss 0.2422, Time 54.7584
+Epoch 516, Score -17.0000, Loss 0.2422, Time 54.3230
+Epoch 517, Score -3.0000, Loss 0.2429, Time 53.6267
+Epoch 518, Score -10.0000, Loss 0.2433, Time 53.4408
+Epoch 519, Score -17.0000, Loss 0.2426, Time 54.3526
+Epoch 520, Score -2.0000, Loss 0.2449, Time 53.9104
+Epoch 521, Score 0.0000, Loss 0.2458, Time 53.8512
+Epoch 522, Score -6.0000, Loss 0.2457, Time 54.3625
+Epoch 523, Score -11.0000, Loss 0.2455, Time 54.2845
+Epoch 524, Score -15.0000, Loss 0.2458, Time 53.8233
+Epoch 525, Score 0.0000, Loss 0.2463, Time 54.4405
+Epoch 526, Score -8.0000, Loss 0.2454, Time 53.9211
+Epoch 527, Score -15.0000, Loss 0.2452, Time 54.4868
+Epoch 528, Score 0.0000, Loss 0.2441, Time 54.5612
+Epoch 529, Score -5.0000, Loss 0.2418, Time 54.8279
+Epoch 530, Score -12.0000, Loss 0.2393, Time 54.1406
+Epoch 531, Score -19.0000, Loss 0.2392, Time 54.4253
+Epoch 532, Score -5.0000, Loss 0.2397, Time 54.4811
+Epoch 533, Score -12.0000, Loss 0.2384, Time 54.1895
+Epoch 534, Score -19.0000, Loss 0.2405, Time 54.3236
+Epoch 535, Score -4.0000, Loss 0.2436, Time 54.5969
+Epoch 536, Score -11.0000, Loss 0.2444, Time 54.1956
+Epoch 537, Score -18.0000, Loss 0.2433, Time 53.8673
+Epoch 538, Score -4.0000, Loss 0.2445, Time 54.4226
+Epoch 539, Score -11.0000, Loss 0.2425, Time 54.4598
+Epoch 540, Score -18.0000, Loss 0.2439, Time 54.2686
+Epoch 541, Score -1.0000, Loss 0.2435, Time 54.1536
+Epoch 542, Score -8.0000, Loss 0.2443, Time 54.6336
+Epoch 543, Score -15.0000, Loss 0.2445, Time 53.9479
+Epoch 544, Score 0.0000, Loss 0.2438, Time 54.3403
+Epoch 545, Score -7.0000, Loss 0.2437, Time 54.4277
+Epoch 546, Score -14.0000, Loss 0.2420, Time 54.2555
+Epoch 547, Score 0.0000, Loss 0.2411, Time 53.6912
+Epoch 548, Score -6.0000, Loss 0.2392, Time 54.4644
+Epoch 549, Score -13.0000, Loss 0.2407, Time 54.7206
+Epoch 550, Score -20.0000, Loss 0.2416, Time 53.7485
+Epoch 551, Score -2.0000, Loss 0.2419, Time 54.4432
+Epoch 552, Score -9.0000, Loss 0.2422, Time 54.1496
+Epoch 553, Score -16.0000, Loss 0.2412, Time 53.9457
+Epoch 554, Score -1.0000, Loss 0.2426, Time 54.5602
+Epoch 555, Score -8.0000, Loss 0.2418, Time 54.4436
+Epoch 556, Score -15.0000, Loss 0.2429, Time 54.2033
+Epoch 557, Score -1.0000, Loss 0.2432, Time 54.4913
+Epoch 558, Score -5.0000, Loss 0.2430, Time 53.8582
+Epoch 559, Score -12.0000, Loss 0.2414, Time 54.6541
+Epoch 560, Score -19.0000, Loss 0.2401, Time 54.0929
+Epoch 561, Score -5.0000, Loss 0.2378, Time 54.7415
+Epoch 562, Score -12.0000, Loss 0.2371, Time 54.5896
+Epoch 563, Score -16.0000, Loss 0.2403, Time 54.4220
+Epoch 564, Score 0.0000, Loss 0.2427, Time 54.0915
+Epoch 565, Score -7.0000, Loss 0.2401, Time 54.1627
+Epoch 566, Score -13.0000, Loss 0.2402, Time 54.1914
+Epoch 567, Score -14.0000, Loss 0.2391, Time 53.9689
+Epoch 568, Score 0.0000, Loss 0.2379, Time 54.7420
+Epoch 569, Score -6.0000, Loss 0.2385, Time 54.4996
+Epoch 570, Score -13.0000, Loss 0.2391, Time 53.8889
+Epoch 571, Score -20.0000, Loss 0.2399, Time 54.2566
+Epoch 572, Score -4.0000, Loss 0.2410, Time 54.5636
+Epoch 573, Score -9.0000, Loss 0.2404, Time 54.8014
+Epoch 574, Score -16.0000, Loss 0.2402, Time 54.8803
+Epoch 575, Score -1.0000, Loss 0.2416, Time 54.4589
+Epoch 576, Score -8.0000, Loss 0.2401, Time 54.6876
+Epoch 577, Score -15.0000, Loss 0.2409, Time 53.8368
+Epoch 578, Score 0.0000, Loss 0.2388, Time 53.8692
+Epoch 579, Score -7.0000, Loss 0.2381, Time 54.4812
+Epoch 580, Score -14.0000, Loss 0.2378, Time 54.7260
+Epoch 581, Score 0.0000, Loss 0.2372, Time 53.8998
+Epoch 582, Score -7.0000, Loss 0.2395, Time 54.3684
+Epoch 583, Score -14.0000, Loss 0.2401, Time 54.5379
+Epoch 584, Score -14.0000, Loss 0.2400, Time 53.4685
+Epoch 585, Score 0.0000, Loss 0.2402, Time 53.8828
+Epoch 586, Score -5.0000, Loss 0.2410, Time 54.3680
+Epoch 587, Score -13.0000, Loss 0.2380, Time 53.5874
+Epoch 588, Score -20.0000, Loss 0.2379, Time 54.1897
+Epoch 589, Score -5.0000, Loss 0.2372, Time 54.6357
+Epoch 590, Score -12.0000, Loss 0.2388, Time 54.5580
+Epoch 591, Score -19.0000, Loss 0.2409, Time 53.6946
+Epoch 592, Score -3.0000, Loss 0.2411, Time 54.5976
+Epoch 593, Score -10.0000, Loss 0.2430, Time 54.3684
+Epoch 594, Score -17.0000, Loss 0.2442, Time 53.7829
+Epoch 595, Score -3.0000, Loss 0.2450, Time 54.5041
+Epoch 596, Score -10.0000, Loss 0.2454, Time 54.2837
+Epoch 597, Score -17.0000, Loss 0.2469, Time 54.3631
+Epoch 598, Score -2.0000, Loss 0.2479, Time 53.7024
+Epoch 599, Score -9.0000, Loss 0.2461, Time 54.1461
+Epoch 600, Score -14.0000, Loss 0.2435, Time 54.9498
+Epoch 601, Score 0.0000, Loss 0.2449, Time 54.3050
+Epoch 602, Score -6.0000, Loss 0.2446, Time 54.5224
+Epoch 603, Score -14.0000, Loss 0.2430, Time 54.4844
+Epoch 604, Score -20.0000, Loss 0.2436, Time 53.9600
+Epoch 605, Score -6.0000, Loss 0.2461, Time 54.7759
+Epoch 606, Score -13.0000, Loss 0.2467, Time 54.4874
+Epoch 607, Score -20.0000, Loss 0.2461, Time 54.0049
+Epoch 608, Score -5.0000, Loss 0.2471, Time 53.9523
+Epoch 609, Score -12.0000, Loss 0.2466, Time 54.1994
+Epoch 610, Score -19.0000, Loss 0.2463, Time 54.8299
+Epoch 611, Score -5.0000, Loss 0.2456, Time 54.6758
+Epoch 612, Score -12.0000, Loss 0.2467, Time 54.6784
+Epoch 613, Score -19.0000, Loss 0.2466, Time 54.2362
+Epoch 614, Score -4.0000, Loss 0.2468, Time 54.0818
+Epoch 615, Score -11.0000, Loss 0.2477, Time 53.7736
+Epoch 616, Score -17.0000, Loss 0.2483, Time 53.4916
+Epoch 617, Score -2.0000, Loss 0.2478, Time 54.1717
+Epoch 618, Score -9.0000, Loss 0.2444, Time 53.3492
+Epoch 619, Score -15.0000, Loss 0.2445, Time 53.6676
+Epoch 620, Score -1.0000, Loss 0.2432, Time 54.3667
+Epoch 621, Score -4.0000, Loss 0.2408, Time 54.1712
+Epoch 622, Score -2.0000, Loss 0.2389, Time 54.4623
+Epoch 623, Score -7.0000, Loss 0.2385, Time 53.5603
+Epoch 624, Score -14.0000, Loss 0.2395, Time 54.6993
+Epoch 625, Score -20.0000, Loss 0.2412, Time 53.8304
+Epoch 626, Score -5.0000, Loss 0.2419, Time 53.8438
+Epoch 627, Score -12.0000, Loss 0.2424, Time 55.0566
+Epoch 628, Score -18.0000, Loss 0.2410, Time 54.1333
+Epoch 629, Score -2.0000, Loss 0.2430, Time 54.1664
+Epoch 630, Score -9.0000, Loss 0.2411, Time 54.2513
+Epoch 631, Score -14.0000, Loss 0.2414, Time 54.3301
+Epoch 632, Score 0.0000, Loss 0.2434, Time 54.0609
+Epoch 633, Score -5.0000, Loss 0.2462, Time 54.2940
+Epoch 634, Score -12.0000, Loss 0.2458, Time 53.8316
+Epoch 635, Score -19.0000, Loss 0.2450, Time 53.9048
+Epoch 636, Score -5.0000, Loss 0.2415, Time 54.7639
+Epoch 637, Score -12.0000, Loss 0.2416, Time 53.9456
+Epoch 638, Score -19.0000, Loss 0.2422, Time 54.5214
+Epoch 639, Score -4.0000, Loss 0.2432, Time 53.7748
+Epoch 640, Score -11.0000, Loss 0.2452, Time 54.3946
+Epoch 641, Score -18.0000, Loss 0.2451, Time 53.5572
+Epoch 642, Score -4.0000, Loss 0.2441, Time 54.3213
+Epoch 643, Score -10.0000, Loss 0.2462, Time 54.5210
+Epoch 644, Score -18.0000, Loss 0.2481, Time 53.8524
+Epoch 645, Score -3.0000, Loss 0.2461, Time 54.9066
+Epoch 646, Score -10.0000, Loss 0.2468, Time 53.9444
+Epoch 647, Score -17.0000, Loss 0.2461, Time 54.0030
+Epoch 648, Score -3.0000, Loss 0.2484, Time 54.5298
+Epoch 649, Score -10.0000, Loss 0.2485, Time 54.3144
+Epoch 650, Score -17.0000, Loss 0.2453, Time 54.4127
+Epoch 651, Score -2.0000, Loss 0.2442, Time 53.6206
+Epoch 652, Score -9.0000, Loss 0.2446, Time 53.5984
+Epoch 653, Score -16.0000, Loss 0.2452, Time 54.7223
+Epoch 654, Score -2.0000, Loss 0.2425, Time 54.1526
+Epoch 655, Score -9.0000, Loss 0.2420, Time 54.3825
+Epoch 656, Score -16.0000, Loss 0.2445, Time 53.9611
+Epoch 657, Score -1.0000, Loss 0.2451, Time 54.8718
+Epoch 658, Score -8.0000, Loss 0.2421, Time 53.6435
+Epoch 659, Score -15.0000, Loss 0.2413, Time 54.3910
+Epoch 660, Score 0.0000, Loss 0.2437, Time 54.7845
+Epoch 661, Score -7.0000, Loss 0.2423, Time 54.1809
+Epoch 662, Score -14.0000, Loss 0.2409, Time 53.8356
+Epoch 663, Score 0.0000, Loss 0.2401, Time 53.6906
+Epoch 664, Score -6.0000, Loss 0.2394, Time 54.2627
+Epoch 665, Score -13.0000, Loss 0.2394, Time 53.7862
+Epoch 666, Score -20.0000, Loss 0.2375, Time 54.3859
+Epoch 667, Score -6.0000, Loss 0.2394, Time 54.2666
+Epoch 668, Score -13.0000, Loss 0.2413, Time 54.5481
+Epoch 669, Score -15.0000, Loss 0.2428, Time 54.7663
+Epoch 670, Score 0.0000, Loss 0.2441, Time 53.5863
+Epoch 671, Score -7.0000, Loss 0.2428, Time 54.6814
+Epoch 672, Score -14.0000, Loss 0.2425, Time 54.5072
+Epoch 673, Score 0.0000, Loss 0.2438, Time 53.8911
+Epoch 674, Score -7.0000, Loss 0.2435, Time 53.5247
+Epoch 675, Score -13.0000, Loss 0.2436, Time 54.2786
+Epoch 676, Score 0.0000, Loss 0.2433, Time 54.5592
+Epoch 677, Score -6.0000, Loss 0.2421, Time 54.3914
+Epoch 678, Score -11.0000, Loss 0.2424, Time 53.7164
+Epoch 679, Score -18.0000, Loss 0.2421, Time 53.8913
+Epoch 680, Score -4.0000, Loss 0.2414, Time 54.0894
+Epoch 681, Score -11.0000, Loss 0.2443, Time 53.6829
+Epoch 682, Score -18.0000, Loss 0.2460, Time 54.5309
+Epoch 683, Score -18.0000, Loss 0.2435, Time 54.3471
+Epoch 684, Score -3.0000, Loss 0.2441, Time 54.2068
+Epoch 685, Score -10.0000, Loss 0.2434, Time 53.9461
+Epoch 686, Score -15.0000, Loss 0.2452, Time 53.9393
+Epoch 687, Score 0.0000, Loss 0.2438, Time 54.2837
+Epoch 688, Score -7.0000, Loss 0.2423, Time 53.8053
+Epoch 689, Score -15.0000, Loss 0.2427, Time 53.8537
+Epoch 690, Score 0.0000, Loss 0.2418, Time 54.5398
+Epoch 691, Score -7.0000, Loss 0.2426, Time 54.7152
+Epoch 692, Score -14.0000, Loss 0.2402, Time 53.7497
+Epoch 693, Score 0.0000, Loss 0.2407, Time 53.5860
+Epoch 694, Score -6.0000, Loss 0.2392, Time 54.2218
+Epoch 695, Score -11.0000, Loss 0.2395, Time 54.3526
+Epoch 696, Score -18.0000, Loss 0.2401, Time 54.4674
+Epoch 697, Score -18.0000, Loss 0.2403, Time 54.1482
+Epoch 698, Score -4.0000, Loss 0.2421, Time 54.2459
+Epoch 699, Score -11.0000, Loss 0.2427, Time 54.5261
+Epoch 700, Score -18.0000, Loss 0.2425, Time 54.6413
+Epoch 701, Score -3.0000, Loss 0.2423, Time 53.6397
+Epoch 702, Score -8.0000, Loss 0.2440, Time 53.4869
+Epoch 703, Score -15.0000, Loss 0.2441, Time 53.6707
+Epoch 704, Score -1.0000, Loss 0.2421, Time 54.4988
+Epoch 705, Score -8.0000, Loss 0.2436, Time 53.9890
+Epoch 706, Score -15.0000, Loss 0.2426, Time 53.8263
+Epoch 707, Score -20.0000, Loss 0.2423, Time 53.3239
+Epoch 708, Score -4.0000, Loss 0.2420, Time 53.5360
+Epoch 709, Score -11.0000, Loss 0.2430, Time 54.5966
+Epoch 710, Score -16.0000, Loss 0.2435, Time 54.2646
+Epoch 711, Score -1.0000, Loss 0.2437, Time 54.8822
+Epoch 712, Score -8.0000, Loss 0.2426, Time 54.3871
+Epoch 713, Score -12.0000, Loss 0.2418, Time 54.4581
+Epoch 714, Score -19.0000, Loss 0.2418, Time 54.8122
+Epoch 715, Score -4.0000, Loss 0.2428, Time 54.8972
+Epoch 716, Score -11.0000, Loss 0.2418, Time 54.3986
+Epoch 717, Score -19.0000, Loss 0.2421, Time 53.8633
+Epoch 718, Score -4.0000, Loss 0.2390, Time 54.5586
+Epoch 719, Score -11.0000, Loss 0.2406, Time 54.0661
+Epoch 720, Score -18.0000, Loss 0.2423, Time 53.7311
+Epoch 721, Score -4.0000, Loss 0.2419, Time 54.0142
+Epoch 722, Score -9.0000, Loss 0.2406, Time 54.7681
+Epoch 723, Score -16.0000, Loss 0.2419, Time 54.1947
+Epoch 724, Score -1.0000, Loss 0.2415, Time 54.2851
+Epoch 725, Score -8.0000, Loss 0.2406, Time 54.0320
+Epoch 726, Score -15.0000, Loss 0.2384, Time 54.5497
+Epoch 727, Score -19.0000, Loss 0.2378, Time 54.8925
+Epoch 728, Score -4.0000, Loss 0.2384, Time 54.6903
+Epoch 729, Score -11.0000, Loss 0.2400, Time 54.0378
+Epoch 730, Score -18.0000, Loss 0.2396, Time 54.4405
+Epoch 731, Score -4.0000, Loss 0.2399, Time 54.9725
+Epoch 732, Score -11.0000, Loss 0.2406, Time 54.5258
+Epoch 733, Score -18.0000, Loss 0.2405, Time 53.7211
+Epoch 734, Score -3.0000, Loss 0.2412, Time 54.1909
+Epoch 735, Score -10.0000, Loss 0.2400, Time 54.1124
+Epoch 736, Score -17.0000, Loss 0.2412, Time 54.4036
+Epoch 737, Score -3.0000, Loss 0.2396, Time 54.8024
+Epoch 738, Score -10.0000, Loss 0.2378, Time 53.8866
+Epoch 739, Score -16.0000, Loss 0.2400, Time 53.4693
+Epoch 740, Score -2.0000, Loss 0.2418, Time 54.7773
+Epoch 741, Score -9.0000, Loss 0.2418, Time 54.0686
+Epoch 742, Score -14.0000, Loss 0.2400, Time 54.3829
+Epoch 743, Score -18.0000, Loss 0.2359, Time 54.4911
+Epoch 744, Score -3.0000, Loss 0.2349, Time 54.7810
+Epoch 745, Score -11.0000, Loss 0.2372, Time 54.3632
+Epoch 746, Score -18.0000, Loss 0.2355, Time 54.2963
+Epoch 747, Score -19.0000, Loss 0.2350, Time 54.4501
+Epoch 748, Score -5.0000, Loss 0.2395, Time 54.3528
+Epoch 749, Score -10.0000, Loss 0.2405, Time 54.6269
+Epoch 750, Score -17.0000, Loss 0.2404, Time 53.9052
+Epoch 751, Score -2.0000, Loss 0.2413, Time 53.8334
+Epoch 752, Score -8.0000, Loss 0.2416, Time 54.0028
+Epoch 753, Score -15.0000, Loss 0.2430, Time 53.6528
+Epoch 754, Score 0.0000, Loss 0.2434, Time 53.5194
+Epoch 755, Score -7.0000, Loss 0.2430, Time 53.5117
+Epoch 756, Score -14.0000, Loss 0.2413, Time 54.1788
+Epoch 757, Score 0.0000, Loss 0.2421, Time 54.6751
+Epoch 758, Score -6.0000, Loss 0.2418, Time 53.9513
+Epoch 759, Score -14.0000, Loss 0.2414, Time 54.9727
+Epoch 760, Score 0.0000, Loss 0.2427, Time 54.3496
+Epoch 761, Score -6.0000, Loss 0.2435, Time 53.6655
+Epoch 762, Score -13.0000, Loss 0.2438, Time 54.5744
+Epoch 763, Score -19.0000, Loss 0.2438, Time 54.9786
+Epoch 764, Score -3.0000, Loss 0.2443, Time 53.9195
+Epoch 765, Score -10.0000, Loss 0.2444, Time 54.0280
+Epoch 766, Score -17.0000, Loss 0.2439, Time 54.1214
+Epoch 767, Score -2.0000, Loss 0.2427, Time 53.5903
+Epoch 768, Score -9.0000, Loss 0.2407, Time 53.9239
+Epoch 769, Score -14.0000, Loss 0.2417, Time 53.9580
+Epoch 770, Score 0.0000, Loss 0.2430, Time 54.2949
+Epoch 771, Score -7.0000, Loss 0.2428, Time 54.9608
+Epoch 772, Score -14.0000, Loss 0.2415, Time 54.3002
+Epoch 773, Score -19.0000, Loss 0.2423, Time 54.1413
+Epoch 774, Score -5.0000, Loss 0.2431, Time 54.6164
+Epoch 775, Score -11.0000, Loss 0.2444, Time 54.2448
+Epoch 776, Score -18.0000, Loss 0.2452, Time 54.9200
+Epoch 777, Score -3.0000, Loss 0.2439, Time 54.4575
+Epoch 778, Score -10.0000, Loss 0.2426, Time 54.6958
+Epoch 779, Score -17.0000, Loss 0.2428, Time 53.8945
+Epoch 780, Score -2.0000, Loss 0.2443, Time 54.2132
+Epoch 781, Score -9.0000, Loss 0.2449, Time 53.6853
+Epoch 782, Score -16.0000, Loss 0.2464, Time 54.0355
+Epoch 783, Score -1.0000, Loss 0.2465, Time 53.5811
+Epoch 784, Score -6.0000, Loss 0.2434, Time 54.7028
+Epoch 785, Score -13.0000, Loss 0.2430, Time 53.8791
+Epoch 786, Score -20.0000, Loss 0.2449, Time 54.2548/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+usage: train.py [-h] [--n_epochs N_EPOCHS]
+                [--n_batches_per_epoch N_BATCHES_PER_EPOCH]
+                [--batch_size BATCH_SIZE] [--update_interval UPDATE_INTERVAL]
+                [--gamma GAMMA] [--lr LR] [--n_steps N_STEPS]
+                [--eps_end EPS_END] [--eps_decay EPS_DECAY]
+                [--beta_frames BETA_FRAMES] [--beta_start BETA_START]
+                [--buffer_capacity BUFFER_CAPACITY]
+                [--hidden_dims HIDDEN_DIMS] [--env ENV]
+train.py: error: unrecognized arguments: --update_freq=20000
+
+Epoch 787, Score -4.0000, Loss 0.2452, Time 54.0869
+Epoch 788, Score -11.0000, Loss 0.2419, Time 53.9033
+Epoch 789, Score -18.0000, Loss 0.2401, Time 54.8394
+Epoch 790, Score -3.0000, Loss 0.2407, Time 54.0245
+Epoch 791, Score -10.0000, Loss 0.2417, Time 54.4345
+Epoch 792, Score -14.0000, Loss 0.2418, Time 54.6502
+Epoch 793, Score 0.0000, Loss 0.2405, Time 54.9812
+Epoch 794, Score -7.0000, Loss 0.2419, Time 53.6441
+Epoch 795, Score -14.0000, Loss 0.2432, Time 53.4299
+Epoch 796, Score 0.0000, Loss 0.2438, Time 53.6551
+Epoch 797, Score -6.0000, Loss 0.2390, Time 54.2500
+Epoch 798, Score -13.0000, Loss 0.2386, Time 54.4486
+Epoch 799, Score -20.0000, Loss 0.2382, Time 54.5686
+Epoch 800, Score -6.0000, Loss 0.2399, Time 54.6243
+Epoch 801, Score -9.0000, Loss 0.2406, Time 53.9439
+Epoch 802, Score -17.0000, Loss 0.2401, Time 54.2137
+Epoch 803, Score -3.0000, Loss 0.2408, Time 54.7106
+Epoch 804, Score -8.0000, Loss 0.2381, Time 54.1866
+Epoch 805, Score -15.0000, Loss 0.2387, Time 53.7920
+Epoch 806, Score 0.0000, Loss 0.2407, Time 54.3941
+Epoch 807, Score -7.0000, Loss 0.2391, Time 53.7131
+Epoch 808, Score -14.0000, Loss 0.2407, Time 54.7070
+Epoch 809, Score 0.0000, Loss 0.2413, Time 54.3438
+Epoch 810, Score -7.0000, Loss 0.2398, Time 54.7573
+Epoch 811, Score -14.0000, Loss 0.2417, Time 54.7366
+Epoch 812, Score 0.0000, Loss 0.2431, Time 55.0314
+Epoch 813, Score -6.0000, Loss 0.2427, Time 54.6224
+Epoch 814, Score -13.0000, Loss 0.2435, Time 54.4865
+Epoch 815, Score -20.0000, Loss 0.2428, Time 54.7522
+Epoch 816, Score -5.0000, Loss 0.2434, Time 53.6499
+Epoch 817, Score -13.0000, Loss 0.2454, Time 54.0975
+Epoch 818, Score -20.0000, Loss 0.2442, Time 53.5149
+Epoch 819, Score -5.0000, Loss 0.2447, Time 54.7718
+Epoch 820, Score -12.0000, Loss 0.2456, Time 54.0222
+Epoch 821, Score -19.0000, Loss 0.2459, Time 54.1610
+Epoch 822, Score -4.0000, Loss 0.2444, Time 53.9116
+Epoch 823, Score -12.0000, Loss 0.2442, Time 53.6655
+Epoch 824, Score -19.0000, Loss 0.2428, Time 54.2435
+Epoch 825, Score -2.0000, Loss 0.2424, Time 54.1058
+Epoch 826, Score -9.0000, Loss 0.2411, Time 54.3060
+Epoch 827, Score -16.0000, Loss 0.2433, Time 53.9324
+Epoch 828, Score -2.0000, Loss 0.2428, Time 54.0251
+Epoch 829, Score -9.0000, Loss 0.2429, Time 53.9309
+Epoch 830, Score -16.0000, Loss 0.2427, Time 53.6913
+Epoch 831, Score -1.0000, Loss 0.2419, Time 54.4563
+Epoch 832, Score -8.0000, Loss 0.2437, Time 54.0099
+Epoch 833, Score -15.0000, Loss 0.2439, Time 53.6324
+Epoch 834, Score -1.0000, Loss 0.2401, Time 53.5532
+Epoch 835, Score -6.0000, Loss 0.2402, Time 54.2801
+Epoch 836, Score -13.0000, Loss 0.2421, Time 53.7115
+Epoch 837, Score -17.0000, Loss 0.2403, Time 54.4111
+Epoch 838, Score -1.0000, Loss 0.2418, Time 54.2305
+Epoch 839, Score -8.0000, Loss 0.2414, Time 53.3439
+Epoch 840, Score -15.0000, Loss 0.2417, Time 54.2542
+Epoch 841, Score -20.0000, Loss 0.2399, Time 53.9160
+Epoch 842, Score -6.0000, Loss 0.2425, Time 54.1644
+Epoch 843, Score -13.0000, Loss 0.2432, Time 53.7771
+Epoch 844, Score -17.0000, Loss 0.2444, Time 54.4430
+Epoch 845, Score -2.0000, Loss 0.2440, Time 54.1050
+Epoch 846, Score -9.0000, Loss 0.2442, Time 54.2032
+Epoch 847, Score -16.0000, Loss 0.2441, Time 53.9345
+Epoch 848, Score -1.0000, Loss 0.2446, Time 53.9009
+Epoch 849, Score -2.0000, Loss 0.2449, Time 54.4980
+Epoch 850, Score -9.0000, Loss 0.2443, Time 54.5952
+Epoch 851, Score -16.0000, Loss 0.2427, Time 54.0781
+Epoch 852, Score -1.0000, Loss 0.2440, Time 53.8953
+Epoch 853, Score -8.0000, Loss 0.2459, Time 54.9022
+Epoch 854, Score -15.0000, Loss 0.2463, Time 54.7803
+Epoch 855, Score -1.0000, Loss 0.2472, Time 54.6338
+Epoch 856, Score -6.0000, Loss 0.2453, Time 54.9985
+Epoch 857, Score -13.0000, Loss 0.2439, Time 54.1083
+Epoch 858, Score -18.0000, Loss 0.2437, Time 54.3217
+Epoch 859, Score -4.0000, Loss 0.2440, Time 54.4678
+Epoch 860, Score -11.0000, Loss 0.2464, Time 54.2821
+Epoch 861, Score -16.0000, Loss 0.2461, Time 53.7700
+Epoch 862, Score -20.0000, Loss 0.2459, Time 53.7234
+Epoch 863, Score -6.0000, Loss 0.2463, Time 54.3144
+Epoch 864, Score -11.0000, Loss 0.2471, Time 53.4481
+Epoch 865, Score -18.0000, Loss 0.2468, Time 53.7954
+Epoch 866, Score -3.0000, Loss 0.2452, Time 54.2662
+Epoch 867, Score -10.0000, Loss 0.2457, Time 53.8892
+Epoch 868, Score -17.0000, Loss 0.2460, Time 54.3526
+Epoch 869, Score -1.0000, Loss 0.2476, Time 54.2517
+Epoch 870, Score -8.0000, Loss 0.2449, Time 53.4387
+Epoch 871, Score -15.0000, Loss 0.2453, Time 54.1102
+Epoch 872, Score -1.0000, Loss 0.2449, Time 54.0436
+Epoch 873, Score -7.0000, Loss 0.2429, Time 53.6967
+Epoch 874, Score -14.0000, Loss 0.2395, Time 53.8389
+Epoch 875, Score -18.0000, Loss 0.2401, Time 53.7889
+Epoch 876, Score -5.0000, Loss 0.2387, Time 53.9628
+Epoch 877, Score -10.0000, Loss 0.2396, Time 53.7291
+Epoch 878, Score -17.0000, Loss 0.2442, Time 54.7267
+Epoch 879, Score -3.0000, Loss 0.2450, Time 54.1487
+Epoch 880, Score -10.0000, Loss 0.2440, Time 54.2780
+Epoch 881, Score -16.0000, Loss 0.2449, Time 54.4054
+Epoch 882, Score -1.0000, Loss 0.2438, Time 54.1693
+Epoch 883, Score -8.0000, Loss 0.2436, Time 53.6326
+Epoch 884, Score -15.0000, Loss 0.2433, Time 53.9808
+Epoch 885, Score -1.0000, Loss 0.2411, Time 54.6941
+Epoch 886, Score -8.0000, Loss 0.2418, Time 53.8519
+Epoch 887, Score -12.0000, Loss 0.2406, Time 54.3020
+Epoch 888, Score -19.0000, Loss 0.2413, Time 54.2110
+Epoch 889, Score -4.0000, Loss 0.2443, Time 54.2388
+Epoch 890, Score -11.0000, Loss 0.2456, Time 54.0385
+Epoch 891, Score -14.0000, Loss 0.2456, Time 54.1383
+Epoch 892, Score -13.0000, Loss 0.2442, Time 54.4299
+Epoch 893, Score -20.0000, Loss 0.2403, Time 53.9962
+Epoch 894, Score -6.0000, Loss 0.2407, Time 54.3664
+Epoch 895, Score -13.0000, Loss 0.2425, Time 54.9044
+Epoch 896, Score -20.0000, Loss 0.2434, Time 53.8521
+Epoch 897, Score -3.0000, Loss 0.2438, Time 53.7670
+Epoch 898, Score -10.0000, Loss 0.2454, Time 53.6392
+Epoch 899, Score -17.0000, Loss 0.2428, Time 54.0922
+Epoch 900, Score -3.0000, Loss 0.2442, Time 54.9533
+Epoch 901, Score -9.0000, Loss 0.2445, Time 54.7616
+Epoch 902, Score -16.0000, Loss 0.2436, Time 54.5988
+Epoch 903, Score -1.0000, Loss 0.2425, Time 53.7100
+Epoch 904, Score -8.0000, Loss 0.2409, Time 54.4412
+Epoch 905, Score -14.0000, Loss 0.2381, Time 53.9574
+Epoch 906, Score -19.0000, Loss 0.2394, Time 55.0456
+Epoch 907, Score -4.0000, Loss 0.2389, Time 54.4877
+Epoch 908, Score -11.0000, Loss 0.2397, Time 53.5770
+Epoch 909, Score -17.0000, Loss 0.2426, Time 53.9101
+Epoch 910, Score -3.0000, Loss 0.2413, Time 54.3074
+Epoch 911, Score -10.0000, Loss 0.2411, Time 54.0274
+Epoch 912, Score -14.0000, Loss 0.2422, Time 53.5239
+Epoch 913, Score -20.0000, Loss 0.2421, Time 53.4376
+Epoch 914, Score -5.0000, Loss 0.2424, Time 54.0116
+Epoch 915, Score -12.0000, Loss 0.2447, Time 54.7430
+Epoch 916, Score -19.0000, Loss 0.2440, Time 53.5806
+Epoch 917, Score -5.0000, Loss 0.2444, Time 54.6903
+Epoch 918, Score -12.0000, Loss 0.2435, Time 54.4756
+Epoch 919, Score -19.0000, Loss 0.2447, Time 54.4243
+Epoch 920, Score -4.0000, Loss 0.2439, Time 54.3610
+Epoch 921, Score -4.0000, Loss 0.2436, Time 53.9581
+Epoch 922, Score -11.0000, Loss 0.2443, Time 54.1239
+Epoch 923, Score -18.0000, Loss 0.2464, Time 53.9167
+Epoch 924, Score -20.0000, Loss 0.2457, Time 54.6590
+Epoch 925, Score -1.0000, Loss 0.2448, Time 54.2956
+Epoch 926, Score -8.0000, Loss 0.2441, Time 54.0694
+Epoch 927, Score -15.0000, Loss 0.2473, Time 54.6100
+Epoch 928, Score 0.0000, Loss 0.2457, Time 54.4408
+Epoch 929, Score -8.0000, Loss 0.2456, Time 54.4981
+Epoch 930, Score -15.0000, Loss 0.2432, Time 54.5062
+Epoch 931, Score 0.0000, Loss 0.2421, Time 54.2214
+Epoch 932, Score -7.0000, Loss 0.2418, Time 54.8413
+Epoch 933, Score -14.0000, Loss 0.2428, Time 54.8145
+Epoch 934, Score -19.0000, Loss 0.2416, Time 54.5669
+Epoch 935, Score -4.0000, Loss 0.2407, Time 54.2495
+Epoch 936, Score -11.0000, Loss 0.2399, Time 53.5392
+Epoch 937, Score -18.0000, Loss 0.2406, Time 54.4707
+Epoch 938, Score -4.0000, Loss 0.2410, Time 54.2961
+Epoch 939, Score -11.0000, Loss 0.2409, Time 54.3719
+Epoch 940, Score -16.0000, Loss 0.2411, Time 54.6965
+Epoch 941, Score -2.0000, Loss 0.2420, Time 53.7760
+Epoch 942, Score -9.0000, Loss 0.2390, Time 53.7513
+Epoch 943, Score -16.0000, Loss 0.2398, Time 54.3447
+wandb: Waiting for W&B process to finish, PID 6185
+
+Epoch 944, Score -1.0000, Loss 0.2397, Time 54.3694
+Epoch 945, Score -6.0000, Loss 0.2373, Time 53.5463
+Epoch 946, Score -13.0000, Loss 0.2356, Time 54.2981
+Epoch 947, Score -20.0000, Loss 0.2370, Time 54.5839
+Epoch 948, Score -4.0000, Loss 0.2389, Time 54.0112
+Epoch 949, Score -11.0000, Loss 0.2383, Time 53.8340
+Epoch 950, Score -13.0000, Loss 0.2387, Time 54.8606
+Epoch 951, Score -20.0000, Loss 0.2393, Time 54.7938
+Epoch 952, Score -6.0000, Loss 0.2395, Time 53.6175
+Epoch 953, Score -13.0000, Loss 0.2398, Time 53.8544
+Epoch 954, Score -20.0000, Loss 0.2398, Time 54.5580
+Epoch 955, Score -5.0000, Loss 0.2391, Time 54.6963
+Epoch 956, Score -11.0000, Loss 0.2376, Time 54.3787
+Epoch 957, Score -16.0000, Loss 0.2380, Time 54.9715
+Epoch 958, Score -1.0000, Loss 0.2404, Time 54.2414
+Epoch 959, Score -8.0000, Loss 0.2418, Time 54.5734
+Epoch 960, Score -15.0000, Loss 0.2422, Time 54.3959
+Epoch 961, Score -1.0000, Loss 0.2419, Time 54.2654
+Epoch 962, Score -8.0000, Loss 0.2427, Time 53.8427
+Epoch 963, Score -12.0000wandb: Program ended successfully.
+, Loss 0.2438, Time 54.0441
+Epoch 964, Score -17.0000, Loss 0.2431, Time 54.8001
+Epoch 965, Score -2.0000, Loss 0.2399, Time 54.7773
+Epoch 966, Score -9.0000, Loss 0.2386, Time 54.8213
+Epoch 967, Score -16.0000, Loss 0.2384, Time 53.5051
+Epoch 968, Score -1.0000, Loss 0.2398, Time 54.1583
+Epoch 969, Score -5.0000, Loss 0.2385, Time 54.2270
+Epoch 970, Score -12.0000, Loss 0.2408, Time 54.0354
+Epoch 971, Score -19.0000, Loss 0.2383, Time 53.4935
+Epoch 972, Score -4.0000, Loss 0.2397, Time 54.2242
+Epoch 973, Score -11.0000, Loss 0.2387, Time 54.0544
+Epoch 974, Score -18.0000, Loss 0.2415, Time 54.3318
+Epoch 975, Score -3.0000, Loss 0.2434, Time 54.3531
+Epoch 976, Score -10.0000, Loss 0.2417, Time 54.5934
+Epoch 977, Score -17.0000, Loss 0.2416, Time 54.4105
+Epoch 978, Score -3.0000, Loss 0.2436, Time 53.9837
+Epoch 979, Score -10.0000, Loss 0.2437, Time 54.0551
+Epoch 980, Score -17.0000, Loss 0.2432, Time 53.4432
+Epoch 981, Score -1.0000, Loss 0.2399, Time 54.7861
+Epoch 982, Score -8.0000, Loss 0.2393, Time 54.7329
+Epoch 983, Score -16.0000, Loss 0.2412, Time 54.0474
+Epoch 984, Score -1.0000, Loss 0.2406, Time 53.7520
+Epoch 985, Score -7.0000, Loss 0.2407, Time 54.3422
+Epoch 986, Score -14.0000, Loss 0.2396, Time 54.2964
+Epoch 987, Score 0.0000, Loss 0.2372, Time 54.3398
+Epoch 988, Score -3.0000, Loss 0.2379, Time 53.6789
+Epoch 989, Score -11.0000, Loss 0.2360, Time 54.7227
+Epoch 990, Score -18.0000, Loss 0.2363, Time 54.4210
+Epoch 991, Score -2.0000, Loss 0.2385, Time 54.0406
+Epoch 992, Score -9.0000, Loss 0.2384, Time 53.7419
+Epoch 993, Score -16.0000, Loss 0.2382, Time 54.4442
+Epoch 994, Score -2.0000, Loss 0.2403, Time 54.2982
+Epoch 995, Score -9.0000, Loss 0.2416, Time 54.3082
+Epoch 996, Score -16.0000, Loss 0.2409, Time 54.4544
+Epoch 997, Score -1.0000, Loss 0.2391, Time 53.6172
+Epoch 998, Score -8.0000, Loss 0.2381, Time 53.4271
+Epoch 999, Score -15.0000, Loss 0.2363, Time 54.1321
+wandb: Run summary:
+wandb:             _step 2289
+wandb:   episodic_reward -21.0
+wandb:          _runtime 52512.27514624596
+wandb:        _timestamp 1601471358.3671222
+wandb:              loss 0.23632699251174927
+wandb:              time 54.13212275505066
+wandb:      best_episode 0
+wandb: Syncing 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 2 other file(s)
+wandb: - 0.06MB of 1.52MB uploaded (0.00MB deduped)wandb: \ 1.52MB of 1.52MB uploaded (0.00MB deduped)wandb: | 1.52MB of 1.52MB uploaded (0.00MB deduped)wandb: / 1.52MB of 1.52MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Synced graceful-pine-298: https://app.wandb.ai/dmriser/rlmp/runs/t2bl7d59
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ubuntu/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+usage: train.py [-h] [--n_epochs N_EPOCHS]
+                [--n_batches_per_epoch N_BATCHES_PER_EPOCH]
+                [--batch_size BATCH_SIZE] [--update_interval UPDATE_INTERVAL]
+                [--gamma GAMMA] [--lr LR] [--n_steps N_STEPS]
+                [--eps_end EPS_END] [--eps_decay EPS_DECAY]
+                [--beta_frames BETA_FRAMES] [--beta_start BETA_START]
+                [--buffer_capacity BUFFER_CAPACITY]
+                [--hidden_dims HIDDEN_DIMS] [--env ENV]
+train.py: error: unrecognized arguments: --update_freq=20000

@@ -113,8 +113,10 @@ if __name__ == "__main__":
         target_network = target_network.to(device)
 
     if use_cnn:
+        print("Using CNN state transformer.")
         state_transformer = lambda s: cnn_state_transformer(s, device)
     else:
+        print("Using flat state transformer.")
         state_transformer = lambda s: flat_state_transformer(s, device)
         
     target_network.load_state_dict(online_network.state_dict())

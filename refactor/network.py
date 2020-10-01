@@ -10,7 +10,7 @@ class Network(nn.Module):
         self.obs_shape = obs_shape
         self.num_actions = num_actions
         self.hidden_dim = hidden_dim
-
+        
         # Network definitions in PyTorch.
         self.features = nn.Sequential(
             nn.Linear(self.obs_shape, self.hidden_dim), 

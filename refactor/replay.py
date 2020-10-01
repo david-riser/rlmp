@@ -10,7 +10,7 @@ class PrioritizedReplayBuffer:
         self.alpha = alpha
         self.priorities, self.buffer = [], []
         self.index_pool = np.arange(maxsize)
-        
+
 
     def __len__(self):
         return len(self.buffer)

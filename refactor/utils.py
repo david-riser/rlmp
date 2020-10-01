@@ -46,14 +46,14 @@ def expand_transitions(transitions, torchify=True, state_transformer=None):
         discounted_rewards = torch.FloatTensor(discounted_rewards).to(device)
         ns = torch.LongTensor(ns).to(device)
 
-        if state_transformer:
+        if state_transformer and len(states[0].shape) > 1:
             states = torch.cat(states).to(device)
             next_states = torch.cat(next_states).to(device)
             nth_states = torch.cat(nth_states).to(device)
         else:
-            states = torch.FloatTensor(states).to(device)
-            next_states = torch.FloatTensor(next_states).to(device)
-            nth_states = torch.FloatTensor(nth_states).to(device)
+            states = torch.stack(states).to(device)
+            next_states = torch.stack(next_states).to(device)
+            nth_states = torch.stack(nth_states).to(device)
             
                 
     return states, actions, rewards, next_states, discounted_rewards, nth_states, dones, ns
