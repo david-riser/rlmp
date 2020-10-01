@@ -43,7 +43,7 @@ class NStepTrainer:
         """ Fill the n-step buffer each time the environment
             has been reset.
         """
-
+                        
         # Maybe something is in there, clear it out. 
         self.nstep_buffer = [] 
 
@@ -61,6 +61,64 @@ class NStepTrainer:
             self.state = next_state 
             
 
+    def pretrain(self, steps):
+        """ Pretrain the online network using the expert buffer.
+        """
+
+        pretrain_loss = 0.
+        for step in range(steps):
+            
+            e_transitions, e_weights, e_indices = self.expert_buffer.sample(
+                self.config['expert_batch_size'], beta=1.)
+
+            (e_states, e_actions, e_rewards, e_next_states, e_discounted_rewards,
+             e_nth_states, e_dones, e_ns) = expand_transitions(
+                 e_transitions, torchify=True, state_transformer=self.state_transformer)
+
+            e_loss = ntd_loss(
+                online_model=self.online_network, 
+                target_model=self.target_network,
+                states=e_states, actions=e_actions,
+                next_states=e_next_states, rewards=e_rewards,
+                dones=e_dones, gamma=0.99, n=1
+            )       
+            e_weights = torch.FloatTensor(e_weights).to(self.device)
+            e_loss = e_loss * e_weights
+            e_priorities = e_loss + 1e-5
+            e_priorities = e_priorities.detach().cpu().numpy()
+            self.expert_buffer.update_priorities(e_priorities, e_indices)
+            e_loss = e_loss.mean()
+                    
+            if self.config['n_steps'] > 1:
+                e_nstep_loss = ntd_loss(
+                    online_model=self.online_network, 
+                    target_model=self.target_network,
+                    states=e_states, actions=e_actions,
+                    next_states=e_nth_states, rewards=e_discounted_rewards,
+                    dones=e_dones, gamma=0.99, n=e_ns
+                )
+                e_nstep_loss = e_nstep_loss.mean()
+                e_loss += e_nstep_loss  
+
+
+            q_values = self.online_network(e_states)
+            e_loss += torch.mean(margin_loss(q_values, e_actions))
+            pretrain_loss += e_loss.detach().cpu().numpy()
+            
+            self.optimizer.zero_grad()
+            e_loss.backward()
+            self.optimizer.step()
+
+
+            if step % 10 == 0:
+                print("Step: {0}, Loss: {1:6.4f}".format(step, pretrain_loss / 10))
+                wandb.log({"pretrain_loss":pretrain_loss / 10})
+                pretrain_loss = 0.
+                
+        self.target_network.load_state_dict(self.online_network.state_dict())
+
+            
+        
     def train(self):
         """ Train the online network using the n-step loss. 
         """

@@ -39,6 +39,7 @@ def get_args():
     parser.add_argument('--env', type=str, default='CartPole-v0')
     parser.add_argument('--save_buffer', type=str, default=None)
     parser.add_argument('--expert_buffer', type=str, default=None)
+    parser.add_argument('--pretrain_steps', type=int, default=0)
     return parser.parse_args()
 
 
@@ -54,7 +55,7 @@ def setup_wandb(config):
 
 
 def setup_env(env_name, train=True):
-    if env_name == "CartPole-v0":
+    if env_name in ["CartPole-v0", "SpaceInvaders-ram-v0"]:
         env = gym.make(env_name)
     else:
         env = make_atari(env_name)
@@ -143,6 +144,10 @@ if __name__ == "__main__":
                            env_builder, action_transformer, state_transformer,
                            expert_buffer
     )
+
+    if args.pretrain_steps > 0 and args.expert_buffer is not None:
+        trainer.pretrain(args.pretrain_steps)
+    
     trainer.train()
     torch.save(online_network, "network.pkl")
 
