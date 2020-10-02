@@ -3,4 +3,7 @@ wandb/*
 tmp/*
 rllib/wandb/*
 *.npy
-refactor/wandb/* 
+refactor/wandb/*
+refactor/*.pkl
+refactor/*.out
+refactor/*.pdf

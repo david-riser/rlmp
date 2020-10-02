@@ -14,7 +14,7 @@ class NStepTrainer:
     def __init__(self, config, online_network, target_network, optimizer,
                  buffer, epsilon_schedule, beta_schedule, env_builder,
                  action_transformer, state_transformer, expert_buffer=None,
-                 expert_coef=1., online_coef=1.
+                 evaluator=None, expert_coef=1., online_coef=1.
     ):
         self.config = config
         self.online_network = online_network
@@ -26,6 +26,7 @@ class NStepTrainer:
         self.env_builder = env_builder
         self.action_transformer = action_transformer
         self.state_transformer = state_transformer
+        self.evaluator = evaluator
         self.episodic_reward = []
         self.loss = []
         self.nstep_buffer = []
@@ -132,6 +133,8 @@ class NStepTrainer:
             epoch_loss = []
             start_time = time.time()
             for batch in range(self.config['n_batches_per_epoch']):
+
+                self.evaluator.evaluate(self.step)
 
                 # Choose an action based on the current state and 
                 # according to an epsilon-greedy policy.
@@ -314,7 +317,8 @@ class NStepTrainer:
 
             wandb.log({
                 "time":time.time() - start_time,
-                "loss":self.loss[-1]
+                "loss":self.loss[-1],
+                "epsilon":epsilon, "beta":beta
             })
 
         wandb.log({"best_episode":self.best_episode})

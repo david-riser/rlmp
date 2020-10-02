@@ -8,12 +8,13 @@ import wandb
 
 from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
 
+from evaluators import PeriodicEvaluator
 from network import ConvNetwork, Network
 from replay import PrioritizedReplayBuffer
 from schedules import BetaSchedule, EpsilonSchedule, FixedSchedule
 from trainer import NStepTrainer
 from transformers import action_transformer, cnn_state_transformer, flat_state_transformer
-from utils import rolling
+from utils import play_evaluation_games, rolling
 
 
 
@@ -40,6 +41,9 @@ def get_args():
     parser.add_argument('--save_buffer', type=str, default=None)
     parser.add_argument('--expert_buffer', type=str, default=None)
     parser.add_argument('--pretrain_steps', type=int, default=0)
+    parser.add_argument('--eval_frequency', type=int, default=100)
+    parser.add_argument('--n_eval_games', type=int, default=20)
+    parser.add_argument('--eval_eps', type=float, default=0.05)
     return parser.parse_args()
 
 
@@ -138,11 +142,21 @@ if __name__ == "__main__":
     else:
         expert_buffer = None
 
-        
+    
+    eval_function = lambda: play_evaluation_games(
+        env_builder=env_builder,
+        model=online_network,
+        state_transformer=state_transformer,
+        action_transformer=action_transformer,
+        num_games=args.n_eval_games,
+        epsilon=args.eval_eps
+    )    
+    evaluator = PeriodicEvaluator(eval_function=eval_function, update_frequency=args.eval_frequency)
+    
     trainer = NStepTrainer(config, online_network, target_network, optimizer,
                            buffer, epsilon_schedule, beta_schedule,
                            env_builder, action_transformer, state_transformer,
-                           expert_buffer
+                           expert_buffer, evaluator
     )
 
     if args.pretrain_steps > 0 and args.expert_buffer is not None:

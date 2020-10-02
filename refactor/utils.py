@@ -1,4 +1,5 @@
 import numpy as np
+import random
 import torch
 
 from collections import namedtuple
@@ -57,3 +58,40 @@ def expand_transitions(transitions, torchify=True, state_transformer=None):
             
                 
     return states, actions, rewards, next_states, discounted_rewards, nth_states, dones, ns
+
+
+
+def play_evaluation_games(model, env_builder, state_transformer,
+                          action_transformer, num_games=20, epsilon=0.05):
+    """ Play some evaluation games and return the
+        scores.  
+    """
+    
+    env = env_builder()
+    
+    scores = []
+    actions = []  
+    with torch.no_grad():
+        for eval_game in range(num_games):
+            score = 0
+            state = env.reset()
+            state = state_transformer(state)
+
+            done = False
+            while not done:
+                if random.random() > epsilon:
+                    action = model(state)
+                    action = action_transformer(action)
+                else:
+                    action = env.action_space.sample()
+
+                actions.append(action)    
+                next_state, reward, done, _ = env.step(action)
+                score += reward
+                state = state_transformer(next_state)
+
+            scores.append(score)
+            env.close()
+
+
+    return scores, actions
