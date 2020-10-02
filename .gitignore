@@ -7,3 +7,7 @@ refactor/wandb/*
 refactor/*.pkl
 refactor/*.out
 refactor/*.pdf
+
+*.pkl
+*.pdf
+*.pyc
