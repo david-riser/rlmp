@@ -166,7 +166,11 @@ if __name__ == "__main__":
     torch.save(online_network, "network.pkl")
 
     if args.save_buffer is not None:
-        buffer.save(args.save_buffer)
+        if args.buffer_capacity > 10000:
+            save_size = 10000
+        else:
+            save_size = args.buffer_capacity
+        buffer.save(args.save_buffer, save_size)
     
     # Plot something to investigate
     mean_returns = rolling(trainer.episodic_reward, np.mean, 4, pad=True)

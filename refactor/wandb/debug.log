@@ -1,106 +1,72 @@
-2020-10-09 23:59:49,511 DEBUG   MainThread:3671 [wandb_config.py:_load_defaults():154] no defaults not found in config-defaults.yaml
-2020-10-09 23:59:49,588 DEBUG   MainThread:3671 [meta.py:_setup_code_git():49] probe for git information
-2020-10-09 23:59:49,608 DEBUG   MainThread:3671 [run_manager.py:__init__():547] Initialized sync for rlmp/25wg6704
-2020-10-09 23:59:49,611 INFO    MainThread:3671 [run_manager.py:wrap_existing_process():1149] wrapping existing process 3659
-2020-10-09 23:59:49,639 INFO    MainThread:3671 [run_manager.py:init_run():928] system metrics and metadata threads started
-2020-10-09 23:59:49,639 INFO    MainThread:3671 [run_manager.py:init_run():967] upserting run before process can begin, waiting at most 10 seconds
-2020-10-09 23:59:49,758 INFO    Thread-15 :3671 [run_manager.py:_upsert_run():1056] saving pip packages
-2020-10-09 23:59:49,758 INFO    Thread-15 :3671 [run_manager.py:_upsert_run():1058] initializing streaming files api
-2020-10-09 23:59:49,759 INFO    Thread-15 :3671 [run_manager.py:_upsert_run():1065] unblocking file change observer, beginning sync with W&B servers
-2020-10-09 23:59:49,759 INFO    MainThread:3671 [run_manager.py:wrap_existing_process():1166] informing user process we are ready to proceed
-2020-10-09 23:59:49,764 INFO    MainThread:3671 [run_manager.py:_sync_etc():1298] entering loop for messages from user process
-2020-10-09 23:59:50,587 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/config.yaml
-2020-10-09 23:59:50,712 INFO    Thread-4  :3671 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/requirements.txt
-2020-10-09 23:59:50,713 INFO    Thread-4  :3671 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-09 23:59:50,714 INFO    Thread-4  :3671 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/output.log
-2020-10-10 00:00:00,590 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:00,590 INFO    Thread-4  :3671 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:06,593 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:00:10,595 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:10,598 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:18,599 INFO    Thread-4  :3671 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-events.jsonl
-2020-10-10 00:00:19,600 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:19,600 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:22,601 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:00:27,604 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:27,607 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:30,606 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:30,606 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:38,610 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:38,613 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:38,614 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:00:48,615 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-events.jsonl
-2020-10-10 00:00:49,616 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:49,616 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:54,619 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:00:57,620 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:57,621 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:01:04,624 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:01:04,625 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:01:08,627 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:01:08,628 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:01:10,628 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:01:15,631 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:01:15,634 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:01:18,632 INFO    Thread-4  :3671 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-events.jsonl
-2020-10-10 00:00:33,358 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:00:42,362 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:00:46,364 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-summary.json
-2020-10-10 00:00:46,365 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:00:49,366 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-events.jsonl
-2020-10-10 00:00:55,369 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-summary.json
-2020-10-10 00:00:55,372 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:00:58,371 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:01:03,374 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-summary.json
-2020-10-10 00:01:03,374 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:01:14,379 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:01:19,382 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-events.jsonl
-2020-10-10 00:01:20,223 INFO    MainThread:3481 [run_manager.py:_sync_etc():1321] received message from user process: {"exitcode": 255}
-2020-10-10 00:01:20,224 INFO    MainThread:3481 [run_manager.py:_sync_etc():1408] closing log streams and sending exitcode to W&B
-2020-10-10 00:01:20,225 INFO    MainThread:3481 [run_manager.py:shutdown():1072] shutting down system stats and metadata service
-2020-10-10 00:01:20,382 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-events.jsonl
-2020-10-10 00:01:20,383 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/output.log
-2020-10-10 00:01:20,538 INFO    MainThread:3481 [run_manager.py:shutdown():1086] stopping streaming files and file change observer
-2020-10-10 00:01:21,383 INFO    Thread-4  :3481 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:01:23,773 INFO    MainThread:3481 [run_manager.py:_sync_etc():1427] rendering summary
-2020-10-10 00:01:23,774 INFO    MainThread:3481 [run_manager.py:_sync_etc():1459] syncing files to cloud storage
-2020-10-10 00:01:23,775 INFO    MainThread:3481 [run_manager.py:_sync_etc():1468] syncing complete: https://app.wandb.ai/dmriser/rlmp/runs/11p6yfgd
-.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:00:38,610 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:38,613 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:38,614 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:00:42,362 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:00:46,364 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-summary.json
-2020-10-10 00:00:46,365 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:00:48,615 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-events.jsonl
-2020-10-10 00:00:49,366 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-events.jsonl
-2020-10-10 00:00:49,616 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:49,616 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:54,619 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:00:55,369 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-summary.json
-2020-10-10 00:00:55,372 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:00:57,620 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:00:57,621 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:00:58,371 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:01:03,374 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-summary.json
-2020-10-10 00:01:03,374 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-history.jsonl
-2020-10-10 00:01:04,624 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:01:04,625 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:01:08,627 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:01:08,628 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:01:10,628 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-metadata.json
-2020-10-10 00:01:14,379 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:01:15,631 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-summary.json
-2020-10-10 00:01:15,634 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-history.jsonl
-2020-10-10 00:01:18,632 INFO    Thread-4  :3671 [25wg6704:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235948-25wg6704/wandb-events.jsonl
-2020-10-10 00:01:19,382 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-events.jsonl
-2020-10-10 00:01:20,223 INFO    MainThread:3481 [11p6yfgd:run_manager.py:_sync_etc():1321] received message from user process: {"exitcode": 255}
-2020-10-10 00:01:20,224 INFO    MainThread:3481 [11p6yfgd:run_manager.py:_sync_etc():1408] closing log streams and sending exitcode to W&B
-2020-10-10 00:01:20,225 INFO    MainThread:3481 [11p6yfgd:run_manager.py:shutdown():1072] shutting down system stats and metadata service
-2020-10-10 00:01:20,382 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-events.jsonl
-2020-10-10 00:01:20,383 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/output.log
-2020-10-10 00:01:20,538 INFO    MainThread:3481 [11p6yfgd:run_manager.py:shutdown():1086] stopping streaming files and file change observer
-2020-10-10 00:01:21,383 INFO    Thread-4  :3481 [11p6yfgd:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201009_235848-11p6yfgd/wandb-metadata.json
-2020-10-10 00:01:23,773 INFO    MainThread:3481 [11p6yfgd:run_manager.py:_sync_etc():1427] rendering summary
-2020-10-10 00:01:23,774 INFO    MainThread:3481 [11p6yfgd:run_manager.py:_sync_etc():1459] syncing files to cloud storage
-2020-10-10 00:01:23,775 INFO    MainThread:3481 [11p6yfgd:run_manager.py:_sync_etc():1468] syncing complete: https://app.wandb.ai/dmriser/rlmp/runs/11p6yfgd
+2020-10-11 14:56:31,090 DEBUG   MainThread:3564 [wandb_config.py:_load_defaults():154] no defaults not found in config-defaults.yaml
+2020-10-11 14:56:31,157 DEBUG   MainThread:3564 [meta.py:_setup_code_git():49] probe for git information
+2020-10-11 14:56:31,177 DEBUG   MainThread:3564 [run_manager.py:__init__():547] Initialized sync for rlmp/1voeuuj5
+2020-10-11 14:56:31,180 INFO    MainThread:3564 [run_manager.py:wrap_existing_process():1149] wrapping existing process 3551
+2020-10-11 14:56:31,181 WARNING MainThread:3564 [io_wrap.py:register():108] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2020-10-11 14:56:31,208 INFO    MainThread:3564 [run_manager.py:init_run():928] system metrics and metadata threads started
+2020-10-11 14:56:31,208 INFO    MainThread:3564 [run_manager.py:init_run():967] upserting run before process can begin, waiting at most 10 seconds
+2020-10-11 14:56:31,316 INFO    Thread-15 :3564 [run_manager.py:_upsert_run():1056] saving pip packages
+2020-10-11 14:56:31,316 INFO    Thread-15 :3564 [run_manager.py:_upsert_run():1058] initializing streaming files api
+2020-10-11 14:56:31,317 INFO    Thread-15 :3564 [run_manager.py:_upsert_run():1065] unblocking file change observer, beginning sync with W&B servers
+2020-10-11 14:56:31,317 INFO    MainThread:3564 [run_manager.py:wrap_existing_process():1166] informing user process we are ready to proceed
+2020-10-11 14:56:31,322 INFO    MainThread:3564 [run_manager.py:_sync_etc():1298] entering loop for messages from user process
+2020-10-11 14:56:32,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/config.yaml
+2020-10-11 14:56:32,276 INFO    Thread-4  :3564 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:56:32,276 INFO    Thread-4  :3564 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:56:32,277 INFO    Thread-4  :3564 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/requirements.txt
+2020-10-11 14:56:34,155 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:56:34,156 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:56:34,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:56:35,156 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:56:35,156 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:56:35,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:56:36,156 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:56:36,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:56:36,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:56:37,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:56:37,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:56:37,157 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:56:46,160 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:56:46,161 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:56:48,161 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:57:00,166 INFO    Thread-4  :3564 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-events.jsonl
+2020-10-11 14:57:04,168 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:57:08,170 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:57:08,170 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:57:08,171 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:57:15,173 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:57:15,173 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:57:20,175 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:57:27,178 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:57:27,179 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:57:30,179 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-events.jsonl
+2020-10-11 14:57:36,182 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:57:39,183 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:57:39,184 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:57:39,184 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:57:47,187 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:57:47,187 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:57:52,189 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:58:00,192 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-events.jsonl
+2020-10-11 14:58:08,196 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:58:10,807 INFO    MainThread:3564 [run_manager.py:_sync_etc():1321] received message from user process: {"save_policy": {"glob": "rewards.pdf", "policy": "live"}}
+2020-10-11 14:58:10,807 INFO    MainThread:3564 [run_manager.py:_sync_etc():1321] received message from user process: {"save_policy": {"glob": "network.pkl", "policy": "live"}}
+2020-10-11 14:58:10,808 INFO    MainThread:3564 [run_manager.py:_sync_etc():1321] received message from user process: {"exitcode": 0}
+2020-10-11 14:58:10,808 INFO    MainThread:3564 [run_manager.py:_sync_etc():1408] closing log streams and sending exitcode to W&B
+2020-10-11 14:58:10,808 INFO    MainThread:3564 [run_manager.py:shutdown():1072] shutting down system stats and metadata service
+2020-10-11 14:58:11,197 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-events.jsonl
+2020-10-11 14:58:11,197 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-history.jsonl
+2020-10-11 14:58:11,198 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-summary.json
+2020-10-11 14:58:11,198 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/output.log
+2020-10-11 14:58:11,198 INFO    Thread-4  :3564 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/network.pkl
+2020-10-11 14:58:11,199 INFO    Thread-4  :3564 [run_manager.py:_on_file_created():681] file/dir created: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/rewards.pdf
+2020-10-11 14:58:11,320 INFO    MainThread:3564 [run_manager.py:shutdown():1086] stopping streaming files and file change observer
+2020-10-11 14:58:12,198 INFO    Thread-4  :3564 [run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:58:14,531 INFO    MainThread:3564 [run_manager.py:_sync_etc():1427] rendering summary
+2020-10-11 14:58:14,532 INFO    MainThread:3564 [run_manager.py:_sync_etc():1459] syncing files to cloud storage
+2020-10-11 14:58:15,034 INFO    MainThread:3564 [run_manager.py:_sync_etc():1468] syncing complete: https://app.wandb.ai/dmriser/rlmp/runs/1voeuuj5
+FO    MainThread:3564 [1voeuuj5:run_manager.py:shutdown():1086] stopping streaming files and file change observer
+2020-10-11 14:58:12,198 INFO    Thread-4  :3564 [1voeuuj5:run_manager.py:_on_file_modified():692] file/dir modified: /home/ubuntu/rlmp/refactor/wandb/run-20201011_145630-1voeuuj5/wandb-metadata.json
+2020-10-11 14:58:14,531 INFO    MainThread:3564 [1voeuuj5:run_manager.py:_sync_etc():1427] rendering summary
+2020-10-11 14:58:14,532 INFO    MainThread:3564 [1voeuuj5:run_manager.py:_sync_etc():1459] syncing files to cloud storage
+2020-10-11 14:58:15,034 INFO    MainThread:3564 [1voeuuj5:run_manager.py:_sync_etc():1468] syncing complete: https://app.wandb.ai/dmriser/rlmp/runs/1voeuuj5

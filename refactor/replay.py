@@ -11,18 +11,21 @@ class PrioritizedReplayBuffer:
         self.alpha = alpha
         self.priorities, self.buffer = [], []
         self.index_pool = np.arange(maxsize)
+        self.current_max = 0.
 
-
+        
     def __len__(self):
         return len(self.buffer)
 
 
-    def save(self, output):
+    def save(self, output, maxsave=None):
         """ Save the buffer and priorities to an output file
             to be loaded at a later time.
         """
+
+        n_save = maxsave or self.maxsize
         with open(output, "wb") as ofile:
-            pickle.dump({"buffer":self.buffer, "priorities":self.priorities}, ofile)
+            pickle.dump({"buffer":self.buffer[:n_save], "priorities":self.priorities[:n_save]}, ofile)
 
 
     def load(self, inputfile):
@@ -39,13 +42,15 @@ class PrioritizedReplayBuffer:
         """ Add to the buffer and ensure that it is 
             not too full. 
         """
-        max_prio = np.max(self.priorities) if self.buffer else 1.0
+        max_prio = self.current_max if self.buffer else 1.0
         self.buffer.append(transition)
         self.priorities.append(max_prio)
         
         if len(self.buffer) > self.maxsize:
             self.buffer.pop(0)
-            self.priorities.pop(0)
+            prio = self.priorities.pop(0)
+            if self.current_max == prio:
+                self.current_max = np.max(self.priorities)
             
             
     def sample(self, batch_size, beta=0.4):
@@ -77,8 +82,10 @@ class PrioritizedReplayBuffer:
     def update_priorities(self, prios, indices):
         for index, prio in zip(indices, prios):
             self.priorities[index] = prio
+            if prio > self.current_max:
+                self.current_max = prio
 
-
+                
 
 class ReplayBuffer:
     """ Dumb replay buffer that mimics the interface of the 
