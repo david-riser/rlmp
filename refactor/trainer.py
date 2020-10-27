@@ -14,7 +14,7 @@ class NStepTrainer:
     def __init__(self, config, online_network, target_network, optimizer,
                  buffer, epsilon_schedule, beta_schedule, env_builder,
                  action_transformer, state_transformer, expert_buffer=None,
-                 evaluator=None, expert_coef=1., online_coef=1.
+                 evaluator=None, expert_coef=1., online_coef=1., batchsize_bandit=None
     ):
         self.config = config
         self.online_network = online_network
@@ -39,6 +39,8 @@ class NStepTrainer:
         self.expert_coef = expert_coef / total
         self.online_coef = online_coef / total
 
+        self.batchsize_bandit = batchsize_bandit
+        
         
     def prime_buffer(self, env):
         """ Fill the n-step buffer each time the environment
@@ -134,8 +136,23 @@ class NStepTrainer:
             start_time = time.time()
             for batch in range(self.config['n_batches_per_epoch']):
 
-                self.evaluator.evaluate(self.step)
+                scores = self.evaluator.evaluate(self.step)
+                if scores is not None and self.batchsize_bandit is not None:
 
+                    if self.step > 0:
+                        reward = np.median(scores)
+                        self.batchsize_bandit.step(reward)
+
+                    batch_size, expert_batch_size = self.batchsize_bandit.sample()
+                    self.config['batch_size'] = batch_size
+                    self.config['expert_batch_size'] = expert_batch_size
+
+                    wandb.log({"bandit_batch_size":batch_size,
+                               "bandit_expert_batch_size":expert_batch_size,
+                               "bandit_values":self.batchsize_bandit.values
+                    })
+                    
+                    
                 # Choose an action based on the current state and 
                 # according to an epsilon-greedy policy.
                 epsilon = self.epsilon_schedule.value(self.step)

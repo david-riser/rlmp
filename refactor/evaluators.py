@@ -28,3 +28,7 @@ class PeriodicEvaluator:
                 "eval_actions":wandb.Histogram(np_histogram=histo)
             })
 
+            return scores
+
+        else:
+            return None

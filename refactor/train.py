@@ -8,6 +8,7 @@ import wandb
 
 from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
 
+from bandits import Bandit
 from evaluators import PeriodicEvaluator
 from network import ConvNetwork, Network
 from replay import PrioritizedReplayBuffer
@@ -44,6 +45,9 @@ def get_args():
     parser.add_argument('--eval_frequency', type=int, default=100)
     parser.add_argument('--n_eval_games', type=int, default=20)
     parser.add_argument('--eval_eps', type=float, default=0.05)
+    parser.add_argument('--bandit_c', type=float, default=1.)
+    parser.add_argument('--bandit_alpha', type=float, default=0.2)
+    parser.add_argument('--use_bandit', action='store_true')
     return parser.parse_args()
 
 
@@ -152,11 +156,20 @@ if __name__ == "__main__":
         epsilon=args.eval_eps
     )    
     evaluator = PeriodicEvaluator(eval_function=eval_function, update_frequency=args.eval_frequency)
-    
+
+    # See if we're to use a bandit to choose the batch size
+    if args.use_bandit:
+        arms = [(8,56), (16,48), (24,40), (32,32), (40,24),
+                (48,16), (56,8)]
+        bandit = Bandit(arms=arms, alpha=args.bandit_alpha, c=args.bandit_c)
+    else:
+        bandit = None
+
+        
     trainer = NStepTrainer(config, online_network, target_network, optimizer,
                            buffer, epsilon_schedule, beta_schedule,
                            env_builder, action_transformer, state_transformer,
-                           expert_buffer, evaluator
+                           expert_buffer, evaluator, batchsize_bandit=bandit
     )
 
     if args.pretrain_steps > 0 and args.expert_buffer is not None:
