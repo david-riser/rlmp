@@ -34,7 +34,7 @@ clyent==1.2.2
 colorama==0.4.3
 configparser==5.0.0
 contextlib2==0.6.0.post1
-cryptography==2.8
+cryptography==3.2
 cycler==0.10.0
 cymem==2.0.2
 Cython==0.29.15
@@ -158,7 +158,7 @@ patsy==0.5.1
 pep8==1.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==7.0.0
+Pillow==7.1.0
 pkginfo==1.5.0.1
 plac==0.9.6
 plotly==4.8.1
@@ -260,7 +260,7 @@ tables==3.6.1
 tblib==1.6.0
 tensorboard==1.14.0
 tensorboardX==2.1
-tensorflow==1.14.0
+tensorflow==1.15.4
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
 terminado==0.8.3
