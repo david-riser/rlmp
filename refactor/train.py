@@ -8,7 +8,7 @@ import wandb
 
 from stable_baselines.common.atari_wrappers import make_atari, wrap_deepmind
 
-from bandits import Bandit, EGBandit
+from bandits import Bandit, EGBandit, FakeBanditSchedule
 from evaluators import PeriodicEvaluator
 from network import ConvNetwork, Network
 from replay import PrioritizedReplayBuffer
@@ -163,7 +163,10 @@ if __name__ == "__main__":
         arms = [(8,56), (16,48), (24,40), (32,32), (40,24),
                 (48,16), (56,8)]
         # bandit = Bandit(arms=arms, alpha=args.bandit_alpha, c=args.bandit_c)
-        bandit = EGBandit(arms=arms, alpha=args.bandit_alpha, eps=args.bandit_eps)
+        # bandit = EGBandit(arms=arms, alpha=args.bandit_alpha, eps=args.bandit_eps)
+
+        decay = args.n_epochs * args.n_batches_per_epoch / args.eval_frequency
+        bandit = FakeBanditSchedule(batch_size=64, decay=decay)
     else:
         bandit = None
 

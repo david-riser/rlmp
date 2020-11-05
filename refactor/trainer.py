@@ -214,11 +214,11 @@ class NStepTrainer:
                 if len(self.nstep_buffer) > self.config['n_steps']:
                     _ = self.nstep_buffer.pop(0)
                 self.state = next_state
-
-                if len(self.buffer) >= self.config['batch_size']:
+                
+                beta = self.beta_schedule.value(self.step)
+                if len(self.buffer) >= self.config['batch_size'] and self.config['batch_size'] > 0:
                     # Sample a batch of experience from the replay buffer and 
                     # train with the n-step TD loss.
-                    beta = self.beta_schedule.value(self.step)
                     transitions, weights, indices = self.buffer.sample(
                         self.config['batch_size'], beta)
                     (states, actions, rewards, next_states, discounted_rewards,
@@ -257,57 +257,62 @@ class NStepTrainer:
                         nstep_loss = nstep_loss.mean()
                         loss += nstep_loss  
 
-                    # Maybe we have an expert buffer, if so we should train some
-                    # samples from that expert buffer.
-                    if self.expert_buffer is not None:
-                        e_transitions, e_weights, e_indices = self.expert_buffer.sample(
-                            self.config['expert_batch_size'], beta)
+                # Maybe we have an expert buffer, if so we should train some
+                # samples from that expert buffer.
+                if self.expert_buffer is not None and self.config['expert_batch_size'] > 0:
+                    e_transitions, e_weights, e_indices = self.expert_buffer.sample(
+                        self.config['expert_batch_size'], beta)
+                    
+                    (e_states, e_actions, e_rewards, e_next_states, e_discounted_rewards,
+                     e_nth_states, e_dones, e_ns) = expand_transitions(
+                         e_transitions, torchify=True, state_transformer=self.state_transformer)
 
-                        (e_states, e_actions, e_rewards, e_next_states, e_discounted_rewards,
-                         e_nth_states, e_dones, e_ns) = expand_transitions(
-                             e_transitions, torchify=True, state_transformer=self.state_transformer)
-
-                        e_loss = ntd_loss(
+                    e_loss = ntd_loss(
+                        online_model=self.online_network, 
+                        target_model=self.target_network,
+                        states=e_states, actions=e_actions,
+                        next_states=e_next_states, rewards=e_rewards,
+                        dones=e_dones, gamma=0.99, n=1
+                    )       
+                    e_weights = torch.FloatTensor(e_weights).to(self.device)
+                    e_loss = e_loss * e_weights
+                    e_priorities = e_loss + 1e-5
+                    e_priorities = e_priorities.detach().cpu().numpy()
+                    self.expert_buffer.update_priorities(e_priorities, e_indices)
+                    e_loss = e_loss.mean()
+                    
+                    if self.config['n_steps'] > 1:
+                        e_nstep_loss = ntd_loss(
                             online_model=self.online_network, 
                             target_model=self.target_network,
                             states=e_states, actions=e_actions,
-                            next_states=e_next_states, rewards=e_rewards,
-                            dones=e_dones, gamma=0.99, n=1
-                        )       
-                        e_weights = torch.FloatTensor(e_weights).to(self.device)
-                        e_loss = e_loss * e_weights
-                        e_priorities = e_loss + 1e-5
-                        e_priorities = e_priorities.detach().cpu().numpy()
-                        self.expert_buffer.update_priorities(e_priorities, e_indices)
-                        e_loss = e_loss.mean()
-                    
-                        if self.config['n_steps'] > 1:
-                            e_nstep_loss = ntd_loss(
-                                online_model=self.online_network, 
-                                target_model=self.target_network,
-                                states=e_states, actions=e_actions,
-                                next_states=e_nth_states, rewards=e_discounted_rewards,
-                                dones=e_dones, gamma=0.99, n=e_ns
-                            )
-                            e_nstep_loss = e_nstep_loss.mean()
-                            e_loss += e_nstep_loss  
+                            next_states=e_nth_states, rewards=e_discounted_rewards,
+                            dones=e_dones, gamma=0.99, n=e_ns
+                        )
+                        e_nstep_loss = e_nstep_loss.mean()
+                        e_loss += e_nstep_loss  
 
 
-                        q_values = self.online_network(e_states)
-                        e_loss += torch.mean(margin_loss(q_values, e_actions))
+                    q_values = self.online_network(e_states)
+                    e_loss += torch.mean(margin_loss(q_values, e_actions))
                         
-                        # Finally, add this sucker to the loss if we do have expert samples.
-                        loss = loss * self.online_coef + e_loss * self.expert_coef
+                # Finally, add this sucker to the loss if we do have expert samples.
+                if self.config['batch_size'] > 0 and self.config['expert_batch_size'] > 0:
+                    loss = loss * self.online_coef + e_loss * self.expert_coef
+                elif self.config['batch_size'] > 0:
+                    loss = loss
+                elif self.config['expert_batch_size'] > 0:
+                    loss = e_loss
                         
                         
-                    # Take the step of updating online network parameters
-                    # based on this batch loss.
-                    self.optimizer.zero_grad()
-                    loss.backward()
-                    self.optimizer.step()
+                # Take the step of updating online network parameters
+                # based on this batch loss.
+                self.optimizer.zero_grad()
+                loss.backward()
+                self.optimizer.step()
 
-                    # End of training step actions
-                    epoch_loss.append(loss.detach().cpu().numpy())
+                # End of training step actions
+                epoch_loss.append(loss.detach().cpu().numpy())
                 
                 # End of every step actions
                 if self.step % self.config['update_interval'] == 0:

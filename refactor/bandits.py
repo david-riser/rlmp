@@ -68,3 +68,24 @@ class EGBandit:
 
 
         return self.arms[self.last_action]
+
+class FakeBanditSchedule:
+    """ Not a bandit at all, a fixed schedule. """
+    def __init__(self, batch_size, decay):
+        self.batch_size = batch_size
+        self.decay = decay
+        self.steps = 0
+        self.values = [0, 0]
+        print("Setting up FakeBanditSchedule with batch size {} and decay {}".format(
+            self.batch_size, self.decay
+        ))
+        
+    def step(self, reward):
+        self.steps += 1
+
+
+    def sample(self):
+        batch_size = int(self.steps * self.batch_size / self.decay)
+        expert_batch_size = self.batch_size - batch_size
+        print("Sampled batch sizes ({},{})".format(batch_size, expert_batch_size))
+        return (batch_size, expert_batch_size)
