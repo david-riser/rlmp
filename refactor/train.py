@@ -27,7 +27,7 @@ def get_args():
     parser.add_argument('--n_epochs', type=int, default=400)
     parser.add_argument('--n_batches_per_epoch', type=int, default=400)
     parser.add_argument('--batch_size', type=int, default=32)
-    parser.add_argument('--expert_batch_size', type=int, default=8)
+    parser.add_argument('--expert_batch_size', type=int, default=0)
     parser.add_argument('--update_interval', type=int, default=1000)
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--lr', type=float, default=0.001)

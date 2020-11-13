@@ -70,7 +70,7 @@ def play_evaluation_games(model, env_builder, state_transformer,
     env = env_builder()
     
     scores = []
-    actions = []  
+    actions = []
     with torch.no_grad():
         for eval_game in range(num_games):
             score = 0

@@ -297,22 +297,23 @@ class NStepTrainer:
                     e_loss += torch.mean(margin_loss(q_values, e_actions))
                         
                 # Finally, add this sucker to the loss if we do have expert samples.
-                if self.config['batch_size'] > 0 and self.config['expert_batch_size'] > 0:
-                    loss = loss * self.online_coef + e_loss * self.expert_coef
-                elif self.config['batch_size'] > 0:
-                    loss = loss
-                elif self.config['expert_batch_size'] > 0:
-                    loss = e_loss
+                if len(self.buffer) > self.config["batch_size"]:
+                    if self.config['batch_size'] > 0 and self.config['expert_batch_size'] > 0:
+                        loss = loss * self.online_coef + e_loss * self.expert_coef
+                    elif self.config['batch_size'] > 0:
+                        loss = loss
+                    elif self.config['expert_batch_size'] > 0:
+                        loss = e_loss
                         
                         
-                # Take the step of updating online network parameters
-                # based on this batch loss.
-                self.optimizer.zero_grad()
-                loss.backward()
-                self.optimizer.step()
+                    # Take the step of updating online network parameters
+                    # based on this batch loss.
+                    self.optimizer.zero_grad()
+                    loss.backward()
+                    self.optimizer.step()
 
-                # End of training step actions
-                epoch_loss.append(loss.detach().cpu().numpy())
+                    # End of training step actions
+                    epoch_loss.append(loss.detach().cpu().numpy())
                 
                 # End of every step actions
                 if self.step % self.config['update_interval'] == 0:

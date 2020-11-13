@@ -32,3 +32,4 @@ class PeriodicEvaluator:
 
         else:
             return None
+
