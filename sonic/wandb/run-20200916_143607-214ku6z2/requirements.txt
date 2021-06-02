@@ -280,7 +280,7 @@ typing-extensions==3.7.4.1
 typing==3.7.4.1
 ujson==1.35
 unicodecsv==0.14.1
-urllib3==1.25.8
+urllib3==1.26.5
 wandb==0.9.4
 wasabi==0.2.2
 watchdog==0.10.2
